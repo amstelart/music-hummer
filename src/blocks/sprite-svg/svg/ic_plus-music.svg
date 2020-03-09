@@ -1,9 +1,0 @@
-<svg width="144" height="144" viewBox="0 0 144 144" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="icon/48/ic_plus-music">
-<g id="icons8-musical">
-<path id="Oval" opacity="0.3" d="M51 123C64.2548 123 75 112.255 75 99C75 85.7452 64.2548 75 51 75C37.7452 75 27 85.7452 27 99C27 112.255 37.7452 123 51 123Z" fill="#BA0000"/>
-<path id="Path" opacity="0.3" d="M117 51L75 39V15L117 27V51Z" fill="#BA0000"/>
-<path id="Combined Shape" fill-rule="evenodd" clip-rule="evenodd" d="M81 51H117C120.6 51 123 48.6 123 45V21C123 17.4 120.6 15 117 15H75C71.4 15 69 17.4 69 21V45V74.8556C64.0152 71.1643 57.8027 69 51 69C34.2 69 21 82.2 21 99C21 115.8 34.2 129 51 129C67.8 129 81 115.8 81 99V51ZM81 39H111V27H81V39ZM51 81C61.2 81 69 88.8 69 99C69 109.2 61.2 117 51 117C40.8 117 33 109.2 33 99C33 88.8 40.8 81 51 81Z" fill="#1A1919"/>
-</g>
-</g>
-</svg>
