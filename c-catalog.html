@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Music hummer</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"> -->
+  <!-- <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"> -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+
+  </script>
+
+</head>
+
+<body>
+
+  <div class="main-wrapper">
+
+    <header class="page-header" role="banner">
+      <div class="top-line">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="top-line__info-item">Москва: +7 (495) 120-07-89</div>
+              <div class="top-line__info-item">Бесплатно по России: 8 800 250-00-00</div>
+              <div class="top-line__info-item">welcome@music-hummer.ru</div>
+            </div>
+            <div class="col-auto">
+              <ul class="top-line__nav">
+                <li><a href="#">Тендеры</a></li>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Оплата</a></li>
+                <li><a href="#">Поддержка</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mid-line">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <a href="index.html" class="logo">
+                <img src="img/logo.svg" alt="" width="122px" height="32px">
+              </a>
+            </div>
+            <div class="col-auto">
+              <div class="user-options">
+                <a class="user-options__item" href="#"><svg class="icon icon-search" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_compare"></use></svg> Сравнение</a>
+                <a class="user-options__item" href="#"><svg class="icon icon-search" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_fav"></use></svg> Отложенные</a>
+                <a class="user-options__item" href="#"><svg class="icon icon-search" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_shopping_cart"></use></svg> Корзина</a>
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="user-entry">
+                <a href="#" class="">Войти</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-line">
+        <div class="container">
+          <div class="nav-line__inner">
+            <nav class="main-nav d-flex">
+              <li class="main-nav__item active">
+                <a href="#" class="main-nav__link">Акции</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Каталог</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Бренды</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Услуги</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Оптовикам</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Контакты</a>
+              </li>
+            </nav>
+            <form class="form-inline search">
+              <input class="form-control" type="search" placeholder="Более 30 000 товаров" aria-label="Search">
+              <button class="btn" type="submit"><svg class="icon icon-search" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-search"></use></svg></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <div class="container">
+
+      <div class="page-top">
+        <nav class="page-top__breadcrumb" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Главная</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Каталог</li>
+          </ol>
+        </nav>
+        <h1 class="page-top__title">Каталог музыкальных инструментов и оборудования</h1>        
+      </div>
+      <div class="c-catalog">
+        <div class="row">
+          <div class="col-lg-3 mb-4">
+            <a href="#" class="c-card">
+              <img class="c-card__img" src="img/c-card-img-01.jpg" alt="">
+              <div class="c-card__title">Гитары</div>
+            </a>
+          </div>
+          <div class="col-lg-3 mb-4">
+            <a href="#" class="c-card">
+              <img class="c-card__img" src="img/c-card-img-01.jpg" alt="">
+              <div class="c-card__title">Гитары</div>
+            </a>
+          </div>
+          <div class="col-lg-3 mb-4">
+            <a href="#" class="c-card">
+              <img class="c-card__img" src="img/c-card-img-01.jpg" alt="">
+              <div class="c-card__title">Гитары</div>
+            </a>
+          </div>
+          <div class="col-lg-3 mb-4">
+            <a href="#" class="c-card">
+              <img class="c-card__img" src="img/c-card-img-01.jpg" alt="">
+              <div class="c-card__title">Гитары</div>
+            </a>
+          </div>
+          <div class="col-lg-3 mb-4">
+            <a href="#" class="c-card">
+              <img class="c-card__img" src="img/c-card-img-01.jpg" alt="">
+              <div class="c-card__title">Гитары</div>
+            </a>
+          </div>
+          <div class="col-lg-3 mb-4">
+            <a href="#" class="c-card">
+              <img class="c-card__img" src="img/c-card-img-01.jpg" alt="">
+              <div class="c-card__title">Гитары</div>
+            </a>
+          </div>
+          <div class="col-lg-3 mb-4">
+            <a href="#" class="c-card">
+              <img class="c-card__img" src="img/c-card-img-01.jpg" alt="">
+              <div class="c-card__title">Гитары</div>
+            </a>
+          </div>
+          <div class="col-lg-3 mb-4">
+            <a href="#" class="c-card">
+              <img class="c-card__img" src="img/c-card-img-01.jpg" alt="">
+              <div class="c-card__title">Гитары</div>
+            </a>
+          </div>
+          <div class="col-lg-3 mb-4">
+            <a href="#" class="c-card">
+              <img class="c-card__img" src="img/c-card-img-01.jpg" alt="">
+              <div class="c-card__title">Гитары</div>
+            </a>
+          </div>
+          <div class="col-lg-3 mb-4">
+            <a href="#" class="c-card">
+              <img class="c-card__img" src="img/c-card-img-01.jpg" alt="">
+              <div class="c-card__title">Гитары</div>
+            </a>
+          </div>
+          <div class="col-lg-3 mb-4">
+            <a href="#" class="c-card">
+              <img class="c-card__img" src="img/c-card-img-01.jpg" alt="">
+              <div class="c-card__title">Гитары</div>
+            </a>
+          </div>
+          <div class="col-lg-3 mb-4">
+            <a href="#" class="c-card">
+              <img class="c-card__img" src="img/c-card-img-01.jpg" alt="">
+              <div class="c-card__title">Гитары</div>
+            </a>
+          </div>
+          <div class="col-lg-3 mb-4">
+            <a href="#" class="c-card">
+              <img class="c-card__img" src="img/c-card-img-01.jpg" alt="">
+              <div class="c-card__title">Гитары</div>
+            </a>
+          </div>
+          <div class="col-lg-3 mb-4">
+            <a href="#" class="c-card">
+              <img class="c-card__img" src="img/c-card-img-01.jpg" alt="">
+              <div class="c-card__title">Гитары</div>
+            </a>
+          </div>
+          <div class="col-lg-3 mb-4">
+            <a href="#" class="c-card">
+              <img class="c-card__img" src="img/c-card-img-01.jpg" alt="">
+              <div class="c-card__title">Гитары</div>
+            </a>
+          </div>
+          <div class="col-lg-3 mb-4">
+            <a href="#" class="c-card">
+              <img class="c-card__img" src="img/c-card-img-01.jpg" alt="">
+              <div class="c-card__title">Гитары</div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2 class="section__title">Недавно просмотренные</h2>
+        <div class="row">
+          <div class="col-lg-3 mb-4">
+            <div class="p-card">
+              <img class="" src="img/product-stub.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-3 mb-4">
+            <div class="p-card">
+              <img class="" src="img/product-stub.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-3 mb-4">
+            <div class="p-card">
+              <img class="" src="img/product-stub.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="page-footer" role="contentinfo">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 page-footer__contacts">
+            <div class="mb-4">
+              <img src="img/logo-white.svg" width="122px" height="32px" alt="">
+            </div>
+            <div class="mb-3">
+              <ul class="list-unstyled">
+                <li class="mb-4">
+                  <small>Интернет-магазин:</small>
+                  <div class="font-weight-bold">8 (800) 555-07-83</div>
+                </li>
+                <li class="mb-4">
+                  <small>Магазин в Москве:</small>
+                  <div class="font-weight-bold">+7 (495) 120-07-89</div>
+                  <small>метро ВДНХ, ул 1-я останкинская д.55</small>
+                </li>
+                <li class="mb-4">
+                  <small>E-mail:</small>
+                  <div class="font-weight-bold">welcome@music-hummer.ru</div>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="#" class="btn btn-block btn-outline-light">Контакты</a>
+            </div>
+          </div>
+          <div class="col-lg-9 page-footer__info">
+            <div class="row">
+              <div class="col">
+                <div class="page-footer__nav-title">Инструменты</div>
+                <ul class="page-footer__nav">
+                  <li><a href="#">Гитары</a></li>
+                  <li><a href="#">Клавишные</a></li>
+                  <li><a href="#">Ударные</a></li>
+                  <li><a href="#">Духовые</a></li>
+                  <li><a href="#">Смычковые</a></li>
+                </ul>
+              </div>
+              <div class="col">
+                <div class="page-footer__nav-title">Оборудование</div>
+                <ul class="page-footer__nav">
+                  <li><a href="#">Звуковое</a></li>
+                  <li><a href="#">Гитарное</a></li>
+                  <li><a href="#">Трансляционное</a></li>
+                  <li><a href="#">Световое</a></li>
+                </ul>
+              </div>
+              <div class="col-auto">
+                <div class="page-footer__nav-title">Решения</div>
+                <ul class="page-footer__nav">
+                  <li><a href="#">Для студии</a></li>
+                  <li><a href="#">Для ресторанов</a></li>
+                  <li><a href="#">Для кинотеатров</a></li>
+                  <li><a href="#">Для концертов</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="py-4">
+              <ul class="social">
+                <li class="social__link-wrap">
+                  <a class="social__link" href="#">
+                    <img src="img/social-vk.png" alt="">
+                  </a>
+                </li>
+                <li class="social__link-wrap">
+                  <a class="social__link" href="#">
+                    <img src="img/social-fb.png" alt="">
+                  </a>
+                </li>
+                <li class="social__link-wrap">
+                  <a class="social__link" href="#">
+                    <img src="img/social-yout.png" alt="">
+                  </a>
+                </li>
+                <li class="social__link-wrap">
+                  <a class="social__link" href="#">
+                    <img src="img/social-inst.png" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="copyright"><p class="small">© 2006 – 2019 Интернет-магазин музыкальных инструментов и оборудования «Мьюзик Хаммер». 
+              Сайт не является публичной офертой.</p></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+  </div>
+  <script src="js/script.min.js"></script>
+
+</body>
+</html>
