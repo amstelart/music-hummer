@@ -76,14 +76,14 @@
             </div>
             <div class="col-auto">
               <div class="user-options">
-                <a href="#">Сравнение</a>
-                <a href="#">Отложенные</a>
-                <a href="#">Корзина</a>
+                <a class="user-options__item" href="#"><svg class="icon icon-search" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_compare"></use></svg> Сравнение</a>
+                <a class="user-options__item" href="#"><svg class="icon icon-search" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_fav"></use></svg> Отложенные</a>
+                <a class="user-options__item" href="#"><svg class="icon icon-search" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_shopping_cart"></use></svg> Корзина</a>
               </div>
             </div>
             <div class="col-auto">
               <div class="user-entry">
-                <a href="#" class="btn">Войти</a>
+                <a href="#" class="">Войти</a>
               </div>
             </div>
           </div>
@@ -183,7 +183,7 @@
           </div>
         </div>
         <div class="text-center mb-4">
-          <a href="#" class="btn">Каталог</a>
+          <a href="#" class="btn btn-primary">Каталог</a>
         </div>
       </div>
 
@@ -209,7 +209,48 @@
         </ul>
         <div class="tab-content">
           <div class="tab-pane fade show active" id="all">
-            Все...
+            <div class="row">
+              <div class="col-lg-3 mb-4">
+                <div class="p-card">
+                  <img class="" src="img/product-stub.png" alt="">
+                </div>
+              </div>
+              <div class="col-lg-3 mb-4">
+                <div class="p-card">
+                  <img class="" src="img/product-stub.png" alt="">
+                </div>
+              </div>
+              <div class="col-lg-3 mb-4">
+                <div class="p-card">
+                  <img class="" src="img/product-stub.png" alt="">
+                </div>
+              </div>
+              <div class="col-lg-3 mb-4">
+                <div class="p-card">
+                  <img class="" src="img/product-stub.png" alt="">
+                </div>
+              </div>
+              <div class="col-lg-3 mb-4">
+                <div class="p-card">
+                  <img class="" src="img/product-stub.png" alt="">
+                </div>
+              </div>
+              <div class="col-lg-3 mb-4">
+                <div class="p-card">
+                  <img class="" src="img/product-stub.png" alt="">
+                </div>
+              </div>
+              <div class="col-lg-3 mb-4">
+                <div class="p-card">
+                  <img class="" src="img/product-stub.png" alt="">
+                </div>
+              </div>
+              <div class="col-lg-3 mb-4">
+                <div class="p-card">
+                  <img class="" src="img/product-stub.png" alt="">
+                </div>
+              </div>
+            </div>
           </div>
           <div class="tab-pane fade" id="percussion">
             Ударные...
@@ -247,15 +288,58 @@
               <div class="col-12">
                 <div class="media-board__social">
                   <div>Мы в соц. сетях</div>
-                  <div class="social"></div>
-                </div>
+                  <ul class="social">
+                    <li class="social__link-wrap">
+                      <a class="social__link" href="#">
+                        <img src="img/social-vk.png" alt="">
+                      </a>
+                    </li>
+                    <li class="social__link-wrap">
+                      <a class="social__link" href="#">
+                        <img src="img/social-fb.png" alt="">
+                      </a>
+                    </li>
+                    <li class="social__link-wrap">
+                      <a class="social__link" href="#">
+                        <img src="img/social-yout.png" alt="">
+                      </a>
+                    </li>
+                    <li class="social__link-wrap">
+                      <a class="social__link" href="#">
+                        <img src="img/social-inst.png" alt="">
+                      </a>
+                    </li>
+                  </ul>
+                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-4">
             <h2 class="section__title">Новости</h2>
             <div class="media-board__news">
-
+              <div class="news-fead">
+                <div class="news-fead__item">
+                  <div class="news-fead__date">26 июля 2015</div>
+                  <div class="news-fead__title"><a href="#">NUMARK SCRATCH - НОВИНКА ДЛЯ ДИДЖЕЕВ</a></div>
+                </div>
+                <div class="news-fead__item">
+                  <div class="news-fead__date">26 июля 2015</div>
+                  <div class="news-fead__title"><a href="#">НОВИНКИ ОТ YAMAHA: ИННОВАЦИИ, ОСНОВАННЫЕ НА ТРАДИЦИЯХ</a></div>
+                </div>
+                <div class="news-fead__item">
+                  <div class="news-fead__date">26 июля 2015</div>
+                  <div class="news-fead__title"><a href="#">Alto Professional: новая серия компактных сабвуферов Truesonic 3</a></div>
+                </div>
+                <div class="news-fead__item">
+                  <div class="news-fead__date">26 июля 2015</div>
+                  <div class="news-fead__title"><a href="#">Alto Professional: новая серия компактных сабвуферов Truesonic 3</a></div>
+                </div>
+                <div class="news-fead__item">
+                  <div class="news-fead__date">26 июля 2015</div>
+                  <div class="news-fead__title"><a href="#">Alto Professional: новая серия компактных сабвуферов Truesonic 3</a></div>
+                </div>
+              </div>
+              <a href="#" class="news-fead__more">Все нвости</a>
             </div>
           </div>
         </div>
@@ -350,6 +434,23 @@
 
       <div class="section">
         <h2 class="section__title">Недавно просмотренные</h2>
+        <div class="row">
+          <div class="col-lg-3 mb-4">
+            <div class="p-card">
+              <img class="" src="img/product-stub.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-3 mb-4">
+            <div class="p-card">
+              <img class="" src="img/product-stub.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-3 mb-4">
+            <div class="p-card">
+              <img class="" src="img/product-stub.png" alt="">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -378,7 +479,7 @@
               </ul>
             </div>
             <div>
-              <a href="#" class="btn">Контакты</a>
+              <a href="#" class="btn btn-block btn-outline-light">Контакты</a>
             </div>
           </div>
           <div class="col-lg-9 page-footer__info">
@@ -412,7 +513,30 @@
                 </ul>
               </div>
             </div>
-            <div class="social"></div>
+            <div class="py-4">
+              <ul class="social">
+                <li class="social__link-wrap">
+                  <a class="social__link" href="#">
+                    <img src="img/social-vk.png" alt="">
+                  </a>
+                </li>
+                <li class="social__link-wrap">
+                  <a class="social__link" href="#">
+                    <img src="img/social-fb.png" alt="">
+                  </a>
+                </li>
+                <li class="social__link-wrap">
+                  <a class="social__link" href="#">
+                    <img src="img/social-yout.png" alt="">
+                  </a>
+                </li>
+                <li class="social__link-wrap">
+                  <a class="social__link" href="#">
+                    <img src="img/social-inst.png" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
             <div class="copyright"><p class="small">© 2006 – 2019 Интернет-магазин музыкальных инструментов и оборудования «Мьюзик Хаммер». 
               Сайт не является публичной офертой.</p></div>
           </div>
