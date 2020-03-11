@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Music hummer</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"> -->
+  <!-- <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"> -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+
+  </script>
+
+</head>
+
+<body>
+
+  <div class="main-wrapper">
+
+    <header class="page-header" role="banner">
+      <div class="top-line">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="top-line__info-item">Москва: +7 (495) 120-07-89</div>
+              <div class="top-line__info-item">Бесплатно по России: 8 800 250-00-00</div>
+              <div class="top-line__info-item">welcome@music-hummer.ru</div>
+            </div>
+            <div class="col-auto">
+              <ul class="top-line__nav">
+                <li><a href="#">Тендеры</a></li>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Оплата</a></li>
+                <li><a href="#">Поддержка</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mid-line">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <a href="index.html" class="logo">
+                <img src="img/logo.svg" alt="" width="122px" height="32px">
+              </a>
+            </div>
+            <div class="col-auto">
+              <div class="user-options">
+                <a class="user-options__item" href="#"><svg class="icon icon-search" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_compare"></use></svg> Сравнение</a>
+                <a class="user-options__item" href="#"><svg class="icon icon-search" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_fav"></use></svg> Отложенные</a>
+                <a class="user-options__item" href="#"><svg class="icon icon-search" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_shopping_cart"></use></svg> Корзина</a>
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="user-entry">
+                <a href="#" class="">Войти</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-line">
+        <div class="container">
+          <div class="nav-line__inner">
+            <nav class="main-nav d-flex">
+              <li class="main-nav__item active">
+                <a href="#" class="main-nav__link">Акции</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Каталог</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Бренды</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Услуги</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Оптовикам</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Контакты</a>
+              </li>
+            </nav>
+            <form class="form-inline search">
+              <input class="form-control" type="search" placeholder="Более 30 000 товаров" aria-label="Search">
+              <button class="btn" type="submit"><svg class="icon icon-search" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-search"></use></svg></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <div class="container">
+
+      <div class="page-top">
+        <nav class="page-top__breadcrumb" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Главная</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Каталог</li>
+          </ol>
+        </nav>
+        <h1 class="page-top__title">Гитары</h1>        
+      </div>
+       
+      <div class="p-catalog">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="c-sidebar">
+              <ul class="sidebar-nav">
+                <li class="catalog-main"><a href="#catalog-collapse" data-toggle="collapse">Каталог</a>
+                  <div class="collapse" id="catalog-collapse">
+                    <ul>
+                      <li><a href="#catalog-sub-collapse" data-toggle="collapse">Гитары</a>
+                        <div class="collapse" id="catalog-sub-collapse">
+                          <ul class="catalog-main__sub-nav">
+                            <li><a href="#">Электрогитары <span>1234</span></a></li>
+                            <li><a href="#">Бас-гитары <span>336</span></a></li>
+                            <li><a href="#">Акустические <span>5678</span></a></li>
+                            <li><a href="#">Классические <span>1882</span></a></li>
+                            <li><a href="#">Электроакустические <span>568</span></a></li>
+                            <li><a href="#">Полуакустические <span>985</span></a></li>
+                            <li><a href="#">Уменьшенные гитары <span>1289</span></a></li>
+                            <li><a href="#">Укулеле <span>87</span></a></li>
+                            <li><a href="#">Наборы новичкам <span>34</span></a></li>
+                            <li><a href="#">Аксессуары <span>12</span></a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li><a href="#">Гитарное оборудование</a></li>
+                      <li><a href="#">Трансляционное оборудование</a></li>
+                      <li><a href="#">Звуковое оборудование</a></li>
+                      <li><a href="#">Студия и звукозапись</a></li>
+                      <li><a href="#">Клавишные</a></li>
+                      <li><a href="#">Микрофоны</a></li>
+                      <li><a href="#">Наушники</a></li>
+                      <li><a href="#">Свет, сцена, эффекты</a></li>
+                      <li><a href="#">Караоке оборудование</a></li>
+                      <li><a href="#">Ударные</a></li>
+                      <li><a href="#">Hi Fi оборудование</a></li>
+                      <li><a href="#">Перкуссия</a></li>
+                      <li><a href="#">Оркестровые</a></li>
+                      <li><a href="#">Народные</a></li>
+                      <li><a href="#">Сувениры и подарки</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">Новинки</a></li>
+                <li><a href="#">Скидки</a></li>
+                <li><a href="#">Хиты продаж</a></li>
+                <li><a href="#">Доступен в комплекте</a></li>
+              </ul>
+              <form class="sidebar-filter-group">
+                <div class="sidebar-filter">
+                  <div class="sidebar-filter__title">Бренды</div>
+                  <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                    <input type="checkbox" class="custom-control-input" id="filter-brand-01">
+                    <label class="custom-control-label" for="filter-brand-01">ALHAMBRA</label>
+                  </div>
+                  <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                    <input type="checkbox" class="custom-control-input" id="filter-brand-02">
+                    <label class="custom-control-label" for="filter-brand-02">ART & LUTHERIE</label>
+                  </div>
+                  <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                    <input type="checkbox" class="custom-control-input" id="filter-brand-03">
+                    <label class="custom-control-label" for="filter-brand-03">CORT</label>
+                  </div>
+                  <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                    <input type="checkbox" class="custom-control-input" id="filter-brand-04">
+                    <label class="custom-control-label" for="filter-brand-04">CRAFTER</label>
+                  </div>
+                  <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                    <input type="checkbox" class="custom-control-input" id="filter-brand-05">
+                    <label class="custom-control-label" for="filter-brand-05">DEAN</label>
+                  </div>
+                  <div class="collapse" id="filter-brand-collapse" style="overflow: hidden;">
+                    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                      <input type="checkbox" class="custom-control-input" id="filter-brand-06">
+                      <label class="custom-control-label" for="filter-brand-06">DEAN</label>
+                    </div>
+                    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                      <input type="checkbox" class="custom-control-input" id="filter-brand-07">
+                      <label class="custom-control-label" for="filter-brand-07">DEAN</label>
+                    </div>
+                    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                      <input type="checkbox" class="custom-control-input" id="filter-brand-08">
+                      <label class="custom-control-label" for="filter-brand-08">DEAN</label>
+                    </div>
+                    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                      <input type="checkbox" class="custom-control-input" id="filter-brand-09">
+                      <label class="custom-control-label" for="filter-brand-09">DEAN</label>
+                    </div>
+                    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                      <input type="checkbox" class="custom-control-input" id="filter-brand-10">
+                      <label class="custom-control-label" for="filter-brand-10">DEAN</label>
+                    </div>
+                  </div>
+                  <a href="#filter-brand-collapse" data-toggle="collapse">Все бренды</a>
+                </div>
+                <div class="sidebar-filter">
+                  <div class="sidebar-filter__title">Цена</div>
+                </div>
+                <div class="sidebar-filter">
+                  <div class="sidebar-filter__title">Тип</div>
+                  <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                    <input type="checkbox" class="custom-control-input" id="filter-type-01">
+                    <label class="custom-control-label" for="filter-type-01">Без звукоснимателей</label>
+                  </div>
+                  <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                    <input type="checkbox" class="custom-control-input" id="filter-type-02">
+                    <label class="custom-control-label" for="filter-type-02">Со звукоснимателем</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <form class="row align-items-center mt-2">
+              <div class="form-group col-lg-4">
+                <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                  <option selected>Сначала популярные</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="form-group col-lg-4">
+                <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                  <input type="checkbox" class="custom-control-input" id="customControlInline">
+                  <label class="custom-control-label" for="customControlInline">Только в наличии</label>
+                </div>
+              </div>
+            </form>
+            <div class="row">
+              <div class="col-lg-4 mb-4">
+                <div class="p-card">
+                  <img class="" src="img/product-stub.png" alt="">
+                </div>
+              </div>
+              <div class="col-lg-4 mb-4">
+                <div class="p-card">
+                  <img class="" src="img/product-stub.png" alt="">
+                </div>
+              </div>
+              <div class="col-lg-4 mb-4">
+                <div class="p-card">
+                  <img class="" src="img/product-stub.png" alt="">
+                </div>
+              </div>
+              <div class="col-lg-4 mb-4">
+                <div class="p-card">
+                  <img class="" src="img/product-stub.png" alt="">
+                </div>
+              </div>
+              <div class="col-lg-4 mb-4">
+                <div class="p-card">
+                  <img class="" src="img/product-stub.png" alt="">
+                </div>
+              </div>
+              <div class="col-lg-4 mb-4">
+                <div class="p-card">
+                  <img class="" src="img/product-stub.png" alt="">
+                </div>
+              </div>
+              <div class="col-lg-4 mb-4">
+                <div class="p-card">
+                  <img class="" src="img/product-stub.png" alt="">
+                </div>
+              </div>
+              <div class="col-lg-4 mb-4">
+                <div class="p-card">
+                  <img class="" src="img/product-stub.png" alt="">
+                </div>
+              </div>
+              <div class="col-lg-4 mb-4">
+                <div class="p-card">
+                  <img class="" src="img/product-stub.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <nav aria-label="...">
+                  <ul class="pagination pagination-sm">
+                    <li class="page-item active" aria-current="page">
+                      <span class="page-link">1</span>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    <li class="page-item active"><span class="page-link">...</span></li>
+                    <li class="page-item"><a class="page-link" href="#">45</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="col-auto">
+                <!-- <div data-toggle="dropdown">Показывать по 30</div>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>              -->
+                <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                  <option selected>Сначала популярные</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section latest">
+        <h2 class="section__title">Недавно просмотренные</h2>
+        <div class="row">
+          <div class="col-lg-3 mb-4">
+            <div class="p-card">
+              <img class="" src="img/product-stub.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-3 mb-4">
+            <div class="p-card">
+              <img class="" src="img/product-stub.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-3 mb-4">
+            <div class="p-card">
+              <img class="" src="img/product-stub.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="page-footer" role="contentinfo">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 page-footer__contacts">
+            <div class="mb-4">
+              <img src="img/logo-white.svg" width="122px" height="32px" alt="">
+            </div>
+            <div class="mb-3">
+              <ul class="list-unstyled">
+                <li class="mb-4">
+                  <small>Интернет-магазин:</small>
+                  <div class="font-weight-bold">8 (800) 555-07-83</div>
+                </li>
+                <li class="mb-4">
+                  <small>Магазин в Москве:</small>
+                  <div class="font-weight-bold">+7 (495) 120-07-89</div>
+                  <small>метро ВДНХ, ул 1-я останкинская д.55</small>
+                </li>
+                <li class="mb-4">
+                  <small>E-mail:</small>
+                  <div class="font-weight-bold">welcome@music-hummer.ru</div>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="#" class="btn btn-block btn-outline-light">Контакты</a>
+            </div>
+          </div>
+          <div class="col-lg-9 page-footer__info">
+            <div class="row">
+              <div class="col">
+                <div class="page-footer__nav-title">Инструменты</div>
+                <ul class="page-footer__nav">
+                  <li><a href="#">Гитары</a></li>
+                  <li><a href="#">Клавишные</a></li>
+                  <li><a href="#">Ударные</a></li>
+                  <li><a href="#">Духовые</a></li>
+                  <li><a href="#">Смычковые</a></li>
+                </ul>
+              </div>
+              <div class="col">
+                <div class="page-footer__nav-title">Оборудование</div>
+                <ul class="page-footer__nav">
+                  <li><a href="#">Звуковое</a></li>
+                  <li><a href="#">Гитарное</a></li>
+                  <li><a href="#">Трансляционное</a></li>
+                  <li><a href="#">Световое</a></li>
+                </ul>
+              </div>
+              <div class="col-auto">
+                <div class="page-footer__nav-title">Решения</div>
+                <ul class="page-footer__nav">
+                  <li><a href="#">Для студии</a></li>
+                  <li><a href="#">Для ресторанов</a></li>
+                  <li><a href="#">Для кинотеатров</a></li>
+                  <li><a href="#">Для концертов</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="py-4">
+              <ul class="social">
+                <li class="social__link-wrap">
+                  <a class="social__link" href="#">
+                    <img src="img/social-vk.png" alt="">
+                  </a>
+                </li>
+                <li class="social__link-wrap">
+                  <a class="social__link" href="#">
+                    <img src="img/social-fb.png" alt="">
+                  </a>
+                </li>
+                <li class="social__link-wrap">
+                  <a class="social__link" href="#">
+                    <img src="img/social-yout.png" alt="">
+                  </a>
+                </li>
+                <li class="social__link-wrap">
+                  <a class="social__link" href="#">
+                    <img src="img/social-inst.png" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="copyright"><p class="small">© 2006 – 2019 Интернет-магазин музыкальных инструментов и оборудования «Мьюзик Хаммер». 
+              Сайт не является публичной офертой.</p></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+  </div>
+  <script src="js/script.min.js"></script>
+
+</body>
+</html>
