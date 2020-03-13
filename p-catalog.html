@@ -47,7 +47,7 @@
   <div class="main-wrapper">
 
     <header class="page-header" role="banner">
-      <div class="top-line">
+      <div class="top-line d-none d-lg-block">
         <div class="container">
           <div class="row">
             <div class="col">
@@ -76,9 +76,9 @@
             </div>
             <div class="col-auto">
               <div class="user-options">
-                <a class="user-options__item" href="#"><svg class="icon icon-search" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_compare"></use></svg> Сравнение</a>
-                <a class="user-options__item" href="#"><svg class="icon icon-search" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_fav"></use></svg> Отложенные</a>
-                <a class="user-options__item" href="#"><svg class="icon icon-search" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_shopping_cart"></use></svg> Корзина</a>
+                <a class="user-options__item" href="#"><svg class="icon icon-search" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_compare"></use></svg><span class="d-none d-lg-inline-flex">Сравнение</span></a>
+                <a class="user-options__item" href="#"><svg class="icon icon-search" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_fav"></use></svg><span class="d-none d-lg-inline-flex">Отложенные</span></a>
+                <a class="user-options__item" href="#"><svg class="icon icon-search" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_shopping_cart"></use></svg><span class="d-none d-lg-inline-flex">Корзина</span></a>
               </div>
             </div>
             <div class="col-auto">
@@ -89,7 +89,7 @@
           </div>
         </div>
       </div>
-      <div class="nav-line">
+      <div class="nav-line d-none d-lg-block">
         <div class="container">
           <div class="nav-line__inner">
             <nav class="main-nav d-flex">
@@ -139,7 +139,9 @@
           <div class="col-lg-3">
             <div class="c-sidebar">
               <ul class="sidebar-nav">
-                <li class="catalog-main"><a href="#catalog-collapse" data-toggle="collapse">Каталог</a>
+                <li class="catalog-main"><a href="#catalog-collapse" class="collapsed" data-toggle="collapse">
+                  <div class="burger"><span></span></div>
+                  Каталог</a>
                   <div class="collapse" id="catalog-collapse">
                     <ul>
                       <li><a href="#catalog-sub-collapse" data-toggle="collapse">Гитары</a>
@@ -243,6 +245,307 @@
                   </div>
                 </div>
               </form>
+
+              <div class="bx-sidebar-block">
+                <div class="smart-filter mb-4 bx-green ">
+                  <div class="smart-filter-section">
+              
+                    <div class="smart-filter-title">Подбор параметров</div>
+              
+                    <form name="_form" action="/catalog/sportswear/" method="get" class="smart-filter-form">
+              
+              
+                      <div class="row">
+              
+                        <div class="col-12 mb-2 smart-filter-parameters-box bx-active">
+                          <span class="smart-filter-container-modef"></span>
+              
+                          <div class="smart-filter-parameters-box-title" onclick="smartFilter.hideFilterProps(this)">
+                            <span class="smart-filter-parameters-box-title-text">Розничная цена</span>
+                            <span data-role="prop_angle" class="smart-filter-angle smart-filter-angle-up">
+                              <span class="smart-filter-angles"></span>
+                            </span>
+                          </div>
+              
+                          <div class="smart-filter-block" data-role="bx_filter_block">
+                            <div class="smart-filter-parameters-box-container">
+                              <div class="smart-filter-input-group-number">
+                                <div class="d-flex justify-content-between">
+                                  <div class="form-group" style="width: calc(50% - 10px);">
+                                    <div class="smart-filter-input-container">
+                                      <input class="min-price form-control form-control-sm" type="number" name="arrFilter_P1_MIN"
+                                        id="arrFilter_P1_MIN" value="" size="5" placeholder="От" onkeyup="smartFilter.keyup(this)">
+                                    </div>
+                                  </div>
+              
+                                  <div class="form-group" style="width: calc(50% - 10px);">
+                                    <div class="smart-filter-input-container">
+                                      <input class="max-price form-control form-control-sm" type="number" name="arrFilter_P1_MAX"
+                                        id="arrFilter_P1_MAX" value="" size="5" placeholder="До" onkeyup="smartFilter.keyup(this)">
+                                    </div>
+                                  </div>
+                                </div>
+              
+                                <div class="smart-filter-slider-track-container">
+                                  <div class="smart-filter-slider-track" id="drag_track_c4ca4238a0b923820dcc509a6f75849b">
+                                    <div class="smart-filter-slider-ruler p1"><span>2&nbsp;330</span></div>
+                                    <div class="smart-filter-slider-ruler p2"><span>2&nbsp;422.25</span></div>
+                                    <div class="smart-filter-slider-ruler p3"><span>2&nbsp;514.50</span></div>
+                                    <div class="smart-filter-slider-ruler p4"><span>2&nbsp;606.75</span></div>
+                                    <div class="smart-filter-slider-ruler p5"><span>2&nbsp;699</span></div>
+                                    <div class="smart-filter-slider-price-bar-vd" style="left: 0;right: 0;"
+                                      id="colorUnavailableActive_c4ca4238a0b923820dcc509a6f75849b"></div>
+                                    <div class="smart-filter-slider-price-bar-vn" style="left: 0%; right: 0%;"
+                                      id="colorAvailableInactive_c4ca4238a0b923820dcc509a6f75849b"></div>
+                                    <div class="smart-filter-slider-price-bar-v" style="left: 0%; right: 0%;"
+                                      id="colorAvailableActive_c4ca4238a0b923820dcc509a6f75849b"></div>
+                                    <div class="smart-filter-slider-range" id="drag_tracker_c4ca4238a0b923820dcc509a6f75849b"
+                                      style="left: 0; right: 0;">
+                                      <a class="smart-filter-slider-handle left" style="left:0;" href="javascript:void(0)"
+                                        id="left_slider_c4ca4238a0b923820dcc509a6f75849b"></a>
+                                      <a class="smart-filter-slider-handle right" style="right:0;" href="javascript:void(0)"
+                                        id="right_slider_c4ca4238a0b923820dcc509a6f75849b"></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <script type="text/javascript">
+                          BX.ready(function () {
+                            window['trackBarc4ca4238a0b923820dcc509a6f75849b'] = new BX.Iblock.SmartFilter({ 'leftSlider': 'left_slider_c4ca4238a0b923820dcc509a6f75849b', 'rightSlider': 'right_slider_c4ca4238a0b923820dcc509a6f75849b', 'tracker': 'drag_tracker_c4ca4238a0b923820dcc509a6f75849b', 'trackerWrap': 'drag_track_c4ca4238a0b923820dcc509a6f75849b', 'minInputId': 'arrFilter_P1_MIN', 'maxInputId': 'arrFilter_P1_MAX', 'minPrice': '2330', 'maxPrice': '2699', 'curMinPrice': '', 'curMaxPrice': '', 'fltMinPrice': '2330', 'fltMaxPrice': '2699', 'precision': '', 'colorUnavailableActive': 'colorUnavailableActive_c4ca4238a0b923820dcc509a6f75849b', 'colorAvailableActive': 'colorAvailableActive_c4ca4238a0b923820dcc509a6f75849b', 'colorAvailableInactive': 'colorAvailableInactive_c4ca4238a0b923820dcc509a6f75849b' });
+                          });
+                        </script>
+              
+                        <div class="col-lg-12 mb-2 smart-filter-parameters-box ">
+                          <span class="smart-filter-container-modef"></span>
+              
+                          <div class="smart-filter-parameters-box-title" onclick="smartFilter.hideFilterProps(this)">
+              
+                            <span class="smart-filter-parameters-box-title-text">Производитель</span>
+              
+                            <span data-role="prop_angle" class="smart-filter-angle smart-filter-angle-down">
+                              <span class="smart-filter-angles"></span>
+                            </span>
+              
+                          </div>
+              
+                          <div class="smart-filter-block" data-role="bx_filter_block">
+                            <div class="smart-filter-parameters-box-container">
+                              <div class="smart-filter-input-group-checkbox-list">
+                                <div class="form-group form-check mb-1">
+                                  <input type="checkbox" value="Y" name="arrFilter_10_1007824416" id="arrFilter_10_1007824416"
+                                    class="form-check-input" onclick="smartFilter.click(this)">
+                                  <label data-role="label_arrFilter_10_1007824416" class="smart-filter-checkbox-text form-check-label"
+                                    for="arrFilter_10_1007824416">
+                                    Китай "Гун Джой Ли"&nbsp;(<span data-role="count_arrFilter_10_1007824416">3</span>) </label>
+                                </div>
+                                <div class="form-group form-check mb-1">
+                                  <input type="checkbox" value="Y" name="arrFilter_10_2674840009" id="arrFilter_10_2674840009"
+                                    class="form-check-input" onclick="smartFilter.click(this)">
+                                  <label data-role="label_arrFilter_10_2674840009" class="smart-filter-checkbox-text form-check-label"
+                                    for="arrFilter_10_2674840009">
+                                    Россия "Grishko"&nbsp;(<span data-role="count_arrFilter_10_2674840009">2</span>) </label>
+                                </div>
+                                <div class="form-group form-check mb-1">
+                                  <input type="checkbox" value="Y" name="arrFilter_10_4097539558" id="arrFilter_10_4097539558"
+                                    class="form-check-input" onclick="smartFilter.click(this)">
+                                  <label data-role="label_arrFilter_10_4097539558" class="smart-filter-checkbox-text form-check-label"
+                                    for="arrFilter_10_4097539558">
+                                    Россия "Молодая семья"&nbsp;(<span data-role="count_arrFilter_10_4097539558">1</span>) </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+              
+                        <div class="col-lg-12 mb-2 smart-filter-parameters-box ">
+                          <span class="smart-filter-container-modef"></span>
+              
+                          <div class="smart-filter-parameters-box-title" onclick="smartFilter.hideFilterProps(this)">
+              
+                            <span class="smart-filter-parameters-box-title-text">Материал</span>
+              
+                            <span data-role="prop_angle" class="smart-filter-angle smart-filter-angle-down">
+                              <span class="smart-filter-angles"></span>
+                            </span>
+              
+                          </div>
+              
+                          <div class="smart-filter-block" data-role="bx_filter_block">
+                            <div class="smart-filter-parameters-box-container">
+                              <div class="smart-filter-input-group-checkbox-list">
+                                <div class="form-group form-check mb-1">
+                                  <input type="checkbox" value="Y" name="arrFilter_11_3611589592" id="arrFilter_11_3611589592"
+                                    class="form-check-input" onclick="smartFilter.click(this)">
+                                  <label data-role="label_arrFilter_11_3611589592" class="smart-filter-checkbox-text form-check-label"
+                                    for="arrFilter_11_3611589592">
+                                    95% хлопок, 5% эластан&nbsp;(<span data-role="count_arrFilter_11_3611589592">4</span>) </label>
+                                </div>
+                                <div class="form-group form-check mb-1">
+                                  <input type="checkbox" value="Y" name="arrFilter_11_692893017" id="arrFilter_11_692893017"
+                                    class="form-check-input" onclick="smartFilter.click(this)">
+                                  <label data-role="label_arrFilter_11_692893017" class="smart-filter-checkbox-text form-check-label"
+                                    for="arrFilter_11_692893017">
+                                    искусственные материалы&nbsp;(<span data-role="count_arrFilter_11_692893017">1</span>) </label>
+                                </div>
+                                <div class="form-group form-check mb-1">
+                                  <input type="checkbox" value="Y" name="arrFilter_11_3068644278" id="arrFilter_11_3068644278"
+                                    class="form-check-input" onclick="smartFilter.click(this)">
+                                  <label data-role="label_arrFilter_11_3068644278" class="smart-filter-checkbox-text form-check-label"
+                                    for="arrFilter_11_3068644278">
+                                    трикотаж&nbsp;(<span data-role="count_arrFilter_11_3068644278">1</span>) </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+              
+                        <div class="col-lg-12 mb-2 smart-filter-parameters-box bx-active">
+                          <span class="smart-filter-container-modef"></span>
+              
+                          <div class="smart-filter-parameters-box-title" onclick="smartFilter.hideFilterProps(this)">
+              
+                            <span class="smart-filter-parameters-box-title-text">Цвет</span>
+              
+                            <span data-role="prop_angle" class="smart-filter-angle smart-filter-angle-up">
+                              <span class="smart-filter-angles"></span>
+                            </span>
+              
+                          </div>
+              
+                          <div class="smart-filter-block" data-role="bx_filter_block">
+                            <div class="smart-filter-parameters-box-container">
+                              <div class="smart-filter-input-group-checkbox-pictures">
+                                <input style="display: none" type="checkbox" name="arrFilter_21_1120914852"
+                                  id="arrFilter_21_1120914852" value="Y">
+                                <label for="arrFilter_21_1120914852" data-role="label_arrFilter_21_1120914852"
+                                  class="smart-filter-checkbox-label"
+                                  onclick="smartFilter.keyup(BX('arrFilter_21_1120914852')); BX.toggleClass(this, 'bx-active');">
+                                  <span class="smart-filter-checkbox-btn bx-color-sl">
+                                    <span class="smart-filter-checkbox-btn-image"
+                                      style="background-image: url('/upload/uf/1df/1df044eafafaf3176ad30f06a5fde303.jpg');"></span>
+                                  </span>
+                                </label>
+                                <input style="display: none" type="checkbox" name="arrFilter_21_2307242536"
+                                  id="arrFilter_21_2307242536" value="Y">
+                                <label for="arrFilter_21_2307242536" data-role="label_arrFilter_21_2307242536"
+                                  class="smart-filter-checkbox-label"
+                                  onclick="smartFilter.keyup(BX('arrFilter_21_2307242536')); BX.toggleClass(this, 'bx-active');">
+                                  <span class="smart-filter-checkbox-btn bx-color-sl">
+                                    <span class="smart-filter-checkbox-btn-image"
+                                      style="background-image: url('/upload/uf/a06/a06e5a72feb1a3eb7c4abd18af65d310.jpg');"></span>
+                                  </span>
+                                </label>
+                                <input style="display: none" type="checkbox" name="arrFilter_21_744714710" id="arrFilter_21_744714710"
+                                  value="Y">
+                                <label for="arrFilter_21_744714710" data-role="label_arrFilter_21_744714710"
+                                  class="smart-filter-checkbox-label"
+                                  onclick="smartFilter.keyup(BX('arrFilter_21_744714710')); BX.toggleClass(this, 'bx-active');">
+                                  <span class="smart-filter-checkbox-btn bx-color-sl">
+                                    <span class="smart-filter-checkbox-btn-image"
+                                      style="background-image: url('/upload/uf/304/304241049d2bb108c4f411bff48f5d02.jpg');"></span>
+                                  </span>
+                                </label>
+                                <input style="display: none" type="checkbox" name="arrFilter_21_337235200" id="arrFilter_21_337235200"
+                                  value="Y">
+                                <label for="arrFilter_21_337235200" data-role="label_arrFilter_21_337235200"
+                                  class="smart-filter-checkbox-label"
+                                  onclick="smartFilter.keyup(BX('arrFilter_21_337235200')); BX.toggleClass(this, 'bx-active');">
+                                  <span class="smart-filter-checkbox-btn bx-color-sl">
+                                    <span class="smart-filter-checkbox-btn-image"
+                                      style="background-image: url('/upload/uf/9d0/9d01674a7bdd46f2de9ea03ea0183f30.jpg');"></span>
+                                  </span>
+                                </label>
+                                <div style="clear: both;"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+              
+                        <div class="col-lg-12 mb-2 smart-filter-parameters-box bx-active">
+                          <span class="smart-filter-container-modef"></span>
+              
+                          <div class="smart-filter-parameters-box-title" onclick="smartFilter.hideFilterProps(this)">
+              
+                            <span class="smart-filter-parameters-box-title-text">Размеры одежды </span>
+              
+                            <span data-role="prop_angle" class="smart-filter-angle smart-filter-angle-up">
+                              <span class="smart-filter-angles"></span>
+                            </span>
+              
+                          </div>
+              
+                          <div class="smart-filter-block" data-role="bx_filter_block">
+                            <div class="smart-filter-parameters-box-container">
+                              <div class="smart-filter-input-group-checkbox-list">
+                                <div class="form-group form-check mb-1">
+                                  <input type="checkbox" value="Y" name="arrFilter_23_3596227959" id="arrFilter_23_3596227959"
+                                    class="form-check-input" onclick="smartFilter.click(this)">
+                                  <label data-role="label_arrFilter_23_3596227959" class="smart-filter-checkbox-text form-check-label"
+                                    for="arrFilter_23_3596227959">
+                                    XS&nbsp;(<span data-role="count_arrFilter_23_3596227959">6</span>) </label>
+                                </div>
+                                <div class="form-group form-check mb-1">
+                                  <input type="checkbox" value="Y" name="arrFilter_23_1330857165" id="arrFilter_23_1330857165"
+                                    class="form-check-input" onclick="smartFilter.click(this)">
+                                  <label data-role="label_arrFilter_23_1330857165" class="smart-filter-checkbox-text form-check-label"
+                                    for="arrFilter_23_1330857165">
+                                    S&nbsp;(<span data-role="count_arrFilter_23_1330857165">6</span>) </label>
+                                </div>
+                                <div class="form-group form-check mb-1">
+                                  <input type="checkbox" value="Y" name="arrFilter_23_945058907" id="arrFilter_23_945058907"
+                                    class="form-check-input" onclick="smartFilter.click(this)">
+                                  <label data-role="label_arrFilter_23_945058907" class="smart-filter-checkbox-text form-check-label"
+                                    for="arrFilter_23_945058907">
+                                    M&nbsp;(<span data-role="count_arrFilter_23_945058907">6</span>) </label>
+                                </div>
+                                <div class="form-group form-check mb-1">
+                                  <input type="checkbox" value="Y" name="arrFilter_23_2788221432" id="arrFilter_23_2788221432"
+                                    class="form-check-input" onclick="smartFilter.click(this)">
+                                  <label data-role="label_arrFilter_23_2788221432" class="smart-filter-checkbox-text form-check-label"
+                                    for="arrFilter_23_2788221432">
+                                    L&nbsp;(<span data-role="count_arrFilter_23_2788221432">6</span>) </label>
+                                </div>
+                                <div class="form-group form-check mb-1">
+                                  <input type="checkbox" value="Y" name="arrFilter_23_3510096238" id="arrFilter_23_3510096238"
+                                    class="form-check-input" onclick="smartFilter.click(this)">
+                                  <label data-role="label_arrFilter_23_3510096238" class="smart-filter-checkbox-text form-check-label"
+                                    for="arrFilter_23_3510096238">
+                                    XL&nbsp;(<span data-role="count_arrFilter_23_3510096238">6</span>) </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--//row-->
+              
+                      <div class="row">
+                        <div class="col smart-filter-button-box">
+                          <div class="smart-filter-block">
+                            <div class="smart-filter-parameters-box-container">
+                              <input class="btn btn-primary" type="button" id="set_filter" name="set_filter" value="Показать">
+                              <input class="btn btn-link" type="button" id="del_filter" name="del_filter" value="Сбросить">
+                              <div class="smart-filter-popup-result left" id="modef" style="display:none">
+                                Выбрано: <span id="modef_num">0</span> <span class="arrow"></span>
+                                <br>
+                                <a href="/catalog/sportswear/filter/clear/apply/" target="">Показать</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+              
+                  </div>
+                </div>
+              
+                <script type="text/javascript">
+                  var smartFilter = new JCSmartFilter('/catalog/sportswear/', 'VERTICAL', { 'SEF_SET_FILTER_URL': '/catalog/sportswear/filter/clear/apply/', 'SEF_DEL_FILTER_URL': '/catalog/sportswear/filter/clear/apply/' });
+                </script>
+              </div>
             </div>
           </div>
           <div class="col-lg-9">
@@ -265,47 +568,1046 @@
             <div class="row">
               <div class="col-lg-4 mb-4">
                 <div class="p-card">
-                  <img class="" src="img/product-stub.png" alt="">
+
+                  <div class="p-card">
+                    <div class="p-card__color">
+                      <div data-entity="sku-block">
+                        <div class="product-item-scu-container" data-entity="sku-line-block">
+                          <!-- <div class="product-item-scu-block-title text-muted">Цвет</div> -->
+                          <div class="product-item-scu-block">
+                            <div class="product-item-scu-list">
+                              <ul class="product-item-scu-item-list">
+                                <li class="product-item-scu-item-color-container selected" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-01.jpg');"></div>
+                                  </div>
+                                </li>
+                                <li class="product-item-scu-item-color-container" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-02.jpg');"></div>
+                                  </div>
+                                </li>
+                                <li class="product-item-scu-item-color-container" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-03.jpg');"></div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-card__options">
+                      <div class="options-block">
+                        <div class="options-block__list">
+                          <div class="options-block__item selected">
+                            <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_favorite_border"></use></svg>
+                          </div>
+                          <div class="options-block__item">
+                            <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_queue"></use></svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-card__inner">
+                      <div class="p-card__img-wrap">
+                        <a href="#">
+                          <img src="img/p-card-img-01.png" alt="">
+                        </a>
+                      </div>
+                      <div class="p-card__body">
+                        <div class="p-card__title"><a href="#">Cort C4 Plus ZBMH Open Pore Tobacco Burst (C4 Pl…</a></div>
+                        <div class="p-card__rating">
+                          <div class="p-rating">
+                            <div class="p-rating__group">
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                            </div>
+                            <a href="#" class="p-rating__link">234 отзыва</a>
+                          </div>
+                        </div>
+                        <div class="p-card__price">
+                          <div class="price">8&nbsp;269&nbsp;₽</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="col-lg-4 mb-4">
                 <div class="p-card">
-                  <img class="" src="img/product-stub.png" alt="">
+
+                  <div class="p-card">
+                    <div class="p-card__color">
+                      <div data-entity="sku-block">
+                        <div class="product-item-scu-container" data-entity="sku-line-block">
+                          <!-- <div class="product-item-scu-block-title text-muted">Цвет</div> -->
+                          <div class="product-item-scu-block">
+                            <div class="product-item-scu-list">
+                              <ul class="product-item-scu-item-list">
+                                <li class="product-item-scu-item-color-container selected" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-01.jpg');"></div>
+                                  </div>
+                                </li>
+                                <li class="product-item-scu-item-color-container" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-02.jpg');"></div>
+                                  </div>
+                                </li>
+                                <li class="product-item-scu-item-color-container" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-03.jpg');"></div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-card__options">
+                      <div class="options-block">
+                        <div class="options-block__list">
+                          <div class="options-block__item selected">
+                            <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_favorite_border"></use></svg>
+                          </div>
+                          <div class="options-block__item">
+                            <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_queue"></use></svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-card__inner">
+                      <div class="p-card__img-wrap">
+                        <a href="#">
+                          <img src="img/p-card-img-01.png" alt="">
+                        </a>
+                      </div>
+                      <div class="p-card__body">
+                        <div class="p-card__title"><a href="#">Cort C4 Plus ZBMH Open Pore Tobacco Burst (C4 Pl…</a></div>
+                        <div class="p-card__rating">
+                          <div class="p-rating">
+                            <div class="p-rating__group">
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                            </div>
+                            <a href="#" class="p-rating__link">234 отзыва</a>
+                          </div>
+                        </div>
+                        <div class="p-card__price">
+                          <div class="price">8&nbsp;269&nbsp;₽</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="col-lg-4 mb-4">
                 <div class="p-card">
-                  <img class="" src="img/product-stub.png" alt="">
+
+                  <div class="p-card">
+                    <div class="p-card__color">
+                      <div data-entity="sku-block">
+                        <div class="product-item-scu-container" data-entity="sku-line-block">
+                          <!-- <div class="product-item-scu-block-title text-muted">Цвет</div> -->
+                          <div class="product-item-scu-block">
+                            <div class="product-item-scu-list">
+                              <ul class="product-item-scu-item-list">
+                                <li class="product-item-scu-item-color-container selected" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-01.jpg');"></div>
+                                  </div>
+                                </li>
+                                <li class="product-item-scu-item-color-container" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-02.jpg');"></div>
+                                  </div>
+                                </li>
+                                <li class="product-item-scu-item-color-container" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-03.jpg');"></div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-card__options">
+                      <div class="options-block">
+                        <div class="options-block__list">
+                          <div class="options-block__item selected">
+                            <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_favorite_border"></use></svg>
+                          </div>
+                          <div class="options-block__item">
+                            <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_queue"></use></svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-card__inner">
+                      <div class="p-card__img-wrap">
+                        <a href="#">
+                          <img src="img/p-card-img-01.png" alt="">
+                        </a>
+                      </div>
+                      <div class="p-card__body">
+                        <div class="p-card__title"><a href="#">Cort C4 Plus ZBMH Open Pore Tobacco Burst (C4 Pl…</a></div>
+                        <div class="p-card__rating">
+                          <div class="p-rating">
+                            <div class="p-rating__group">
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                            </div>
+                            <a href="#" class="p-rating__link">234 отзыва</a>
+                          </div>
+                        </div>
+                        <div class="p-card__price">
+                          <div class="price">8&nbsp;269&nbsp;₽</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="col-lg-4 mb-4">
                 <div class="p-card">
-                  <img class="" src="img/product-stub.png" alt="">
+
+                  <div class="p-card">
+                    <div class="p-card__color">
+                      <div data-entity="sku-block">
+                        <div class="product-item-scu-container" data-entity="sku-line-block">
+                          <!-- <div class="product-item-scu-block-title text-muted">Цвет</div> -->
+                          <div class="product-item-scu-block">
+                            <div class="product-item-scu-list">
+                              <ul class="product-item-scu-item-list">
+                                <li class="product-item-scu-item-color-container selected" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-01.jpg');"></div>
+                                  </div>
+                                </li>
+                                <li class="product-item-scu-item-color-container" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-02.jpg');"></div>
+                                  </div>
+                                </li>
+                                <li class="product-item-scu-item-color-container" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-03.jpg');"></div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-card__options">
+                      <div class="options-block">
+                        <div class="options-block__list">
+                          <div class="options-block__item selected">
+                            <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_favorite_border"></use></svg>
+                          </div>
+                          <div class="options-block__item">
+                            <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_queue"></use></svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-card__inner">
+                      <div class="p-card__img-wrap">
+                        <a href="#">
+                          <img src="img/p-card-img-01.png" alt="">
+                        </a>
+                      </div>
+                      <div class="p-card__body">
+                        <div class="p-card__title"><a href="#">Cort C4 Plus ZBMH Open Pore Tobacco Burst (C4 Pl…</a></div>
+                        <div class="p-card__rating">
+                          <div class="p-rating">
+                            <div class="p-rating__group">
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                            </div>
+                            <a href="#" class="p-rating__link">234 отзыва</a>
+                          </div>
+                        </div>
+                        <div class="p-card__price">
+                          <div class="price">8&nbsp;269&nbsp;₽</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="col-lg-4 mb-4">
                 <div class="p-card">
-                  <img class="" src="img/product-stub.png" alt="">
+
+                  <div class="p-card">
+                    <div class="p-card__color">
+                      <div data-entity="sku-block">
+                        <div class="product-item-scu-container" data-entity="sku-line-block">
+                          <!-- <div class="product-item-scu-block-title text-muted">Цвет</div> -->
+                          <div class="product-item-scu-block">
+                            <div class="product-item-scu-list">
+                              <ul class="product-item-scu-item-list">
+                                <li class="product-item-scu-item-color-container selected" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-01.jpg');"></div>
+                                  </div>
+                                </li>
+                                <li class="product-item-scu-item-color-container" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-02.jpg');"></div>
+                                  </div>
+                                </li>
+                                <li class="product-item-scu-item-color-container" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-03.jpg');"></div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-card__options">
+                      <div class="options-block">
+                        <div class="options-block__list">
+                          <div class="options-block__item selected">
+                            <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_favorite_border"></use></svg>
+                          </div>
+                          <div class="options-block__item">
+                            <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_queue"></use></svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-card__inner">
+                      <div class="p-card__img-wrap">
+                        <a href="#">
+                          <img src="img/p-card-img-01.png" alt="">
+                        </a>
+                      </div>
+                      <div class="p-card__body">
+                        <div class="p-card__title"><a href="#">Cort C4 Plus ZBMH Open Pore Tobacco Burst (C4 Pl…</a></div>
+                        <div class="p-card__rating">
+                          <div class="p-rating">
+                            <div class="p-rating__group">
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                            </div>
+                            <a href="#" class="p-rating__link">234 отзыва</a>
+                          </div>
+                        </div>
+                        <div class="p-card__price">
+                          <div class="price">8&nbsp;269&nbsp;₽</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="col-lg-4 mb-4">
                 <div class="p-card">
-                  <img class="" src="img/product-stub.png" alt="">
+
+                  <div class="p-card">
+                    <div class="p-card__color">
+                      <div data-entity="sku-block">
+                        <div class="product-item-scu-container" data-entity="sku-line-block">
+                          <!-- <div class="product-item-scu-block-title text-muted">Цвет</div> -->
+                          <div class="product-item-scu-block">
+                            <div class="product-item-scu-list">
+                              <ul class="product-item-scu-item-list">
+                                <li class="product-item-scu-item-color-container selected" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-01.jpg');"></div>
+                                  </div>
+                                </li>
+                                <li class="product-item-scu-item-color-container" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-02.jpg');"></div>
+                                  </div>
+                                </li>
+                                <li class="product-item-scu-item-color-container" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-03.jpg');"></div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-card__options">
+                      <div class="options-block">
+                        <div class="options-block__list">
+                          <div class="options-block__item selected">
+                            <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_favorite_border"></use></svg>
+                          </div>
+                          <div class="options-block__item">
+                            <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_queue"></use></svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-card__inner">
+                      <div class="p-card__img-wrap">
+                        <a href="#">
+                          <img src="img/p-card-img-01.png" alt="">
+                        </a>
+                      </div>
+                      <div class="p-card__body">
+                        <div class="p-card__title"><a href="#">Cort C4 Plus ZBMH Open Pore Tobacco Burst (C4 Pl…</a></div>
+                        <div class="p-card__rating">
+                          <div class="p-rating">
+                            <div class="p-rating__group">
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                            </div>
+                            <a href="#" class="p-rating__link">234 отзыва</a>
+                          </div>
+                        </div>
+                        <div class="p-card__price">
+                          <div class="price">8&nbsp;269&nbsp;₽</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="col-lg-4 mb-4">
                 <div class="p-card">
-                  <img class="" src="img/product-stub.png" alt="">
+
+                  <div class="p-card">
+                    <div class="p-card__color">
+                      <div data-entity="sku-block">
+                        <div class="product-item-scu-container" data-entity="sku-line-block">
+                          <!-- <div class="product-item-scu-block-title text-muted">Цвет</div> -->
+                          <div class="product-item-scu-block">
+                            <div class="product-item-scu-list">
+                              <ul class="product-item-scu-item-list">
+                                <li class="product-item-scu-item-color-container selected" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-01.jpg');"></div>
+                                  </div>
+                                </li>
+                                <li class="product-item-scu-item-color-container" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-02.jpg');"></div>
+                                  </div>
+                                </li>
+                                <li class="product-item-scu-item-color-container" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-03.jpg');"></div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-card__options">
+                      <div class="options-block">
+                        <div class="options-block__list">
+                          <div class="options-block__item selected">
+                            <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_favorite_border"></use></svg>
+                          </div>
+                          <div class="options-block__item">
+                            <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_queue"></use></svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-card__inner">
+                      <div class="p-card__img-wrap">
+                        <a href="#">
+                          <img src="img/p-card-img-01.png" alt="">
+                        </a>
+                      </div>
+                      <div class="p-card__body">
+                        <div class="p-card__title"><a href="#">Cort C4 Plus ZBMH Open Pore Tobacco Burst (C4 Pl…</a></div>
+                        <div class="p-card__rating">
+                          <div class="p-rating">
+                            <div class="p-rating__group">
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                            </div>
+                            <a href="#" class="p-rating__link">234 отзыва</a>
+                          </div>
+                        </div>
+                        <div class="p-card__price">
+                          <div class="price">8&nbsp;269&nbsp;₽</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="col-lg-4 mb-4">
                 <div class="p-card">
-                  <img class="" src="img/product-stub.png" alt="">
+
+                  <div class="p-card">
+                    <div class="p-card__color">
+                      <div data-entity="sku-block">
+                        <div class="product-item-scu-container" data-entity="sku-line-block">
+                          <!-- <div class="product-item-scu-block-title text-muted">Цвет</div> -->
+                          <div class="product-item-scu-block">
+                            <div class="product-item-scu-list">
+                              <ul class="product-item-scu-item-list">
+                                <li class="product-item-scu-item-color-container selected" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-01.jpg');"></div>
+                                  </div>
+                                </li>
+                                <li class="product-item-scu-item-color-container" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-02.jpg');"></div>
+                                  </div>
+                                </li>
+                                <li class="product-item-scu-item-color-container" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-03.jpg');"></div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-card__options">
+                      <div class="options-block">
+                        <div class="options-block__list">
+                          <div class="options-block__item selected">
+                            <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_favorite_border"></use></svg>
+                          </div>
+                          <div class="options-block__item">
+                            <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_queue"></use></svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-card__inner">
+                      <div class="p-card__img-wrap">
+                        <a href="#">
+                          <img src="img/p-card-img-01.png" alt="">
+                        </a>
+                      </div>
+                      <div class="p-card__body">
+                        <div class="p-card__title"><a href="#">Cort C4 Plus ZBMH Open Pore Tobacco Burst (C4 Pl…</a></div>
+                        <div class="p-card__rating">
+                          <div class="p-rating">
+                            <div class="p-rating__group">
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                            </div>
+                            <a href="#" class="p-rating__link">234 отзыва</a>
+                          </div>
+                        </div>
+                        <div class="p-card__price">
+                          <div class="price">8&nbsp;269&nbsp;₽</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="col-lg-4 mb-4">
                 <div class="p-card">
-                  <img class="" src="img/product-stub.png" alt="">
+
+                  <div class="p-card">
+                    <div class="p-card__color">
+                      <div data-entity="sku-block">
+                        <div class="product-item-scu-container" data-entity="sku-line-block">
+                          <!-- <div class="product-item-scu-block-title text-muted">Цвет</div> -->
+                          <div class="product-item-scu-block">
+                            <div class="product-item-scu-list">
+                              <ul class="product-item-scu-item-list">
+                                <li class="product-item-scu-item-color-container selected" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-01.jpg');"></div>
+                                  </div>
+                                </li>
+                                <li class="product-item-scu-item-color-container" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-02.jpg');"></div>
+                                  </div>
+                                </li>
+                                <li class="product-item-scu-item-color-container" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-03.jpg');"></div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-card__options">
+                      <div class="options-block">
+                        <div class="options-block__list">
+                          <div class="options-block__item selected">
+                            <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_favorite_border"></use></svg>
+                          </div>
+                          <div class="options-block__item">
+                            <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_queue"></use></svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-card__inner">
+                      <div class="p-card__img-wrap">
+                        <a href="#">
+                          <img src="img/p-card-img-01.png" alt="">
+                        </a>
+                      </div>
+                      <div class="p-card__body">
+                        <div class="p-card__title"><a href="#">Cort C4 Plus ZBMH Open Pore Tobacco Burst (C4 Pl…</a></div>
+                        <div class="p-card__rating">
+                          <div class="p-rating">
+                            <div class="p-rating__group">
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                            </div>
+                            <a href="#" class="p-rating__link">234 отзыва</a>
+                          </div>
+                        </div>
+                        <div class="p-card__price">
+                          <div class="price">8&nbsp;269&nbsp;₽</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-4">
+                <div class="p-card">
+
+                  <div class="p-card">
+                    <div class="p-card__color">
+                      <div data-entity="sku-block">
+                        <div class="product-item-scu-container" data-entity="sku-line-block">
+                          <!-- <div class="product-item-scu-block-title text-muted">Цвет</div> -->
+                          <div class="product-item-scu-block">
+                            <div class="product-item-scu-list">
+                              <ul class="product-item-scu-item-list">
+                                <li class="product-item-scu-item-color-container selected" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-01.jpg');"></div>
+                                  </div>
+                                </li>
+                                <li class="product-item-scu-item-color-container" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-02.jpg');"></div>
+                                  </div>
+                                </li>
+                                <li class="product-item-scu-item-color-container" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-03.jpg');"></div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-card__options">
+                      <div class="options-block">
+                        <div class="options-block__list">
+                          <div class="options-block__item selected">
+                            <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_favorite_border"></use></svg>
+                          </div>
+                          <div class="options-block__item">
+                            <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_queue"></use></svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-card__inner">
+                      <div class="p-card__img-wrap">
+                        <a href="#">
+                          <img src="img/p-card-img-01.png" alt="">
+                        </a>
+                      </div>
+                      <div class="p-card__body">
+                        <div class="p-card__title"><a href="#">Cort C4 Plus ZBMH Open Pore Tobacco Burst (C4 Pl…</a></div>
+                        <div class="p-card__rating">
+                          <div class="p-rating">
+                            <div class="p-rating__group">
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                            </div>
+                            <a href="#" class="p-rating__link">234 отзыва</a>
+                          </div>
+                        </div>
+                        <div class="p-card__price">
+                          <div class="price">8&nbsp;269&nbsp;₽</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-4">
+                <div class="p-card">
+
+                  <div class="p-card">
+                    <div class="p-card__color">
+                      <div data-entity="sku-block">
+                        <div class="product-item-scu-container" data-entity="sku-line-block">
+                          <!-- <div class="product-item-scu-block-title text-muted">Цвет</div> -->
+                          <div class="product-item-scu-block">
+                            <div class="product-item-scu-list">
+                              <ul class="product-item-scu-item-list">
+                                <li class="product-item-scu-item-color-container selected" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-01.jpg');"></div>
+                                  </div>
+                                </li>
+                                <li class="product-item-scu-item-color-container" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-02.jpg');"></div>
+                                  </div>
+                                </li>
+                                <li class="product-item-scu-item-color-container" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-03.jpg');"></div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-card__options">
+                      <div class="options-block">
+                        <div class="options-block__list">
+                          <div class="options-block__item selected">
+                            <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_favorite_border"></use></svg>
+                          </div>
+                          <div class="options-block__item">
+                            <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_queue"></use></svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-card__inner">
+                      <div class="p-card__img-wrap">
+                        <a href="#">
+                          <img src="img/p-card-img-01.png" alt="">
+                        </a>
+                      </div>
+                      <div class="p-card__body">
+                        <div class="p-card__title"><a href="#">Cort C4 Plus ZBMH Open Pore Tobacco Burst (C4 Pl…</a></div>
+                        <div class="p-card__rating">
+                          <div class="p-rating">
+                            <div class="p-rating__group">
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                            </div>
+                            <a href="#" class="p-rating__link">234 отзыва</a>
+                          </div>
+                        </div>
+                        <div class="p-card__price">
+                          <div class="price">8&nbsp;269&nbsp;₽</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-4">
+                <div class="p-card">
+
+                  <div class="p-card">
+                    <div class="p-card__color">
+                      <div data-entity="sku-block">
+                        <div class="product-item-scu-container" data-entity="sku-line-block">
+                          <!-- <div class="product-item-scu-block-title text-muted">Цвет</div> -->
+                          <div class="product-item-scu-block">
+                            <div class="product-item-scu-list">
+                              <ul class="product-item-scu-item-list">
+                                <li class="product-item-scu-item-color-container selected" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-01.jpg');"></div>
+                                  </div>
+                                </li>
+                                <li class="product-item-scu-item-color-container" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-02.jpg');"></div>
+                                  </div>
+                                </li>
+                                <li class="product-item-scu-item-color-container" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-03.jpg');"></div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-card__options">
+                      <div class="options-block">
+                        <div class="options-block__list">
+                          <div class="options-block__item selected">
+                            <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_favorite_border"></use></svg>
+                          </div>
+                          <div class="options-block__item">
+                            <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_queue"></use></svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-card__inner">
+                      <div class="p-card__img-wrap">
+                        <a href="#">
+                          <img src="img/p-card-img-01.png" alt="">
+                        </a>
+                      </div>
+                      <div class="p-card__body">
+                        <div class="p-card__title"><a href="#">Cort C4 Plus ZBMH Open Pore Tobacco Burst (C4 Pl…</a></div>
+                        <div class="p-card__rating">
+                          <div class="p-rating">
+                            <div class="p-rating__group">
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                            </div>
+                            <a href="#" class="p-rating__link">234 отзыва</a>
+                          </div>
+                        </div>
+                        <div class="p-card__price">
+                          <div class="price">8&nbsp;269&nbsp;₽</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -326,14 +1628,8 @@
                 </nav>
               </div>
               <div class="col-auto">
-                <!-- <div data-toggle="dropdown">Показывать по 30</div>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>              -->
                 <select class="border-0 custom-select my-1 mr-sm-2">
-                  <option selected>Сначала популярные</option>
+                  <option selected>Показывать по 30</option>
                   <option value="1">One</option>
                   <option value="2">Two</option>
                   <option value="3">Three</option>
@@ -350,6 +1646,46 @@
           <div class="col-lg-3 mb-4">
 
             <div class="p-card">
+              <div class="p-card__color">
+                <div data-entity="sku-block">
+                  <div class="product-item-scu-container" data-entity="sku-line-block">
+                    <!-- <div class="product-item-scu-block-title text-muted">Цвет</div> -->
+                    <div class="product-item-scu-block">
+                      <div class="product-item-scu-list">
+                        <ul class="product-item-scu-item-list">
+                          <li class="product-item-scu-item-color-container selected" title="Цвет">
+                            <div class="product-item-scu-item-color-block">
+                              <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-01.jpg');"></div>
+                            </div>
+                          </li>
+                          <li class="product-item-scu-item-color-container" title="Цвет">
+                            <div class="product-item-scu-item-color-block">
+                              <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-02.jpg');"></div>
+                            </div>
+                          </li>
+                          <li class="product-item-scu-item-color-container" title="Цвет">
+                            <div class="product-item-scu-item-color-block">
+                              <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-03.jpg');"></div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="p-card__options">
+                <div class="options-block">
+                  <div class="options-block__list">
+                    <div class="options-block__item selected">
+                      <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_favorite_border"></use></svg>
+                    </div>
+                    <div class="options-block__item">
+                      <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_queue"></use></svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="p-card__inner">
                 <div class="p-card__img-wrap">
                   <a href="#">
@@ -386,7 +1722,7 @@
                     </div>
                   </div>
                   <div class="p-card__price">
-                    8 269 ₽
+                    <div class="price">8&nbsp;269&nbsp;₽</div>
                   </div>
                 </div>
               </div>
@@ -395,6 +1731,46 @@
           <div class="col-lg-3 mb-4">
 
             <div class="p-card">
+              <div class="p-card__color">
+                <div data-entity="sku-block">
+                  <div class="product-item-scu-container" data-entity="sku-line-block">
+                    <!-- <div class="product-item-scu-block-title text-muted">Цвет</div> -->
+                    <div class="product-item-scu-block">
+                      <div class="product-item-scu-list">
+                        <ul class="product-item-scu-item-list">
+                          <li class="product-item-scu-item-color-container selected" title="Цвет">
+                            <div class="product-item-scu-item-color-block">
+                              <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-01.jpg');"></div>
+                            </div>
+                          </li>
+                          <li class="product-item-scu-item-color-container" title="Цвет">
+                            <div class="product-item-scu-item-color-block">
+                              <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-02.jpg');"></div>
+                            </div>
+                          </li>
+                          <li class="product-item-scu-item-color-container" title="Цвет">
+                            <div class="product-item-scu-item-color-block">
+                              <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-03.jpg');"></div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="p-card__options">
+                <div class="options-block">
+                  <div class="options-block__list">
+                    <div class="options-block__item selected">
+                      <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_favorite_border"></use></svg>
+                    </div>
+                    <div class="options-block__item">
+                      <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_queue"></use></svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="p-card__inner">
                 <div class="p-card__img-wrap">
                   <a href="#">
@@ -431,7 +1807,7 @@
                     </div>
                   </div>
                   <div class="p-card__price">
-                    8 269 ₽
+                    <div class="price">8&nbsp;269&nbsp;₽</div>
                   </div>
                 </div>
               </div>
@@ -440,6 +1816,46 @@
           <div class="col-lg-3 mb-4">
 
             <div class="p-card">
+              <div class="p-card__color">
+                <div data-entity="sku-block">
+                  <div class="product-item-scu-container" data-entity="sku-line-block">
+                    <!-- <div class="product-item-scu-block-title text-muted">Цвет</div> -->
+                    <div class="product-item-scu-block">
+                      <div class="product-item-scu-list">
+                        <ul class="product-item-scu-item-list">
+                          <li class="product-item-scu-item-color-container selected" title="Цвет">
+                            <div class="product-item-scu-item-color-block">
+                              <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-01.jpg');"></div>
+                            </div>
+                          </li>
+                          <li class="product-item-scu-item-color-container" title="Цвет">
+                            <div class="product-item-scu-item-color-block">
+                              <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-02.jpg');"></div>
+                            </div>
+                          </li>
+                          <li class="product-item-scu-item-color-container" title="Цвет">
+                            <div class="product-item-scu-item-color-block">
+                              <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-03.jpg');"></div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="p-card__options">
+                <div class="options-block">
+                  <div class="options-block__list">
+                    <div class="options-block__item selected">
+                      <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_favorite_border"></use></svg>
+                    </div>
+                    <div class="options-block__item">
+                      <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_queue"></use></svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="p-card__inner">
                 <div class="p-card__img-wrap">
                   <a href="#">
@@ -476,7 +1892,7 @@
                     </div>
                   </div>
                   <div class="p-card__price">
-                    8 269 ₽
+                    <div class="price">8&nbsp;269&nbsp;₽</div>
                   </div>
                 </div>
               </div>

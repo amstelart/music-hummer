@@ -47,7 +47,7 @@
   <div class="main-wrapper">
 
     <header class="page-header" role="banner">
-      <div class="top-line">
+      <div class="top-line d-none d-lg-block">
         <div class="container">
           <div class="row">
             <div class="col">
@@ -76,9 +76,9 @@
             </div>
             <div class="col-auto">
               <div class="user-options">
-                <a class="user-options__item" href="#"><svg class="icon icon-search" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_compare"></use></svg> Сравнение</a>
-                <a class="user-options__item" href="#"><svg class="icon icon-search" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_fav"></use></svg> Отложенные</a>
-                <a class="user-options__item" href="#"><svg class="icon icon-search" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_shopping_cart"></use></svg> Корзина</a>
+                <a class="user-options__item" href="#"><svg class="icon icon-search" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_compare"></use></svg><span class="d-none d-lg-inline-flex">Сравнение</span></a>
+                <a class="user-options__item" href="#"><svg class="icon icon-search" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_fav"></use></svg><span class="d-none d-lg-inline-flex">Отложенные</span></a>
+                <a class="user-options__item" href="#"><svg class="icon icon-search" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_shopping_cart"></use></svg><span class="d-none d-lg-inline-flex">Корзина</span></a>
               </div>
             </div>
             <div class="col-auto">
@@ -89,7 +89,7 @@
           </div>
         </div>
       </div>
-      <div class="nav-line">
+      <div class="nav-line d-none d-lg-block">
         <div class="container">
           <div class="nav-line__inner">
             <nav class="main-nav d-flex">
@@ -240,6 +240,46 @@
           <div class="col-lg-3 mb-4">
 
             <div class="p-card">
+              <div class="p-card__color">
+                <div data-entity="sku-block">
+                  <div class="product-item-scu-container" data-entity="sku-line-block">
+                    <!-- <div class="product-item-scu-block-title text-muted">Цвет</div> -->
+                    <div class="product-item-scu-block">
+                      <div class="product-item-scu-list">
+                        <ul class="product-item-scu-item-list">
+                          <li class="product-item-scu-item-color-container selected" title="Цвет">
+                            <div class="product-item-scu-item-color-block">
+                              <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-01.jpg');"></div>
+                            </div>
+                          </li>
+                          <li class="product-item-scu-item-color-container" title="Цвет">
+                            <div class="product-item-scu-item-color-block">
+                              <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-02.jpg');"></div>
+                            </div>
+                          </li>
+                          <li class="product-item-scu-item-color-container" title="Цвет">
+                            <div class="product-item-scu-item-color-block">
+                              <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-03.jpg');"></div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="p-card__options">
+                <div class="options-block">
+                  <div class="options-block__list">
+                    <div class="options-block__item selected">
+                      <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_favorite_border"></use></svg>
+                    </div>
+                    <div class="options-block__item">
+                      <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_queue"></use></svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="p-card__inner">
                 <div class="p-card__img-wrap">
                   <a href="#">
@@ -276,7 +316,7 @@
                     </div>
                   </div>
                   <div class="p-card__price">
-                    8 269 ₽
+                    <div class="price">8&nbsp;269&nbsp;₽</div>
                   </div>
                 </div>
               </div>
@@ -285,6 +325,46 @@
           <div class="col-lg-3 mb-4">
 
             <div class="p-card">
+              <div class="p-card__color">
+                <div data-entity="sku-block">
+                  <div class="product-item-scu-container" data-entity="sku-line-block">
+                    <!-- <div class="product-item-scu-block-title text-muted">Цвет</div> -->
+                    <div class="product-item-scu-block">
+                      <div class="product-item-scu-list">
+                        <ul class="product-item-scu-item-list">
+                          <li class="product-item-scu-item-color-container selected" title="Цвет">
+                            <div class="product-item-scu-item-color-block">
+                              <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-01.jpg');"></div>
+                            </div>
+                          </li>
+                          <li class="product-item-scu-item-color-container" title="Цвет">
+                            <div class="product-item-scu-item-color-block">
+                              <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-02.jpg');"></div>
+                            </div>
+                          </li>
+                          <li class="product-item-scu-item-color-container" title="Цвет">
+                            <div class="product-item-scu-item-color-block">
+                              <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-03.jpg');"></div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="p-card__options">
+                <div class="options-block">
+                  <div class="options-block__list">
+                    <div class="options-block__item selected">
+                      <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_favorite_border"></use></svg>
+                    </div>
+                    <div class="options-block__item">
+                      <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_queue"></use></svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="p-card__inner">
                 <div class="p-card__img-wrap">
                   <a href="#">
@@ -321,7 +401,7 @@
                     </div>
                   </div>
                   <div class="p-card__price">
-                    8 269 ₽
+                    <div class="price">8&nbsp;269&nbsp;₽</div>
                   </div>
                 </div>
               </div>
@@ -330,6 +410,46 @@
           <div class="col-lg-3 mb-4">
 
             <div class="p-card">
+              <div class="p-card__color">
+                <div data-entity="sku-block">
+                  <div class="product-item-scu-container" data-entity="sku-line-block">
+                    <!-- <div class="product-item-scu-block-title text-muted">Цвет</div> -->
+                    <div class="product-item-scu-block">
+                      <div class="product-item-scu-list">
+                        <ul class="product-item-scu-item-list">
+                          <li class="product-item-scu-item-color-container selected" title="Цвет">
+                            <div class="product-item-scu-item-color-block">
+                              <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-01.jpg');"></div>
+                            </div>
+                          </li>
+                          <li class="product-item-scu-item-color-container" title="Цвет">
+                            <div class="product-item-scu-item-color-block">
+                              <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-02.jpg');"></div>
+                            </div>
+                          </li>
+                          <li class="product-item-scu-item-color-container" title="Цвет">
+                            <div class="product-item-scu-item-color-block">
+                              <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-03.jpg');"></div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="p-card__options">
+                <div class="options-block">
+                  <div class="options-block__list">
+                    <div class="options-block__item selected">
+                      <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_favorite_border"></use></svg>
+                    </div>
+                    <div class="options-block__item">
+                      <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_queue"></use></svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="p-card__inner">
                 <div class="p-card__img-wrap">
                   <a href="#">
@@ -366,7 +486,7 @@
                     </div>
                   </div>
                   <div class="p-card__price">
-                    8 269 ₽
+                    <div class="price">8&nbsp;269&nbsp;₽</div>
                   </div>
                 </div>
               </div>
