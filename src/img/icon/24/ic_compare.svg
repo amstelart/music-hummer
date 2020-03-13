@@ -1,0 +1,6 @@
+<svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icon/24/ic_compare">
+<rect id="Rectangle" x="21" y="9" width="42" height="42" fill="#EDEFF2"/>
+<path id="Combined Shape" fill-rule="evenodd" clip-rule="evenodd" d="M18 12C18 8.7 20.7 6 24 6H60C63.3 6 66 8.7 66 12V48C66 51.3 63.3 54 60 54H24C20.7 54 18 51.3 18 48V12ZM60 12H24V48H60V12ZM45 33V45H39V33H27V27H39V15H45V27H57V33H45ZM6 60V18H12V60H54V66H12C8.7 66 6 63.3 6 60Z" fill="#1A1919"/>
+</g>
+</svg>

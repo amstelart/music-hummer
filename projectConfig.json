@@ -14,7 +14,12 @@
     "burger": [],
     "object-fit-polyfill": [],
     "slick-theme": [],
-    "nav": []
+    "nav": [],
+    "social": [],
+    "buttons": [],
+    "breadcrumb": [],
+    "rating-block": [],
+    "p-card": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
@@ -32,7 +37,7 @@
     "./node_modules/svg4everybody/dist/svg4everybody.js",
     "./node_modules/ismobilejs/isMobile.min.js",
     "./node_modules/object-fit-images/dist/ofi.js",
-    "./node_modules/bootstrap/dist/js/bootstrap.js",
+    "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
     "./node_modules/slick-carousel/slick/slick.min.js"
   ],
   "addJsAfter": [

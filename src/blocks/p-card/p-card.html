@@ -1,0 +1,174 @@
+<!--DEV
+
+Для использования этого файла как шаблона:
+
+@ @include('blocks/p-card/p-card.html')
+
+(Нужно убрать пробел между символами @)
+Подробнее: https://www.npmjs.com/package/gulp-file-include
+
+<div class="p-card p-card--discount">
+  <div class="p-card__label">Скидка</div>
+  <div class="p-card__inner">
+    <div class="p-card__img-wrap">
+      <img src="img/p-card-img-01.png" alt="">
+    </div>
+    <div class="p-card__body">
+      <div class="p-card__title">Cort C4 Plus ZBMH Open Pore Tobacco Burst (C4 Pl…</div>
+      <div class="p-card__rating">
+        <div class="p-rating">
+          <div class="p-rating__group">
+            <svg class="rating-star rating-star--full" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star"></use></svg>
+            <svg class="rating-star rating-star--full" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star"></use></svg>
+            <svg class="rating-star rating-star--full" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star"></use></svg>
+            <svg class="rating-star" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star"></use></svg>
+            <svg class="rating-star" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star"></use></svg>
+          </div>
+          <a href="#" class="p-rating__link">234 отзыва</a>
+        </div>
+      </div>
+      <div class="p-card__price">
+        8 269 ₽
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="p-card p-card--best-seller">
+  <div class="p-card__label">Хит продаж</div>
+  <div class="p-card__inner">
+    <div class="p-card__img-wrap">
+      <img src="img/p-card-img-02.png" alt="">
+    </div>
+    <div class="p-card__body">
+      <div class="p-card__title">Cort C4 Plus ZBMH Open Pore Tobacco Burst (C4 Pl…</div>
+      <div class="p-card__rating">
+        <div class="p-rating">
+          <div class="p-rating__group">
+            <svg class="rating-star rating-star--full" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star"></use></svg>
+            <svg class="rating-star rating-star--full" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star"></use></svg>
+            <svg class="rating-star rating-star--full" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star"></use></svg>
+            <svg class="rating-star" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star"></use></svg>
+            <svg class="rating-star" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star"></use></svg>
+          </div>
+          <a href="#" class="p-rating__link">234 отзыва</a>
+        </div>
+      </div>
+      <div class="p-card__price">
+        8 269 ₽
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="p-card p-card--new">
+  <div class="p-card__label">Новинка</div>
+  <div class="p-card__inner">
+    <div class="p-card__img-wrap">
+      <img src="img/p-card-img-03.png" alt="">
+    </div>
+    <div class="p-card__body">
+      <div class="p-card__title">Cort C4 Plus ZBMH Open Pore Tobacco Burst (C4 Pl…</div>
+      <div class="p-card__rating">
+        <div class="p-rating">
+          <div class="p-rating__group">
+            <svg class="rating-star rating-star--full" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star"></use></svg>
+            <svg class="rating-star rating-star--full" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star"></use></svg>
+            <svg class="rating-star rating-star--full" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star"></use></svg>
+            <svg class="rating-star" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star"></use></svg>
+            <svg class="rating-star" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star"></use></svg>
+          </div>
+          <a href="#" class="p-rating__link">234 отзыва</a>
+        </div>
+      </div>
+      <div class="p-card__price">
+        8 269 ₽
+      </div>
+    </div>
+  </div>
+</div>
+
+-->
+
+<div class="p-card">
+  <div class="p-card__color">
+    <div data-entity="sku-block">
+      <div class="product-item-scu-container" data-entity="sku-line-block">
+        <!-- <div class="product-item-scu-block-title text-muted">Цвет</div> -->
+        <div class="product-item-scu-block">
+          <div class="product-item-scu-list">
+            <ul class="product-item-scu-item-list">
+              <li class="product-item-scu-item-color-container selected" title="Цвет">
+                <div class="product-item-scu-item-color-block">
+                  <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-01.jpg');"></div>
+                </div>
+              </li>
+              <li class="product-item-scu-item-color-container" title="Цвет">
+                <div class="product-item-scu-item-color-block">
+                  <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-02.jpg');"></div>
+                </div>
+              </li>
+              <li class="product-item-scu-item-color-container" title="Цвет">
+                <div class="product-item-scu-item-color-block">
+                  <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-03.jpg');"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="p-card__options">
+    <div class="options-block">
+      <div class="options-block__list">
+        <div class="options-block__item selected">
+          <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_favorite_border"></use></svg>
+        </div>
+        <div class="options-block__item">
+          <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_queue"></use></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="p-card__inner">
+    <div class="p-card__img-wrap">
+      <a href="#">
+        <img src="img/p-card-img-01.png" alt="">
+      </a>
+    </div>
+    <div class="p-card__body">
+      <div class="p-card__title"><a href="#">Cort C4 Plus ZBMH Open Pore Tobacco Burst (C4 Pl…</a></div>
+      <div class="p-card__rating">
+        <div class="p-rating">
+          <div class="p-rating__group">
+            <svg class="rating-star rating-star--full" width="20" height="20">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+              </use>
+            </svg>
+            <svg class="rating-star rating-star--full" width="20" height="20">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+              </use>
+            </svg>
+            <svg class="rating-star rating-star--full" width="20" height="20">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+              </use>
+            </svg>
+            <svg class="rating-star" width="20" height="20">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+              </use>
+            </svg>
+            <svg class="rating-star" width="20" height="20">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+              </use>
+            </svg>
+          </div>
+          <a href="#" class="p-rating__link">234 отзыва</a>
+        </div>
+      </div>
+      <div class="p-card__price">
+        <div class="price">8&nbsp;269&nbsp;₽</div>
+      </div>
+    </div>
+  </div>
+</div>

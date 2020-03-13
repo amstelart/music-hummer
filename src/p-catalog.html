@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Music hummer</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+
+  <div class="main-wrapper">
+
+    @@include('blocks/page-header/page-header.html')
+
+    <div class="container">
+
+      <div class="page-top">
+        <nav class="page-top__breadcrumb" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Главная</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Каталог</li>
+          </ol>
+        </nav>
+        <h1 class="page-top__title">Гитары</h1>        
+      </div>
+       
+      <div class="p-catalog">
+        <div class="row">
+          <div class="col-lg-3 d-none d-lg-inline-flex">
+            <div class="c-sidebar">
+              <ul class="sidebar-nav">
+                <li class="catalog-main"><a href="#catalog-collapse" class="collapsed" data-toggle="collapse">
+                  <div class="burger"><span></span></div>
+                  Каталог</a>
+                  <div class="collapse" id="catalog-collapse">
+                    <ul>
+                      <li><a href="#catalog-sub-collapse" data-toggle="collapse">Гитары</a>
+                        <div class="collapse" id="catalog-sub-collapse">
+                          <ul class="catalog-main__sub-nav">
+                            <li><a href="#">Электрогитары <span>1234</span></a></li>
+                            <li><a href="#">Бас-гитары <span>336</span></a></li>
+                            <li><a href="#">Акустические <span>5678</span></a></li>
+                            <li><a href="#">Классические <span>1882</span></a></li>
+                            <li><a href="#">Электроакустические <span>568</span></a></li>
+                            <li><a href="#">Полуакустические <span>985</span></a></li>
+                            <li><a href="#">Уменьшенные гитары <span>1289</span></a></li>
+                            <li><a href="#">Укулеле <span>87</span></a></li>
+                            <li><a href="#">Наборы новичкам <span>34</span></a></li>
+                            <li><a href="#">Аксессуары <span>12</span></a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li><a href="#">Гитарное оборудование</a></li>
+                      <li><a href="#">Трансляционное оборудование</a></li>
+                      <li><a href="#">Звуковое оборудование</a></li>
+                      <li><a href="#">Студия и звукозапись</a></li>
+                      <li><a href="#">Клавишные</a></li>
+                      <li><a href="#">Микрофоны</a></li>
+                      <li><a href="#">Наушники</a></li>
+                      <li><a href="#">Свет, сцена, эффекты</a></li>
+                      <li><a href="#">Караоке оборудование</a></li>
+                      <li><a href="#">Ударные</a></li>
+                      <li><a href="#">Hi Fi оборудование</a></li>
+                      <li><a href="#">Перкуссия</a></li>
+                      <li><a href="#">Оркестровые</a></li>
+                      <li><a href="#">Народные</a></li>
+                      <li><a href="#">Сувениры и подарки</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">Новинки</a></li>
+                <li><a href="#">Скидки</a></li>
+                <li><a href="#">Хиты продаж</a></li>
+                <li><a href="#">Доступен в комплекте</a></li>
+              </ul>
+              <form class="sidebar-filter-group">
+                <div class="sidebar-filter">
+                  <div class="sidebar-filter__title">Бренды</div>
+                  <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                    <input type="checkbox" class="custom-control-input" id="filter-brand-01">
+                    <label class="custom-control-label" for="filter-brand-01">ALHAMBRA</label>
+                  </div>
+                  <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                    <input type="checkbox" class="custom-control-input" id="filter-brand-02">
+                    <label class="custom-control-label" for="filter-brand-02">ART & LUTHERIE</label>
+                  </div>
+                  <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                    <input type="checkbox" class="custom-control-input" id="filter-brand-03">
+                    <label class="custom-control-label" for="filter-brand-03">CORT</label>
+                  </div>
+                  <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                    <input type="checkbox" class="custom-control-input" id="filter-brand-04">
+                    <label class="custom-control-label" for="filter-brand-04">CRAFTER</label>
+                  </div>
+                  <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                    <input type="checkbox" class="custom-control-input" id="filter-brand-05">
+                    <label class="custom-control-label" for="filter-brand-05">DEAN</label>
+                  </div>
+                  <div class="collapse" id="filter-brand-collapse" style="overflow: hidden;">
+                    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                      <input type="checkbox" class="custom-control-input" id="filter-brand-06">
+                      <label class="custom-control-label" for="filter-brand-06">DEAN</label>
+                    </div>
+                    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                      <input type="checkbox" class="custom-control-input" id="filter-brand-07">
+                      <label class="custom-control-label" for="filter-brand-07">DEAN</label>
+                    </div>
+                    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                      <input type="checkbox" class="custom-control-input" id="filter-brand-08">
+                      <label class="custom-control-label" for="filter-brand-08">DEAN</label>
+                    </div>
+                    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                      <input type="checkbox" class="custom-control-input" id="filter-brand-09">
+                      <label class="custom-control-label" for="filter-brand-09">DEAN</label>
+                    </div>
+                    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                      <input type="checkbox" class="custom-control-input" id="filter-brand-10">
+                      <label class="custom-control-label" for="filter-brand-10">DEAN</label>
+                    </div>
+                  </div>
+                  <a href="#filter-brand-collapse" data-toggle="collapse">Все бренды</a>
+                </div>
+                <div class="sidebar-filter">
+                  <div class="sidebar-filter__title">Цена</div>
+                </div>
+                <div class="sidebar-filter">
+                  <div class="sidebar-filter__title">Тип</div>
+                  <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                    <input type="checkbox" class="custom-control-input" id="filter-type-01">
+                    <label class="custom-control-label" for="filter-type-01">Без звукоснимателей</label>
+                  </div>
+                  <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                    <input type="checkbox" class="custom-control-input" id="filter-type-02">
+                    <label class="custom-control-label" for="filter-type-02">Со звукоснимателем</label>
+                  </div>
+                </div>
+              </form>
+
+              <div class="bx-sidebar-block">
+                <div class="smart-filter mb-4 bx-green ">
+                  <div class="smart-filter-section">
+              
+                    <div class="smart-filter-title">Подбор параметров</div>
+              
+                    <form name="_form" action="/catalog/sportswear/" method="get" class="smart-filter-form">
+              
+              
+                      <div class="row">
+              
+                        <div class="col-12 mb-2 smart-filter-parameters-box bx-active">
+                          <span class="smart-filter-container-modef"></span>
+              
+                          <div class="smart-filter-parameters-box-title" onclick="smartFilter.hideFilterProps(this)">
+                            <span class="smart-filter-parameters-box-title-text">Розничная цена</span>
+                            <span data-role="prop_angle" class="smart-filter-angle smart-filter-angle-up">
+                              <span class="smart-filter-angles"></span>
+                            </span>
+                          </div>
+              
+                          <div class="smart-filter-block" data-role="bx_filter_block">
+                            <div class="smart-filter-parameters-box-container">
+                              <div class="smart-filter-input-group-number">
+                                <div class="d-flex justify-content-between">
+                                  <div class="form-group" style="width: calc(50% - 10px);">
+                                    <div class="smart-filter-input-container">
+                                      <input class="min-price form-control form-control-sm" type="number" name="arrFilter_P1_MIN"
+                                        id="arrFilter_P1_MIN" value="" size="5" placeholder="От" onkeyup="smartFilter.keyup(this)">
+                                    </div>
+                                  </div>
+              
+                                  <div class="form-group" style="width: calc(50% - 10px);">
+                                    <div class="smart-filter-input-container">
+                                      <input class="max-price form-control form-control-sm" type="number" name="arrFilter_P1_MAX"
+                                        id="arrFilter_P1_MAX" value="" size="5" placeholder="До" onkeyup="smartFilter.keyup(this)">
+                                    </div>
+                                  </div>
+                                </div>
+              
+                                <div class="smart-filter-slider-track-container">
+                                  <div class="smart-filter-slider-track" id="drag_track_c4ca4238a0b923820dcc509a6f75849b">
+                                    <div class="smart-filter-slider-ruler p1"><span>2&nbsp;330</span></div>
+                                    <div class="smart-filter-slider-ruler p2"><span>2&nbsp;422.25</span></div>
+                                    <div class="smart-filter-slider-ruler p3"><span>2&nbsp;514.50</span></div>
+                                    <div class="smart-filter-slider-ruler p4"><span>2&nbsp;606.75</span></div>
+                                    <div class="smart-filter-slider-ruler p5"><span>2&nbsp;699</span></div>
+                                    <div class="smart-filter-slider-price-bar-vd" style="left: 0;right: 0;"
+                                      id="colorUnavailableActive_c4ca4238a0b923820dcc509a6f75849b"></div>
+                                    <div class="smart-filter-slider-price-bar-vn" style="left: 0%; right: 0%;"
+                                      id="colorAvailableInactive_c4ca4238a0b923820dcc509a6f75849b"></div>
+                                    <div class="smart-filter-slider-price-bar-v" style="left: 0%; right: 0%;"
+                                      id="colorAvailableActive_c4ca4238a0b923820dcc509a6f75849b"></div>
+                                    <div class="smart-filter-slider-range" id="drag_tracker_c4ca4238a0b923820dcc509a6f75849b"
+                                      style="left: 0; right: 0;">
+                                      <a class="smart-filter-slider-handle left" style="left:0;" href="javascript:void(0)"
+                                        id="left_slider_c4ca4238a0b923820dcc509a6f75849b"></a>
+                                      <a class="smart-filter-slider-handle right" style="right:0;" href="javascript:void(0)"
+                                        id="right_slider_c4ca4238a0b923820dcc509a6f75849b"></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <script type="text/javascript">
+                          BX.ready(function () {
+                            window['trackBarc4ca4238a0b923820dcc509a6f75849b'] = new BX.Iblock.SmartFilter({ 'leftSlider': 'left_slider_c4ca4238a0b923820dcc509a6f75849b', 'rightSlider': 'right_slider_c4ca4238a0b923820dcc509a6f75849b', 'tracker': 'drag_tracker_c4ca4238a0b923820dcc509a6f75849b', 'trackerWrap': 'drag_track_c4ca4238a0b923820dcc509a6f75849b', 'minInputId': 'arrFilter_P1_MIN', 'maxInputId': 'arrFilter_P1_MAX', 'minPrice': '2330', 'maxPrice': '2699', 'curMinPrice': '', 'curMaxPrice': '', 'fltMinPrice': '2330', 'fltMaxPrice': '2699', 'precision': '', 'colorUnavailableActive': 'colorUnavailableActive_c4ca4238a0b923820dcc509a6f75849b', 'colorAvailableActive': 'colorAvailableActive_c4ca4238a0b923820dcc509a6f75849b', 'colorAvailableInactive': 'colorAvailableInactive_c4ca4238a0b923820dcc509a6f75849b' });
+                          });
+                        </script>
+              
+                        <div class="col-lg-12 mb-2 smart-filter-parameters-box ">
+                          <span class="smart-filter-container-modef"></span>
+              
+                          <div class="smart-filter-parameters-box-title" onclick="smartFilter.hideFilterProps(this)">
+              
+                            <span class="smart-filter-parameters-box-title-text">Производитель</span>
+              
+                            <span data-role="prop_angle" class="smart-filter-angle smart-filter-angle-down">
+                              <span class="smart-filter-angles"></span>
+                            </span>
+              
+                          </div>
+              
+                          <div class="smart-filter-block" data-role="bx_filter_block">
+                            <div class="smart-filter-parameters-box-container">
+                              <div class="smart-filter-input-group-checkbox-list">
+                                <div class="form-group form-check mb-1">
+                                  <input type="checkbox" value="Y" name="arrFilter_10_1007824416" id="arrFilter_10_1007824416"
+                                    class="form-check-input" onclick="smartFilter.click(this)">
+                                  <label data-role="label_arrFilter_10_1007824416" class="smart-filter-checkbox-text form-check-label"
+                                    for="arrFilter_10_1007824416">
+                                    Китай "Гун Джой Ли"&nbsp;(<span data-role="count_arrFilter_10_1007824416">3</span>) </label>
+                                </div>
+                                <div class="form-group form-check mb-1">
+                                  <input type="checkbox" value="Y" name="arrFilter_10_2674840009" id="arrFilter_10_2674840009"
+                                    class="form-check-input" onclick="smartFilter.click(this)">
+                                  <label data-role="label_arrFilter_10_2674840009" class="smart-filter-checkbox-text form-check-label"
+                                    for="arrFilter_10_2674840009">
+                                    Россия "Grishko"&nbsp;(<span data-role="count_arrFilter_10_2674840009">2</span>) </label>
+                                </div>
+                                <div class="form-group form-check mb-1">
+                                  <input type="checkbox" value="Y" name="arrFilter_10_4097539558" id="arrFilter_10_4097539558"
+                                    class="form-check-input" onclick="smartFilter.click(this)">
+                                  <label data-role="label_arrFilter_10_4097539558" class="smart-filter-checkbox-text form-check-label"
+                                    for="arrFilter_10_4097539558">
+                                    Россия "Молодая семья"&nbsp;(<span data-role="count_arrFilter_10_4097539558">1</span>) </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+              
+                        <div class="col-lg-12 mb-2 smart-filter-parameters-box ">
+                          <span class="smart-filter-container-modef"></span>
+              
+                          <div class="smart-filter-parameters-box-title" onclick="smartFilter.hideFilterProps(this)">
+              
+                            <span class="smart-filter-parameters-box-title-text">Материал</span>
+              
+                            <span data-role="prop_angle" class="smart-filter-angle smart-filter-angle-down">
+                              <span class="smart-filter-angles"></span>
+                            </span>
+              
+                          </div>
+              
+                          <div class="smart-filter-block" data-role="bx_filter_block">
+                            <div class="smart-filter-parameters-box-container">
+                              <div class="smart-filter-input-group-checkbox-list">
+                                <div class="form-group form-check mb-1">
+                                  <input type="checkbox" value="Y" name="arrFilter_11_3611589592" id="arrFilter_11_3611589592"
+                                    class="form-check-input" onclick="smartFilter.click(this)">
+                                  <label data-role="label_arrFilter_11_3611589592" class="smart-filter-checkbox-text form-check-label"
+                                    for="arrFilter_11_3611589592">
+                                    95% хлопок, 5% эластан&nbsp;(<span data-role="count_arrFilter_11_3611589592">4</span>) </label>
+                                </div>
+                                <div class="form-group form-check mb-1">
+                                  <input type="checkbox" value="Y" name="arrFilter_11_692893017" id="arrFilter_11_692893017"
+                                    class="form-check-input" onclick="smartFilter.click(this)">
+                                  <label data-role="label_arrFilter_11_692893017" class="smart-filter-checkbox-text form-check-label"
+                                    for="arrFilter_11_692893017">
+                                    искусственные материалы&nbsp;(<span data-role="count_arrFilter_11_692893017">1</span>) </label>
+                                </div>
+                                <div class="form-group form-check mb-1">
+                                  <input type="checkbox" value="Y" name="arrFilter_11_3068644278" id="arrFilter_11_3068644278"
+                                    class="form-check-input" onclick="smartFilter.click(this)">
+                                  <label data-role="label_arrFilter_11_3068644278" class="smart-filter-checkbox-text form-check-label"
+                                    for="arrFilter_11_3068644278">
+                                    трикотаж&nbsp;(<span data-role="count_arrFilter_11_3068644278">1</span>) </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+              
+                        <div class="col-lg-12 mb-2 smart-filter-parameters-box bx-active">
+                          <span class="smart-filter-container-modef"></span>
+              
+                          <div class="smart-filter-parameters-box-title" onclick="smartFilter.hideFilterProps(this)">
+              
+                            <span class="smart-filter-parameters-box-title-text">Цвет</span>
+              
+                            <span data-role="prop_angle" class="smart-filter-angle smart-filter-angle-up">
+                              <span class="smart-filter-angles"></span>
+                            </span>
+              
+                          </div>
+              
+                          <div class="smart-filter-block" data-role="bx_filter_block">
+                            <div class="smart-filter-parameters-box-container">
+                              <div class="smart-filter-input-group-checkbox-pictures">
+                                <input style="display: none" type="checkbox" name="arrFilter_21_1120914852"
+                                  id="arrFilter_21_1120914852" value="Y">
+                                <label for="arrFilter_21_1120914852" data-role="label_arrFilter_21_1120914852"
+                                  class="smart-filter-checkbox-label"
+                                  onclick="smartFilter.keyup(BX('arrFilter_21_1120914852')); BX.toggleClass(this, 'bx-active');">
+                                  <span class="smart-filter-checkbox-btn bx-color-sl">
+                                    <span class="smart-filter-checkbox-btn-image"
+                                      style="background-image: url('/upload/uf/1df/1df044eafafaf3176ad30f06a5fde303.jpg');"></span>
+                                  </span>
+                                </label>
+                                <input style="display: none" type="checkbox" name="arrFilter_21_2307242536"
+                                  id="arrFilter_21_2307242536" value="Y">
+                                <label for="arrFilter_21_2307242536" data-role="label_arrFilter_21_2307242536"
+                                  class="smart-filter-checkbox-label"
+                                  onclick="smartFilter.keyup(BX('arrFilter_21_2307242536')); BX.toggleClass(this, 'bx-active');">
+                                  <span class="smart-filter-checkbox-btn bx-color-sl">
+                                    <span class="smart-filter-checkbox-btn-image"
+                                      style="background-image: url('/upload/uf/a06/a06e5a72feb1a3eb7c4abd18af65d310.jpg');"></span>
+                                  </span>
+                                </label>
+                                <input style="display: none" type="checkbox" name="arrFilter_21_744714710" id="arrFilter_21_744714710"
+                                  value="Y">
+                                <label for="arrFilter_21_744714710" data-role="label_arrFilter_21_744714710"
+                                  class="smart-filter-checkbox-label"
+                                  onclick="smartFilter.keyup(BX('arrFilter_21_744714710')); BX.toggleClass(this, 'bx-active');">
+                                  <span class="smart-filter-checkbox-btn bx-color-sl">
+                                    <span class="smart-filter-checkbox-btn-image"
+                                      style="background-image: url('/upload/uf/304/304241049d2bb108c4f411bff48f5d02.jpg');"></span>
+                                  </span>
+                                </label>
+                                <input style="display: none" type="checkbox" name="arrFilter_21_337235200" id="arrFilter_21_337235200"
+                                  value="Y">
+                                <label for="arrFilter_21_337235200" data-role="label_arrFilter_21_337235200"
+                                  class="smart-filter-checkbox-label"
+                                  onclick="smartFilter.keyup(BX('arrFilter_21_337235200')); BX.toggleClass(this, 'bx-active');">
+                                  <span class="smart-filter-checkbox-btn bx-color-sl">
+                                    <span class="smart-filter-checkbox-btn-image"
+                                      style="background-image: url('/upload/uf/9d0/9d01674a7bdd46f2de9ea03ea0183f30.jpg');"></span>
+                                  </span>
+                                </label>
+                                <div style="clear: both;"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+              
+                        <div class="col-lg-12 mb-2 smart-filter-parameters-box bx-active">
+                          <span class="smart-filter-container-modef"></span>
+              
+                          <div class="smart-filter-parameters-box-title" onclick="smartFilter.hideFilterProps(this)">
+              
+                            <span class="smart-filter-parameters-box-title-text">Размеры одежды </span>
+              
+                            <span data-role="prop_angle" class="smart-filter-angle smart-filter-angle-up">
+                              <span class="smart-filter-angles"></span>
+                            </span>
+              
+                          </div>
+              
+                          <div class="smart-filter-block" data-role="bx_filter_block">
+                            <div class="smart-filter-parameters-box-container">
+                              <div class="smart-filter-input-group-checkbox-list">
+                                <div class="form-group form-check mb-1">
+                                  <input type="checkbox" value="Y" name="arrFilter_23_3596227959" id="arrFilter_23_3596227959"
+                                    class="form-check-input" onclick="smartFilter.click(this)">
+                                  <label data-role="label_arrFilter_23_3596227959" class="smart-filter-checkbox-text form-check-label"
+                                    for="arrFilter_23_3596227959">
+                                    XS&nbsp;(<span data-role="count_arrFilter_23_3596227959">6</span>) </label>
+                                </div>
+                                <div class="form-group form-check mb-1">
+                                  <input type="checkbox" value="Y" name="arrFilter_23_1330857165" id="arrFilter_23_1330857165"
+                                    class="form-check-input" onclick="smartFilter.click(this)">
+                                  <label data-role="label_arrFilter_23_1330857165" class="smart-filter-checkbox-text form-check-label"
+                                    for="arrFilter_23_1330857165">
+                                    S&nbsp;(<span data-role="count_arrFilter_23_1330857165">6</span>) </label>
+                                </div>
+                                <div class="form-group form-check mb-1">
+                                  <input type="checkbox" value="Y" name="arrFilter_23_945058907" id="arrFilter_23_945058907"
+                                    class="form-check-input" onclick="smartFilter.click(this)">
+                                  <label data-role="label_arrFilter_23_945058907" class="smart-filter-checkbox-text form-check-label"
+                                    for="arrFilter_23_945058907">
+                                    M&nbsp;(<span data-role="count_arrFilter_23_945058907">6</span>) </label>
+                                </div>
+                                <div class="form-group form-check mb-1">
+                                  <input type="checkbox" value="Y" name="arrFilter_23_2788221432" id="arrFilter_23_2788221432"
+                                    class="form-check-input" onclick="smartFilter.click(this)">
+                                  <label data-role="label_arrFilter_23_2788221432" class="smart-filter-checkbox-text form-check-label"
+                                    for="arrFilter_23_2788221432">
+                                    L&nbsp;(<span data-role="count_arrFilter_23_2788221432">6</span>) </label>
+                                </div>
+                                <div class="form-group form-check mb-1">
+                                  <input type="checkbox" value="Y" name="arrFilter_23_3510096238" id="arrFilter_23_3510096238"
+                                    class="form-check-input" onclick="smartFilter.click(this)">
+                                  <label data-role="label_arrFilter_23_3510096238" class="smart-filter-checkbox-text form-check-label"
+                                    for="arrFilter_23_3510096238">
+                                    XL&nbsp;(<span data-role="count_arrFilter_23_3510096238">6</span>) </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--//row-->
+              
+                      <div class="row">
+                        <div class="col smart-filter-button-box">
+                          <div class="smart-filter-block">
+                            <div class="smart-filter-parameters-box-container">
+                              <input class="btn btn-primary" type="button" id="set_filter" name="set_filter" value="Показать">
+                              <input class="btn btn-link" type="button" id="del_filter" name="del_filter" value="Сбросить">
+                              <div class="smart-filter-popup-result left" id="modef" style="display:none">
+                                Выбрано: <span id="modef_num">0</span> <span class="arrow"></span>
+                                <br>
+                                <a href="/catalog/sportswear/filter/clear/apply/" target="">Показать</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+              
+                  </div>
+                </div>
+              
+                <script type="text/javascript">
+                  var smartFilter = new JCSmartFilter('/catalog/sportswear/', 'VERTICAL', { 'SEF_SET_FILTER_URL': '/catalog/sportswear/filter/clear/apply/', 'SEF_DEL_FILTER_URL': '/catalog/sportswear/filter/clear/apply/' });
+                </script>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <form class="row align-items-center mt-2">
+              <div class="form-group col-lg-4">
+                <select class="custom-select my-1 mr-sm-2">
+                  <option selected>Сначала популярные</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="form-group col-lg-4">
+                <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                  <input type="checkbox" class="custom-control-input" id="customControlInline">
+                  <label class="custom-control-label" for="customControlInline">Только в наличии</label>
+                </div>
+              </div>
+            </form>
+            <div class="row">
+              <div class="col-md-4 col-6 mb-4">
+                <div class="p-card">
+                  @@include('blocks/p-card/p-card.html')
+                </div>
+              </div>
+              <div class="col-md-4 col-6 mb-4">
+                <div class="p-card">
+                  @@include('blocks/p-card/p-card.html')
+                </div>
+              </div>
+              <div class="col-md-4 col-6 mb-4">
+                <div class="p-card">
+                  @@include('blocks/p-card/p-card.html')
+                </div>
+              </div>
+              <div class="col-md-4 col-6 mb-4">
+                <div class="p-card">
+                  @@include('blocks/p-card/p-card.html')
+                </div>
+              </div>
+              <div class="col-md-4 col-6 mb-4">
+                <div class="p-card">
+                  @@include('blocks/p-card/p-card.html')
+                </div>
+              </div>
+              <div class="col-md-4 col-6 mb-4">
+                <div class="p-card">
+                  @@include('blocks/p-card/p-card.html')
+                </div>
+              </div>
+              <div class="col-md-4 col-6 mb-4">
+                <div class="p-card">
+                  @@include('blocks/p-card/p-card.html')
+                </div>
+              </div>
+              <div class="col-md-4 col-6 mb-4">
+                <div class="p-card">
+                  @@include('blocks/p-card/p-card.html')
+                </div>
+              </div>
+              <div class="col-md-4 col-6 mb-4">
+                <div class="p-card">
+                  @@include('blocks/p-card/p-card.html')
+                </div>
+              </div>
+              <div class="col-md-4 col-6 mb-4">
+                <div class="p-card">
+                  @@include('blocks/p-card/p-card.html')
+                </div>
+              </div>
+              <div class="col-md-4 col-6 mb-4">
+                <div class="p-card">
+                  @@include('blocks/p-card/p-card.html')
+                </div>
+              </div>
+              <div class="col-md-4 col-6 mb-4">
+                <div class="p-card">
+                  @@include('blocks/p-card/p-card.html')
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <nav aria-label="...">
+                  <ul class="pagination ">
+                    <li class="page-item active" aria-current="page">
+                      <span class="page-link">1</span>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    <li class="page-item active"><span class="page-link">...</span></li>
+                    <li class="page-item"><a class="page-link" href="#">45</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="col-auto">
+                <select class="border-0 custom-select my-1 mr-sm-2">
+                  <option selected>Показывать по 30</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section latest">
+        <h2 class="section__title">Недавно просмотренные</h2>
+        <div class="row">
+          <div class="col-lg-3 col-6 mb-4">
+            @@include('blocks/p-card/p-card.html')
+          </div>
+          <div class="col-lg-3 col-6 mb-4">
+            @@include('blocks/p-card/p-card.html')
+          </div>
+          <div class="col-lg-3 col-6 mb-4">
+            @@include('blocks/p-card/p-card.html')
+          </div>
+        </div>
+      </div>
+    </div>
+
+    @@include('blocks/page-footer/page-footer.html')
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>

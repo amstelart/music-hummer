@@ -41,9 +41,7 @@
 
   .nav-link {
 
-    @include hover-focus() {
-      
-    }
+    color: #939599;
 
     &.disabled {
       color: $nav-link-disabled-color;
