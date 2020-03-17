@@ -1,0 +1,25 @@
+// В этом файле должны быть стили для БЭМ-блока user-entry, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.user-entry {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__link {
+    color: #000;
+    background: #F0F1F5;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 17px;
+    font-weight: 500;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      color: #000;
+      background: darken(#F0F1F5, 4%);
+    }
+  }
+
+}

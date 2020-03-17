@@ -1,0 +1,107 @@
+// В этом файле должны быть стили для БЭМ-блока main-slider, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.main-slider {
+
+  $block-name:                &; // #{$block-name}__element
+
+  margin-right: -15px;
+  margin-left: -15px;
+
+  @media (min-width: $screen-lg) {
+    margin: 0;
+  }
+
+  &__carousel {
+    .slick-slide {
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .slick-arrow {
+      position: absolute;
+      top: 50%;
+      z-index: 2;
+      width: 64px;
+      height: 64px;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      &.slick-prev {
+        left: 16px;
+  
+        &:before {
+          content:"";
+          color: #000;
+          background-image: url(../img/ic_arrow-left.svg) !important;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center center;
+          width: 24px;
+          height: 24px;
+          display: block;
+        }
+      }
+      &.slick-next {
+        right: 16px;
+  
+        &:before {
+          content:"";
+          color: #000;
+          background-image: url(../img/ic_arrow-right.svg) !important;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center center;
+          width: 24px;
+          height: 24px;
+          display: block;
+        }
+      }
+    }
+  }
+
+  &__nav {
+    background: #F0F1F5;
+    border-radius: 4px;
+    font-size: 14px;
+
+    @media (max-width: ($screen-lg - 1)) {
+      display: none;
+    }
+    
+    .slick-track {
+      display: flex;
+      align-items: stretch;
+    }
+    .item {
+
+    }
+    .slick-slide {
+      border: 4px solid #F0F1F5;
+      border-radius: 4px;
+      cursor: pointer;
+      height: 100%;
+      text-align: center;
+      min-height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:focus {
+        outline: none;
+      }
+      p {
+        text-align: center;
+        padding: 5px 10px;
+        margin: 0;
+      }
+    }
+    .slick-current {
+      background: #fff;
+    }
+  }
+}

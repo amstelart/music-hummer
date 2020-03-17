@@ -114,6 +114,14 @@
       color: #fff;
     }
   }
+
+  &--discount,
+  &--best-seller,
+  &--new {
+    #{$block-name}__color {
+      top: 50px;
+    }
+  }
 }
 
 

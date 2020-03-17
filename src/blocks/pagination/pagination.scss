@@ -1,51 +1,73 @@
-// В этом файле должны быть стили для БЭМ-блока pagination, его элементов,
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
-$line-height:                 1.375em !default;
-
-$text-color:                  hsl(0, 0%, 10%) !default;
-
-$border-color:                hsl(0, 0%, 60%) !default;
-
 .pagination {
-
-  $block-name:                &; // #{$block-name}__element
-
   display: flex;
-  flex-wrap: wrap;
-  margin-top: $line-height;
-  margin-bottom: $line-height;
+  @include list-unstyled();
+  @include border-radius();
+}
 
-  &__item {
-    display: block;
-    padding: 0.5em;
-    min-width: 2.5em;
-    border: 1px solid $border-color;
+.page-link {
+  position: relative;
+  display: block;
+  font-size: 14px;
+  padding: 0.38rem 0.65rem;
+  margin-left: -$pagination-border-width;
+  line-height: $pagination-line-height;
+  color: #000;
+  background-color: $pagination-bg;
+  border: $pagination-border-width solid transparent;
+  border-radius: 4px;
+
+  &:hover {
+    z-index: 2;
+    color: $pagination-hover-color;
     text-decoration: none;
-    text-align: center;
-    color: $text-color;
+    background-color: $pagination-hover-bg;
+    border-color: $pagination-hover-border-color;
+  }
 
-    & + & {
-      border-left: 0;
-    }
+  &:focus {
+    z-index: 3;
+    outline: $pagination-focus-outline;
+    box-shadow: $pagination-focus-box-shadow;
+  }
+}
 
-    &:hover,
-    &:focus {
-      text-decoration: none;
-      color: $text-color;
-    }
-
-    @at-root a#{&} {
-
-      &:hover,
-      &:focus {
-        background-color: $gray-lightest;
-      }
-    }
-
-    &--active {
-      background-color: $gray-lightest;
+.page-item {
+  &:first-child {
+    .page-link {
+      margin-left: 0;
     }
   }
+  &:last-child {
+    .page-link {
+    }
+  }
+
+  &.active .page-link {
+    z-index: 3;
+    color: $pagination-active-color;
+    background-color: $pagination-active-bg;
+    border-color: $pagination-active-border-color;
+  }
+
+  &.disabled .page-link {
+    color: $pagination-disabled-color;
+    pointer-events: none;
+    // Opinionated: remove the "hand" cursor set previously for .page-link
+    cursor: auto;
+    background-color: $pagination-disabled-bg;
+    border-color: $pagination-disabled-border-color;
+  }
+}
+
+
+//
+// Sizing
+//
+
+.pagination-lg {
+  @include pagination-size($pagination-padding-y-lg, $pagination-padding-x-lg, $font-size-lg, $line-height-lg, $border-radius-lg);
+}
+
+.pagination-sm {
+  @include pagination-size($pagination-padding-y-sm, $pagination-padding-x-sm, $font-size-sm, $line-height-sm, $border-radius-sm);
 }

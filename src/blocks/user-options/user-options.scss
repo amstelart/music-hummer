@@ -1,0 +1,24 @@
+// В этом файле должны быть стили для БЭМ-блока user-options, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.user-options {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__item {
+    color: #1A1919;
+
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+
+    .icon {
+      margin-right: 5px;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

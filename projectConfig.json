@@ -19,7 +19,14 @@
     "buttons": [],
     "breadcrumb": [],
     "rating-block": [],
-    "p-card": []
+    "p-card": [],
+    "user-entry": [],
+    "main-slider": [],
+    "pagination": [],
+    "options-card": [],
+    "options-carousel": [],
+    "mobile-menu": [],
+    "user-options": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

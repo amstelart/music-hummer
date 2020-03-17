@@ -1,0 +1,85 @@
+// В этом файле должны быть стили для БЭМ-блока mobile-menu, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.mobile-menu {
+
+  $block-name:                &; // #{$block-name}__element
+
+}
+
+.trop li {
+  list-style-type: none
+}
+
+.trop__head {
+  padding-bottom: 20px;
+  position: relative
+}
+
+.trop.hidden-mnu {
+  position: fixed!important;
+  z-index: 999;
+  height: 101vh;
+  width: 280px;
+  top: 0;
+  left: 0;
+  transform: translate(-100%,0);
+  transition: all .6s;
+  will-change: transform
+}
+
+.trop.hidden-mnu .wrapp-hidden {
+  background-color: #fff;
+  padding: 16px 13px;
+  overflow-y: auto;
+  height: 100%;
+  overflow-x: hidden
+}
+
+.trop.hidden-mnu ul {
+  position: relative
+}
+
+.trop.hidden-mnu.active {
+  transform: translate(0,0)
+}
+
+.trop.hidden-mnu.active .toggle-mnu {
+  opacity: 1;
+  z-index: 200
+}
+
+.trop.hidden-mnu .toggle-mnu {
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  padding-top: 0;
+  opacity: 0;
+  right: 0;
+  padding-left: 0;
+  color: #fff;
+  top: 10px;
+  z-index: 9999;
+  background-color: transparent
+}
+
+.trop.hidden-mnu .toggle-mnu span,.trop.hidden-mnu .toggle-mnu span:after,.trop.hidden-mnu .toggle-mnu span:before {
+  background-color: #3b4256
+}
+
+.trop.hidden-mnu .toggle-mnu.on {
+  opacity: 1
+}
+
+.trop.hidden-mnu .toggle-mnu.on span {
+  background-color: transparent
+}
+
+.trop.hidden-mnu .mnu-wrap {
+  overflow-y: auto;
+  height: 100vh;
+  margin: auto;
+  overflow-x: hidden
+}
+

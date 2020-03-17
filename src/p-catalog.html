@@ -31,15 +31,15 @@
           <div class="col-lg-3 d-none d-lg-inline-flex">
             <div class="c-sidebar">
               <ul class="sidebar-nav">
-                <li class="catalog-main"><a href="#catalog-collapse" class="collapsed" data-toggle="collapse">
+                <li class="catalog-main"><a href="#catalog-collapse" class="" data-toggle="collapse">
                   <div class="burger"><span></span></div>
                   Каталог</a>
-                  <div class="collapse" id="catalog-collapse">
+                  <div class="collapse show" id="catalog-collapse">
                     <ul>
                       <li><a href="#catalog-sub-collapse" data-toggle="collapse">Гитары</a>
-                        <div class="collapse" id="catalog-sub-collapse">
+                        <div class="collapse show" id="catalog-sub-collapse">
                           <ul class="catalog-main__sub-nav">
-                            <li><a href="#">Электрогитары <span>1234</span></a></li>
+                            <li class="active"><a href="#">Электрогитары <span>1234</span></a></li>
                             <li><a href="#">Бас-гитары <span>336</span></a></li>
                             <li><a href="#">Акустические <span>5678</span></a></li>
                             <li><a href="#">Классические <span>1882</span></a></li>
@@ -441,6 +441,72 @@
             </div>
           </div>
           <div class="col-lg-9">
+            <div class="options-carousel">
+              <div class="options-card">
+                <div class="options-card__inner">
+                  <div class="options-card__img-wrap">
+                    <img src="img/options-card-01.jpg" class="options-card__img" alt="">
+                  </div>
+                  <div class="options-card__title">Электрогитары</div>
+                </div>
+              </div>
+              <div class="options-card">
+                <div class="options-card__inner">
+                  <div class="options-card__img-wrap">
+                    <img src="img/options-card-02.jpg" class="options-card__img" alt="">
+                  </div>
+                  <div class="options-card__title">Бас-гитары</div>
+                </div>
+              </div>
+              <div class="options-card">
+                <div class="options-card__inner">
+                  <div class="options-card__img-wrap">
+                    <img src="img/options-card-03.jpg" class="options-card__img" alt="">
+                  </div>
+                  <div class="options-card__title">Электроакустические</div>
+                </div>
+              </div>
+              <div class="options-card">
+                <div class="options-card__inner">
+                  <div class="options-card__img-wrap">
+                    <img src="img/options-card-04.jpg" class="options-card__img" alt="">
+                  </div>
+                  <div class="options-card__title">Полуакустические</div>
+                </div>
+              </div>
+              <div class="options-card">
+                <div class="options-card__inner">
+                  <div class="options-card__img-wrap">
+                    <img src="img/options-card-01.jpg" class="options-card__img" alt="">
+                  </div>
+                  <div class="options-card__title">Электрогитары</div>
+                </div>
+              </div>
+              <div class="options-card">
+                <div class="options-card__inner">
+                  <div class="options-card__img-wrap">
+                    <img src="img/options-card-02.jpg" class="options-card__img" alt="">
+                  </div>
+                  <div class="options-card__title">Бас-гитары</div>
+                </div>
+              </div>
+              <div class="options-card">
+                <div class="options-card__inner">
+                  <div class="options-card__img-wrap">
+                    <img src="img/options-card-03.jpg" class="options-card__img" alt="">
+                  </div>
+                  <div class="options-card__title">Электроакустические</div>
+                </div>
+              </div>
+              <div class="options-card">
+                <div class="options-card__inner">
+                  <div class="options-card__img-wrap">
+                    <img src="img/options-card-04.jpg" class="options-card__img" alt="">
+                  </div>
+                  <div class="options-card__title">Полуакустические</div>
+                </div>
+              </div>
+            </div>
             <form class="row align-items-center mt-2">
               <div class="form-group col-lg-4">
                 <select class="custom-select my-1 mr-sm-2">
@@ -460,17 +526,212 @@
             <div class="row">
               <div class="col-md-4 col-6 mb-4">
                 <div class="p-card">
-                  @@include('blocks/p-card/p-card.html')
+                  <div class="p-card p-card--discount">
+                    <div class="p-card__color">
+                      <div data-entity="sku-block">
+                        <div class="product-item-scu-container" data-entity="sku-line-block">
+                          <!-- <div class="product-item-scu-block-title text-muted">Цвет</div> -->
+                          <div class="product-item-scu-block">
+                            <div class="product-item-scu-list">
+                              <ul class="product-item-scu-item-list">
+                                <li class="product-item-scu-item-color-container selected" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-01.jpg');"></div>
+                                  </div>
+                                </li>
+                                <li class="product-item-scu-item-color-container" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-02.jpg');"></div>
+                                  </div>
+                                </li>
+                                <li class="product-item-scu-item-color-container" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-03.jpg');"></div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-card__options">
+                      <div class="options-block">
+                        <div class="options-block__list">
+                          <div class="options-block__item selected">
+                            <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_favorite_border"></use></svg>
+                          </div>
+                          <div class="options-block__item">
+                            <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_queue"></use></svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-card__label">Скидка</div>
+                    <div class="p-card__inner">
+                      <div class="p-card__img-wrap">
+                        <img src="img/p-card-img-01.png" alt="">
+                      </div>
+                      <div class="p-card__body">
+                        <div class="p-card__title">Cort C4 Plus ZBMH Open Pore Tobacco Burst (C4 Pl…</div>
+                        <div class="p-card__rating">
+                          <div class="p-rating">
+                            <div class="p-rating__group">
+                              <svg class="rating-star rating-star--full" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star"></use></svg>
+                              <svg class="rating-star rating-star--full" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star"></use></svg>
+                              <svg class="rating-star rating-star--full" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star"></use></svg>
+                              <svg class="rating-star" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star"></use></svg>
+                              <svg class="rating-star" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star"></use></svg>
+                            </div>
+                            <a href="#" class="p-rating__link">234 отзыва</a>
+                          </div>
+                        </div>
+                        <div class="p-card__price">
+                          8 269 ₽
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="col-md-4 col-6 mb-4">
                 <div class="p-card">
-                  @@include('blocks/p-card/p-card.html')
+                  <div class="p-card p-card--best-seller">
+                    <div class="p-card__color">
+                      <div data-entity="sku-block">
+                        <div class="product-item-scu-container" data-entity="sku-line-block">
+                          <!-- <div class="product-item-scu-block-title text-muted">Цвет</div> -->
+                          <div class="product-item-scu-block">
+                            <div class="product-item-scu-list">
+                              <ul class="product-item-scu-item-list">
+                                <li class="product-item-scu-item-color-container selected" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-01.jpg');"></div>
+                                  </div>
+                                </li>
+                                <li class="product-item-scu-item-color-container" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-02.jpg');"></div>
+                                  </div>
+                                </li>
+                                <li class="product-item-scu-item-color-container" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-03.jpg');"></div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-card__options">
+                      <div class="options-block">
+                        <div class="options-block__list">
+                          <div class="options-block__item selected">
+                            <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_favorite_border"></use></svg>
+                          </div>
+                          <div class="options-block__item">
+                            <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_queue"></use></svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-card__label">Хит продаж</div>
+                    <div class="p-card__inner">
+                      <div class="p-card__img-wrap">
+                        <img src="img/p-card-img-02.png" alt="">
+                      </div>
+                      <div class="p-card__body">
+                        <div class="p-card__title">Cort C4 Plus ZBMH Open Pore Tobacco Burst (C4 Pl…</div>
+                        <div class="p-card__rating">
+                          <div class="p-rating">
+                            <div class="p-rating__group">
+                              <svg class="rating-star rating-star--full" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star"></use></svg>
+                              <svg class="rating-star rating-star--full" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star"></use></svg>
+                              <svg class="rating-star rating-star--full" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star"></use></svg>
+                              <svg class="rating-star" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star"></use></svg>
+                              <svg class="rating-star" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star"></use></svg>
+                            </div>
+                            <a href="#" class="p-rating__link">234 отзыва</a>
+                          </div>
+                        </div>
+                        <div class="p-card__price">
+                          8 269 ₽
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="col-md-4 col-6 mb-4">
                 <div class="p-card">
-                  @@include('blocks/p-card/p-card.html')
+                  <div class="p-card p-card--new">
+                    <div class="p-card__color">
+                      <div data-entity="sku-block">
+                        <div class="product-item-scu-container" data-entity="sku-line-block">
+                          <!-- <div class="product-item-scu-block-title text-muted">Цвет</div> -->
+                          <div class="product-item-scu-block">
+                            <div class="product-item-scu-list">
+                              <ul class="product-item-scu-item-list">
+                                <li class="product-item-scu-item-color-container selected" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-01.jpg');"></div>
+                                  </div>
+                                </li>
+                                <li class="product-item-scu-item-color-container" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-02.jpg');"></div>
+                                  </div>
+                                </li>
+                                <li class="product-item-scu-item-color-container" title="Цвет">
+                                  <div class="product-item-scu-item-color-block">
+                                    <div class="product-item-scu-item-color" title="Цвет" style="background-image: url('img/color-03.jpg');"></div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-card__options">
+                      <div class="options-block">
+                        <div class="options-block__list">
+                          <div class="options-block__item selected">
+                            <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_favorite_border"></use></svg>
+                          </div>
+                          <div class="options-block__item">
+                            <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_queue"></use></svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-card__label">Новинка</div>
+                    <div class="p-card__inner">
+                      <div class="p-card__img-wrap">
+                        <img src="img/p-card-img-03.png" alt="">
+                      </div>
+                      <div class="p-card__body">
+                        <div class="p-card__title">Cort C4 Plus ZBMH Open Pore Tobacco Burst (C4 Pl…</div>
+                        <div class="p-card__rating">
+                          <div class="p-rating">
+                            <div class="p-rating__group">
+                              <svg class="rating-star rating-star--full" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star"></use></svg>
+                              <svg class="rating-star rating-star--full" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star"></use></svg>
+                              <svg class="rating-star rating-star--full" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star"></use></svg>
+                              <svg class="rating-star" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star"></use></svg>
+                              <svg class="rating-star" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star"></use></svg>
+                            </div>
+                            <a href="#" class="p-rating__link">234 отзыва</a>
+                          </div>
+                        </div>
+                        <div class="p-card__price">
+                          8 269 ₽
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="col-md-4 col-6 mb-4">
@@ -530,7 +791,7 @@
                     <li class="page-item"><a class="page-link" href="#">3</a></li>
                     <li class="page-item"><a class="page-link" href="#">4</a></li>
                     <li class="page-item"><a class="page-link" href="#">5</a></li>
-                    <li class="page-item active"><span class="page-link">...</span></li>
+                    <li class="page-item"><span class="page-link">...</span></li>
                     <li class="page-item"><a class="page-link" href="#">45</a></li>
                   </ul>
                 </nav>
