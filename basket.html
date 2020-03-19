@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Music hummer</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"> -->
+  <!-- <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"> -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+
+  </script>
+
+</head>
+
+<body>
+
+  <div class="main-wrapper">
+
+    <div class="trop main-mnu hidden-mnu hidden-lg landingMenu2 d-lg-none">
+      <div class="wrapp-hidden">
+        <ul class="sidebar-nav">
+          <li class="catalog-main"><a href="#catalog-collapse" class="" data-toggle="collapse">
+            <!-- <div class="burger"><span></span></div> -->
+            Каталог</a>
+            <div class="collapse" id="catalog-collapse">
+              <ul>
+                <li><a href="#catalog-sub-collapse" data-toggle="collapse">Гитары</a>
+                  <div class="collapse" id="catalog-sub-collapse">
+                    <ul class="catalog-main__sub-nav">
+                      <li class="active"><a href="#">Электрогитары <span>1234</span></a></li>
+                      <li><a href="#">Бас-гитары <span>336</span></a></li>
+                      <li><a href="#">Акустические <span>5678</span></a></li>
+                      <li><a href="#">Классические <span>1882</span></a></li>
+                      <li><a href="#">Электроакустические <span>568</span></a></li>
+                      <li><a href="#">Полуакустические <span>985</span></a></li>
+                      <li><a href="#">Уменьшенные гитары <span>1289</span></a></li>
+                      <li><a href="#">Укулеле <span>87</span></a></li>
+                      <li><a href="#">Наборы новичкам <span>34</span></a></li>
+                      <li><a href="#">Аксессуары <span>12</span></a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">Гитарное оборудование</a></li>
+                <li><a href="#">Трансляционное оборудование</a></li>
+                <li><a href="#">Звуковое оборудование</a></li>
+                <li><a href="#">Студия и звукозапись</a></li>
+                <li><a href="#">Клавишные</a></li>
+                <li><a href="#">Микрофоны</a></li>
+                <li><a href="#">Наушники</a></li>
+                <li><a href="#">Свет, сцена, эффекты</a></li>
+                <li><a href="#">Караоке оборудование</a></li>
+                <li><a href="#">Ударные</a></li>
+                <li><a href="#">Hi Fi оборудование</a></li>
+                <li><a href="#">Перкуссия</a></li>
+                <li><a href="#">Оркестровые</a></li>
+                <li><a href="#">Народные</a></li>
+                <li><a href="#">Сувениры и подарки</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">Новинки</a></li>
+          <li><a href="#">Скидки</a></li>
+          <li><a href="#">Хиты продаж</a></li>
+          <li><a href="#">Доступен в комплекте</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <header class="page-header" role="banner">
+      <div class="top-line d-none d-lg-block">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="top-line__info-item">Москва: <a href="tel:+74951290789">+7 (495) 120-07-89</a></div>
+              <div class="top-line__info-item">Бесплатно по России: <a href="tel:+78002500000">8 800 250-00-00</a></div>
+              <div class="top-line__info-item"><a href="mailto:">welcome@music-hummer.ru</a></div>
+            </div>
+            <div class="col-auto">
+              <ul class="top-line__nav">
+                <li><a href="#">Тендеры</a></li>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Оплата</a></li>
+                <li><a href="#">Поддержка</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mid-line">
+        <div class="container">
+          <div class="row">
+            <div class="col-auto d-block d-lg-none pr-0">
+              <div class="burger toggle-mnu"><span></span></div>
+            </div>
+            <div class="col">
+              <a href="index.html" class="logo">
+                <img src="img/logo.svg" alt="" width="122px" height="32px">
+              </a>
+            </div>
+            <div class="col-auto">
+              <div class="user-options">
+                <a class="user-options__item d-none d-lg-inline" href="#"><svg class="icon icon-search" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_compare"></use></svg><span class="d-none d-lg-inline-flex">Сравнение</span></a>
+                <a class="user-options__item" href="#"><svg class="icon icon-search" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_fav"></use></svg><span class="d-none d-lg-inline-flex">Отложенные</span></a>
+                <a class="user-options__item" href="#"><svg class="icon icon-search" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_shopping_cart"></use></svg><span class="d-none d-lg-inline-flex">Корзина</span></a>
+                <a class="user-options__item d-inline d-lg-none" href="#"><svg class="icon icon-search" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-search"></use></svg></a>
+              </div>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <div class="user-entry">
+                <a href="#" class="user-entry__link">Войти</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-line d-none d-lg-block">
+        <div class="container">
+          <div class="nav-line__inner">
+            <nav class="main-nav d-flex">
+              <li class="main-nav__item active">
+                <a href="#" class="main-nav__link">Акции</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Каталог</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Бренды</a>
+              </li>
+              <li class="main-nav__item"><a href="#" class="main-nav__link" data-toggle="dropdown">Услуги</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Аренда</a>
+                  <a class="dropdown-item" href="#">Трейд-ин</a>
+                  <a class="dropdown-item" href="#">Инсталляция</a>
+                  <a class="dropdown-item" href="#">Ремонт и сервис</a>
+                  <a class="dropdown-item" href="#">Для праздников</a>
+                  <a class="dropdown-item" href="#">Услуги для пианино</a>
+                  <a class="dropdown-item" href="#">Роспись на инструментах</a>
+                </div>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Оптовикам</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Контакты</a>
+              </li>
+            </nav>
+            <form class="form-inline search">
+              <input class="form-control" type="search" placeholder="Более 30 000 товаров" aria-label="Search">
+              <button class="btn" type="submit"><svg class="icon icon-search" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-search"></use></svg></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <div class="container">
+
+      <div class="page-top">
+        <nav class="page-top__breadcrumb" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Главная</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Личный кабинет</li>
+          </ol>
+        </nav>
+        <h1 class="page-top__title">Корзина</h1>        
+      </div>
+
+      <div class="lk pt-2 mb-5">
+        <div class="row">
+          <div class="col-lg-3 d-none d-lg-inline-flex">
+            <div class="nav flex-column nav-pills">
+              <a class="nav-link" href="#">Личные данные</a>
+              <a class="nav-link" href="#">Отложенные</a>
+              <a class="nav-link active" href="#">Корзина</a>
+              <a class="nav-link" href="#">Мои заказы</a>
+              <a class="nav-link" href="#">Просмотренные товары</a>
+              <a class="nav-link" href="#">Рассылки</a>
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="basket-item d-flex align-items-center my-3">
+              <div class="col-auto">
+                <a href="#" class="basket-item__img-wrap">
+                  <img src="img/basket-item-img.png" alt="">
+                </a>
+              </div>
+              <div class="col">
+                <div><a href="#" class="text-dark font-weight-bold">Cort C4 Plus ZBMH Open Pore Tobacco Burst</a></div>
+                <div><div class="price">8&nbsp;269&nbsp;₽</div></div>
+              </div>
+              <div class="col-auto">
+                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                  <option selected>1</option>
+                  <option value="1">2</option>
+                  <option value="2">3</option>
+                  <option value="3">4</option>
+                </select>
+              </div>
+              <div class="col-auto">
+                <div class="price">8&nbsp;269&nbsp;₽</div>
+              </div>
+              <div class="col-auto">
+                <span class="close" aria-label="Закрыть"><span></span></span>
+              </div>
+            </div>
+            <div class="basket-item d-flex align-items-center my-3">
+              <div class="col-auto">
+                <a href="#" class="basket-item__img-wrap">
+                  <img src="img/basket-item-img.png" alt="">
+                </a>
+              </div>
+              <div class="col">
+                <div><a href="#" class="text-dark font-weight-bold">Cort C4 Plus ZBMH Open Pore Tobacco Burst</a></div>
+                <div><div class="price">8&nbsp;269&nbsp;₽</div></div>
+              </div>
+              <div class="col-auto">
+                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                  <option selected>1</option>
+                  <option value="1">2</option>
+                  <option value="2">3</option>
+                  <option value="3">4</option>
+                </select>
+              </div>
+              <div class="col-auto">
+                <div class="price">8&nbsp;269&nbsp;₽</div>
+              </div>
+              <div class="col-auto">
+                <span class="close" aria-label="Закрыть"><span></span></span>
+              </div>
+            </div>
+            <div class="basket-kit">
+              <div class="basket-item d-flex align-items-center my-3">
+                <div class="col-auto">
+                  <a href="#" class="basket-item__img-wrap">
+                    <img src="img/basket-item-img.png" alt="">
+                  </a>
+                </div>
+                <div class="col">
+                  <div><a href="#" class="text-dark font-weight-bold">Cort C4 Plus ZBMH Open Pore Tobacco Burst</a></div>
+                  <div><div class="price">8&nbsp;269&nbsp;₽</div></div>
+                </div>
+              </div>
+              <div class="basket-item d-flex align-items-center my-3">
+                <div class="col-auto">
+                  <a href="#" class="basket-item__img-wrap">
+                    <img src="img/basket-item-img.png" alt="">
+                  </a>
+                </div>
+                <div class="col">
+                  <div><a href="#" class="text-dark font-weight-bold">Cort C4 Plus ZBMH Open Pore Tobacco Burst</a></div>
+                  <div><div class="price">8&nbsp;269&nbsp;₽</div></div>
+                </div>
+              </div>
+              <div class="basket-item d-flex align-items-center my-3">
+                <div class="col-auto">
+                  <a href="#" class="basket-item__img-wrap">
+                    <img src="img/basket-item-img.png" alt="">
+                  </a>
+                </div>
+                <div class="col">
+                  <div><a href="#" class="text-dark font-weight-bold">Cort C4 Plus ZBMH Open Pore Tobacco Burst</a></div>
+                  <div><div class="price">8&nbsp;269&nbsp;₽</div></div>
+                </div>
+              </div>
+              <div class="basket-kit__item d-flex align-items-center py-3">
+                <div class="col">
+                  <div><span class="text-dark font-weight-bold">Код комплекта</span> <span>12345678-12345678-12345678-12345678</span></div>
+                  <div><div class="price price--old mr-3">8&nbsp;269&nbsp;₽</div><div class="price">8&nbsp;269&nbsp;₽</div></div>
+                </div>
+                <div class="col-auto">
+                  <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                    <option selected>1</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                    <option value="3">4</option>
+                  </select>
+                </div>
+                <div class="col-auto">
+                  <div class="price">8&nbsp;269&nbsp;₽</div>
+                </div>
+                <div class="col-auto">
+                  <span class="close" aria-label="Закрыть"><span></span></span>
+                </div>
+              </div>
+            </div>
+            <div class="basket-checkout d-flex align-items-center py-4 my-5">
+              <div class="col">
+                <span class="mx-3">9 товаров на сумму</span>
+                <div class="price">8&nbsp;269&nbsp;₽</div>
+              </div>
+              <div class="col-auto"><a href="#" class="btn btn-primary">Оформить заказ</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="page-footer" role="contentinfo">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 page-footer__contacts">
+            <div class="mb-4">
+              <img src="img/logo-white.svg" width="122px" height="32px" alt="">
+            </div>
+            <div class="mb-3">
+              <ul class="list-unstyled">
+                <li class="mb-4">
+                  <small>Интернет-магазин:</small>
+                  <div class="font-weight-bold">8 (800) 555-07-83</div>
+                </li>
+                <li class="mb-4">
+                  <small>Магазин в Москве:</small>
+                  <div class="font-weight-bold">+7 (495) 120-07-89</div>
+                  <small>метро ВДНХ, ул 1-я останкинская д.55</small>
+                </li>
+                <li class="mb-4">
+                  <small>E-mail:</small>
+                  <div class="font-weight-bold">welcome@music-hummer.ru</div>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="#" class="btn btn-block btn-outline-light">Контакты</a>
+            </div>
+          </div>
+          <div class="col-lg-9 page-footer__info">
+            <div class="row d-none d-md-flex">
+              <div class="col">
+                <div class="page-footer__nav-title">Инструменты</div>
+                <ul class="page-footer__nav">
+                  <li><a href="#">Гитары</a></li>
+                  <li><a href="#">Клавишные</a></li>
+                  <li><a href="#">Ударные</a></li>
+                  <li><a href="#">Духовые</a></li>
+                  <li><a href="#">Смычковые</a></li>
+                </ul>
+              </div>
+              <div class="col">
+                <div class="page-footer__nav-title">Оборудование</div>
+                <ul class="page-footer__nav">
+                  <li><a href="#">Звуковое</a></li>
+                  <li><a href="#">Гитарное</a></li>
+                  <li><a href="#">Трансляционное</a></li>
+                  <li><a href="#">Световое</a></li>
+                </ul>
+              </div>
+              <div class="col-auto">
+                <div class="page-footer__nav-title">Решения</div>
+                <ul class="page-footer__nav">
+                  <li><a href="#">Для студии</a></li>
+                  <li><a href="#">Для ресторанов</a></li>
+                  <li><a href="#">Для кинотеатров</a></li>
+                  <li><a href="#">Для концертов</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="pb-4">
+              <ul class="social">
+                <li class="social__link-wrap">
+                  <a class="social__link" href="#">
+                    <img src="img/social-vk.png" alt="">
+                  </a>
+                </li>
+                <li class="social__link-wrap">
+                  <a class="social__link" href="#">
+                    <img src="img/social-fb.png" alt="">
+                  </a>
+                </li>
+                <li class="social__link-wrap">
+                  <a class="social__link" href="#">
+                    <img src="img/social-yout.png" alt="">
+                  </a>
+                </li>
+                <li class="social__link-wrap">
+                  <a class="social__link" href="#">
+                    <img src="img/social-inst.png" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="copyright"><p class="text-muted">© 2006 – 2019 Интернет-магазин музыкальных инструментов и оборудования «Мьюзик Хаммер». 
+              Сайт не является публичной офертой.</p></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+  </div>
+  <script src="js/script.min.js"></script>
+
+</body>
+</html>
