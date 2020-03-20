@@ -1,0 +1,134 @@
+// В этом файле должны быть стили для БЭМ-блока kit, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.kit {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 16px;
+
+    .section__title {
+      margin: 0;
+      line-height: 1;
+      flex-grow: 1;
+    }
+  }
+
+  &__title {
+    background: #34495E;
+    border-radius: 4px;
+    color: #fff;
+    padding: 5px 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  &__box {
+    border: 2px solid #F0F1F5;
+    border-radius: 4px;
+    padding: 12px 12px 0 12px;
+    position: relative;
+
+    &:before {
+      content: "=";
+      font-size: 24px;
+      color: #BA0000;;
+      position: absolute;
+      right: -23px;
+      top: calc(50% - 20px);
+      transform: translateY(-50%);
+    }
+  }
+
+  &__group {
+    &:after {
+      content: "";
+      display: block;
+      background: #F0F1F5;
+      width: 100%;
+      height: 56px;
+    }
+  }
+
+  &__item {
+    position: relative;
+
+    &:hover {
+      .kit__item-close {
+        display: block;
+      }
+      .kit-carousel {
+        position: absolute;
+        top: -15px;
+        bottom: -120px;
+        left: -15px;
+        right: -15px;
+        padding: 15px;
+        width: 100%;
+        // height: 100%;
+        background: #FFFFFF;
+        box-shadow: 0px 12px 32px rgba(26, 25, 25, 0.16), 0px 0px 8px rgba(26, 25, 25, 0.15);
+        border-radius: 4px;
+        z-index: 10;
+
+        .kit-card__action {
+          display: block;
+        }
+
+        .kit-carousel__count {
+          bottom: 15px;
+        }
+        .kit-carousel__btn {
+          bottom: 22px;
+        }
+      }
+    }
+
+    &:not(:last-child) {
+      &:before {
+        content: "+";
+        font-size: 24px;
+        color: #7d7d7d;
+        position: absolute;
+        right: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  &__item-close {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    background: #F0F1F5;
+    border-radius: 50%;
+    padding: 5px;
+    width: 24px;
+    height: 24px;
+    display: none;
+
+    .icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  
+  &__item-info {
+    position: absolute;
+    bottom: -40px;
+  }
+
+  &__action {
+    background: rgba(#FFE400, 0.16);
+    border-radius: 4px;
+  }
+}

@@ -1,0 +1,10 @@
+<svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="ic_account_balance_wallet">
+<path id="Mask" fill-rule="evenodd" clip-rule="evenodd" d="M63 54V57C63 60.3 60.3 63 57 63H15C11.67 63 9 60.3 9 57V15C9 11.7 11.67 9 15 9H57C60.3 9 63 11.7 63 15V18H36C32.67 18 30 20.7 30 24V48C30 51.3 32.67 54 36 54H63ZM36 48H66V24H36V48ZM48 40.5C45.51 40.5 43.5 38.49 43.5 36C43.5 33.51 45.51 31.5 48 31.5C50.49 31.5 52.5 33.51 52.5 36C52.5 38.49 50.49 40.5 48 40.5Z" fill="#C4C6CC"/>
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="9" y="9" width="57" height="54">
+<path id="Mask_2" fill-rule="evenodd" clip-rule="evenodd" d="M63 54V57C63 60.3 60.3 63 57 63H15C11.67 63 9 60.3 9 57V15C9 11.7 11.67 9 15 9H57C60.3 9 63 11.7 63 15V18H36C32.67 18 30 20.7 30 24V48C30 51.3 32.67 54 36 54H63ZM36 48H66V24H36V48ZM48 40.5C45.51 40.5 43.5 38.49 43.5 36C43.5 33.51 45.51 31.5 48 31.5C50.49 31.5 52.5 33.51 52.5 36C52.5 38.49 50.49 40.5 48 40.5Z" fill="white"/>
+</mask>
+<g mask="url(#mask0)">
+</g>
+</g>
+</svg>

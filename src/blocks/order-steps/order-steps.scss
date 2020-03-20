@@ -1,0 +1,41 @@
+// В этом файле должны быть стили для БЭМ-блока order-steps, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.order-steps {
+
+  $block-name:                &; // #{$block-name}__element
+
+  margin-bottom: 30px;
+  border-bottom: 4px solid #F0F1F5;
+
+  &__item {
+    position: relative;
+    margin-bottom: -4px;
+    padding: 10px 4px;
+    align-items: center;
+
+    &.filled {
+      padding-right: 30px;
+    }
+
+    &.filled,
+    &.active {
+      border-bottom: 4px solid #BA0000;
+    }
+
+    &.active {
+      margin-right: auto;
+
+      #{$block-name}__name {
+        display: block;
+      }
+    }
+  }
+
+  &__name {
+    font-size: 20px;
+    display: none;
+    margin-left: 8px;
+  }
+}

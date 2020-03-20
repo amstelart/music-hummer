@@ -1,0 +1,51 @@
+// В этом файле должны быть стили для БЭМ-блока payment-radio, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.field-radio {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: block;
+
+  &__input-wrap {
+
+    margin-bottom: 16px;
+  }
+
+  &__name {
+    position: relative;
+    display: block;
+    margin: 0;
+    font-weight: 400;
+  }
+  
+  &__name-text {
+    display: block;
+    background: #FFFFFF;
+    border: 1px solid #C4C6CC;
+    border-radius: 4px;
+    padding: 16px;
+
+    @at-root input:checked ~ & {
+      border-color: #BA0000;
+    }
+  }
+
+  &__input {
+    position: absolute;
+    top: 0.8em;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    transform: translateY(-50%);
+
+    &:focus,
+    &:active {
+      @include field-focus;
+    }
+
+    // сокрытие инпута в случае использования своей радиокнопки
+    opacity: 0;
+  }
+}

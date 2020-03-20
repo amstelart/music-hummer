@@ -119,6 +119,29 @@ fieldset:disabled a.btn {
   } 
 }
 
+.btn-gray {
+  background-color: #F0F1F5;
+  color: #BA0000;
+
+  &:hover {
+    background-color: #F0F1F5;
+    color: #BA0000;
+  }
+
+  &:focus,
+  &.focus {
+    background-color: #F0F1F5;
+    color: #BA0000;
+  }
+
+  &:disabled,
+  &.disabled {
+    color: #fff;
+    background-color:#C4C6CC;
+    pointer-events: none;
+  } 
+}
+
 .btn-light {
   background-color: #fff;
   color: #BA0000;

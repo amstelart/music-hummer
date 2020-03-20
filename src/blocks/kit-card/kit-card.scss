@@ -1,0 +1,23 @@
+// В этом файле должны быть стили для БЭМ-блока kit-card, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.kit-card {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__img-wrap {
+    padding: 8px;
+  }
+
+  &__img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__action {
+    display: none;
+  }
+
+}

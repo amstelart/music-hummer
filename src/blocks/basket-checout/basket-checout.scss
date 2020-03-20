@@ -1,0 +1,11 @@
+// В этом файле должны быть стили для БЭМ-блока basket-checout, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.basket-checkout {
+
+  $block-name:                &; // #{$block-name}__element
+
+  background: #F0F1F5;
+  border-radius: 4px;
+}

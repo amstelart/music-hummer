@@ -1,0 +1,62 @@
+// В этом файле должны быть стили для БЭМ-блока slider-range, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.slider-rang-wrap {
+  
+  border: 1px solid #C4C6CC;
+  border-radius: 4px;
+  margin-bottom: 40px;
+  
+  .slider-rang__input-wrap {
+    padding-top: 2px;
+    padding-bottom: 5px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  
+  .form-control {
+    border: none;
+    font-size: 17px;
+    
+    &.minus {
+    }
+    &.plus {
+      text-align: right;
+    }
+    
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+  .input-slider-range {
+
+  }
+  
+  .irs.irs--round {
+    height: 1px;
+  }
+
+  .irs--round .irs-handle {
+    border-color: #BA0000;
+    background-color:  #BA0000;
+    cursor: pointer;
+  }
+
+  .irs--round .irs-bar {
+    background-color: #1A1919;
+  }
+
+  .irs--round .irs-line,
+  .irs--round .irs-bar {
+    top: 0;
+    height: 2px;
+  }
+
+  .irs--round .irs-handle {
+    top: -10px;
+  }
+}

@@ -9,6 +9,17 @@
   margin-top: 30px;
   margin-bottom: 25px;
 
+  .slick-list,
+  .slick-track {
+    display: flex;
+  }
+
+  .slick-track:before, .slick-track:after {
+    display: flex;
+    height: 100%;
+    content: '';
+}
+
   .slick-arrow {
     position: absolute;
     top: 50%;

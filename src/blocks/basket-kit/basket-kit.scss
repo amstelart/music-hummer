@@ -1,0 +1,14 @@
+// В этом файле должны быть стили для БЭМ-блока basket-kit, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.basket-kit {
+
+  $block-name:                &; // #{$block-name}__element
+
+  border: 4px solid #FFFAD6;
+
+  &__item {
+    background: #FFFAD6;
+  }
+}

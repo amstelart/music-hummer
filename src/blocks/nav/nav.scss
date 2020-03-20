@@ -13,7 +13,8 @@
 
 .nav-link {
   display: block;
-  padding: $nav-link-padding-y $nav-link-padding-x;
+  padding: 5px 8px;
+  color: #1A1919;
 
   @include hover-focus() {
     text-decoration: none;
@@ -77,8 +78,8 @@
 
   .nav-link.active,
   .show > .nav-link {
-    color: $nav-pills-link-active-color;
-    background-color: $nav-pills-link-active-bg;
+    background: #1A1919;
+    color: #fff;
   }
 }
 

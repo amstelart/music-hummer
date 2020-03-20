@@ -278,21 +278,26 @@
             <div class="row">
               <div class="col-md-6">
                 <h2 class="section__title">Мы в Вконтакте</h2>
+                <img src="img/vk-widget.jpg" class="img-fluid" alt="">
               </div>
               <div class="col-md-6">
                 <h2 class="section__title">Видео</h2>
                 <div class="media-board__video">
-                  <div class="embed-responsive mb-4 embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                  <div class="video-card mb-4">
+                    <a class="video-card__link" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
+                      <img class="img-fluid" src="img/video-card-img-01.jpg" alt="">
+                    </a>
                   </div>
-                  <div class="embed-responsive mb-4 embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                  <div class="video-card mb-4">
+                    <a class="video-card__link" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
+                      <img class="img-fluid" src="img/video-card-img-02.jpg" alt="">
+                    </a>
                   </div>
                 </div>
               </div>
               <div class="col-12">
                 <div class="media-board__social">
-                  <div>Мы в соц. сетях</div>
+                  <div class="h5 my-3 font-weight-bold">Мы в соц. сетях</div>
                   <ul class="social">
                     <li class="social__link-wrap">
                       <a class="social__link" href="#">
@@ -437,20 +442,7 @@
         </div>
       </div>
 
-      <div class="section latest">
-        <h2 class="section__title">Недавно просмотренные</h2>
-        <div class="row">
-          <div class="col-lg-3 col-md-4 col-6 mb-4">
-            @@include('blocks/p-card/p-card.html')
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 mb-4">
-            @@include('blocks/p-card/p-card.html')
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 mb-4">
-            @@include('blocks/p-card/p-card.html')
-          </div>
-        </div>
-      </div>
+      @@include('blocks/section-latest/section-latest.html')
     </div>
 
     @@include('blocks/page-footer/page-footer.html')
