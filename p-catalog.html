@@ -147,16 +147,16 @@
         <div class="container">
           <div class="nav-line__inner">
             <nav class="main-nav d-flex">
-              <li class="main-nav__item active">
+              <li class="main-nav__item">
                 <a href="#" class="main-nav__link">Акции</a>
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__item active">
                 <a href="#" class="main-nav__link">Каталог</a>
               </li>
               <li class="main-nav__item">
                 <a href="#" class="main-nav__link">Бренды</a>
               </li>
-              <li class="main-nav__item"><a href="#" class="main-nav__link" data-toggle="dropdown">Услуги</a>
+              <li class="main-nav__item dropdown"><a href="#" class="main-nav__link" data-toggle="dropdown">Услуги</a>
                 <div class="dropdown-menu">
                   <a class="dropdown-item" href="#">Аренда</a>
                   <a class="dropdown-item" href="#">Трейд-ин</a>
@@ -247,45 +247,45 @@
               </ul>
               <form class="sidebar-filter-group">
                 <div class="sidebar-filter">
-                  <div class="sidebar-filter__title">Бренды</div>
-                  <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                  <div class="sidebar-filter__title mb-2">Бренды</div>
+                  <div class="custom-control custom-checkbox my-2 mr-sm-2">
                     <input type="checkbox" class="custom-control-input" id="filter-brand-01">
                     <label class="custom-control-label" for="filter-brand-01">ALHAMBRA</label>
                   </div>
-                  <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                  <div class="custom-control custom-checkbox my-2 mr-sm-2">
                     <input type="checkbox" class="custom-control-input" id="filter-brand-02">
                     <label class="custom-control-label" for="filter-brand-02">ART & LUTHERIE</label>
                   </div>
-                  <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                  <div class="custom-control custom-checkbox my-2 mr-sm-2">
                     <input type="checkbox" class="custom-control-input" id="filter-brand-03">
                     <label class="custom-control-label" for="filter-brand-03">CORT</label>
                   </div>
-                  <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                  <div class="custom-control custom-checkbox my-2 mr-sm-2">
                     <input type="checkbox" class="custom-control-input" id="filter-brand-04">
                     <label class="custom-control-label" for="filter-brand-04">CRAFTER</label>
                   </div>
-                  <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                  <div class="custom-control custom-checkbox my-2 mr-sm-2">
                     <input type="checkbox" class="custom-control-input" id="filter-brand-05">
                     <label class="custom-control-label" for="filter-brand-05">DEAN</label>
                   </div>
                   <div class="collapse" id="filter-brand-collapse" style="overflow: hidden;">
-                    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                    <div class="custom-control custom-checkbox my-2 mr-sm-2">
                       <input type="checkbox" class="custom-control-input" id="filter-brand-06">
                       <label class="custom-control-label" for="filter-brand-06">DEAN</label>
                     </div>
-                    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                    <div class="custom-control custom-checkbox my-2 mr-sm-2">
                       <input type="checkbox" class="custom-control-input" id="filter-brand-07">
                       <label class="custom-control-label" for="filter-brand-07">DEAN</label>
                     </div>
-                    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                    <div class="custom-control custom-checkbox my-2 mr-sm-2">
                       <input type="checkbox" class="custom-control-input" id="filter-brand-08">
                       <label class="custom-control-label" for="filter-brand-08">DEAN</label>
                     </div>
-                    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                    <div class="custom-control custom-checkbox my-2 mr-sm-2">
                       <input type="checkbox" class="custom-control-input" id="filter-brand-09">
                       <label class="custom-control-label" for="filter-brand-09">DEAN</label>
                     </div>
-                    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                    <div class="custom-control custom-checkbox my-2 mr-sm-2">
                       <input type="checkbox" class="custom-control-input" id="filter-brand-10">
                       <label class="custom-control-label" for="filter-brand-10">DEAN</label>
                     </div>
@@ -293,15 +293,32 @@
                   <a href="#filter-brand-collapse" data-toggle="collapse">Все бренды</a>
                 </div>
                 <div class="sidebar-filter">
-                  <div class="sidebar-filter__title">Цена</div>
+                  <div class="sidebar-filter__title mb-2">Цена</div>
+                  <div class="slider-rang-wrap">
+                    <div class="row">
+                      <div class="col-6">
+                        <label class="slider-rang__input-wrap">
+                          <input class="form-control minus" type="text" value="1"/>
+                        </label>
+                      </div>
+                      <div class="col-6">
+                        <label class="slider-rang__input-wrap">
+                          <input class="form-control plus" type="text" value="1000"/>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="slider-range filter">
+                      <input class="range-slider" type="text"/>
+                    </div>
+                  </div>
                 </div>
                 <div class="sidebar-filter">
-                  <div class="sidebar-filter__title">Тип</div>
-                  <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                  <div class="sidebar-filter__title mb-2">Тип</div>
+                  <div class="custom-control custom-checkbox my-2 mr-sm-2">
                     <input type="checkbox" class="custom-control-input" id="filter-type-01">
                     <label class="custom-control-label" for="filter-type-01">Без звукоснимателей</label>
                   </div>
-                  <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                  <div class="custom-control custom-checkbox my-2 mr-sm-2">
                     <input type="checkbox" class="custom-control-input" id="filter-type-02">
                     <label class="custom-control-label" for="filter-type-02">Со звукоснимателем</label>
                   </div>
@@ -378,7 +395,7 @@
             </div>
             <form class="row align-items-center mt-2">
               <div class="form-group col-lg-4">
-                <select class="custom-select my-1 mr-sm-2">
+                <select class="custom-select custom-select--gray my-1 mr-sm-2">
                   <option selected>Сначала популярные</option>
                   <option value="1">One</option>
                   <option value="2">Two</option>
@@ -695,7 +712,7 @@
                     <div class="p-card__options">
                       <div class="options-block">
                         <div class="options-block__list">
-                          <div class="options-block__item selected">
+                          <div class="options-block__item">
                             <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_favorite_border"></use></svg>
                           </div>
                           <div class="options-block__item">
@@ -784,7 +801,7 @@
                     <div class="p-card__options">
                       <div class="options-block">
                         <div class="options-block__list">
-                          <div class="options-block__item selected">
+                          <div class="options-block__item">
                             <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_favorite_border"></use></svg>
                           </div>
                           <div class="options-block__item">
@@ -873,7 +890,7 @@
                     <div class="p-card__options">
                       <div class="options-block">
                         <div class="options-block__list">
-                          <div class="options-block__item selected">
+                          <div class="options-block__item">
                             <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_favorite_border"></use></svg>
                           </div>
                           <div class="options-block__item">
@@ -962,7 +979,7 @@
                     <div class="p-card__options">
                       <div class="options-block">
                         <div class="options-block__list">
-                          <div class="options-block__item selected">
+                          <div class="options-block__item">
                             <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_favorite_border"></use></svg>
                           </div>
                           <div class="options-block__item">
@@ -1051,7 +1068,7 @@
                     <div class="p-card__options">
                       <div class="options-block">
                         <div class="options-block__list">
-                          <div class="options-block__item selected">
+                          <div class="options-block__item">
                             <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_favorite_border"></use></svg>
                           </div>
                           <div class="options-block__item">
@@ -1140,7 +1157,7 @@
                     <div class="p-card__options">
                       <div class="options-block">
                         <div class="options-block__list">
-                          <div class="options-block__item selected">
+                          <div class="options-block__item">
                             <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_favorite_border"></use></svg>
                           </div>
                           <div class="options-block__item">
@@ -1229,7 +1246,7 @@
                     <div class="p-card__options">
                       <div class="options-block">
                         <div class="options-block__list">
-                          <div class="options-block__item selected">
+                          <div class="options-block__item">
                             <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_favorite_border"></use></svg>
                           </div>
                           <div class="options-block__item">
@@ -1318,7 +1335,7 @@
                     <div class="p-card__options">
                       <div class="options-block">
                         <div class="options-block__list">
-                          <div class="options-block__item selected">
+                          <div class="options-block__item">
                             <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_favorite_border"></use></svg>
                           </div>
                           <div class="options-block__item">
@@ -1407,7 +1424,7 @@
                     <div class="p-card__options">
                       <div class="options-block">
                         <div class="options-block__list">
-                          <div class="options-block__item selected">
+                          <div class="options-block__item">
                             <svg class="icon" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_favorite_border"></use></svg>
                           </div>
                           <div class="options-block__item">
