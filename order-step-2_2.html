@@ -353,6 +353,109 @@
 
 
   </div>
+
+  <div class="fs-modal" style="display: none;max-width:500px;" id="selectableModal">
+      <h5>Категории</h5>
+      <ul class="modal-category-nav">
+          <li><a class="nav-link" href="#">Электрогитары <span class="text-muted">1234</span></a></li>
+          <li><a class="nav-link" href="#">Бас-гитары <span class="text-muted">336</span></a></li>
+          <li><a class="nav-link" href="#">Акустические <span class="text-muted">6528</span></a></li>
+          <li><a class="nav-link" href="#">Классические <span class="text-muted">1882</span></a></li>
+          <li><a class="nav-link" href="#">Электроакустические <span class="text-muted">586</span></a></li>
+          <li><a class="nav-link" href="#">Полуакустические <span class="text-muted">985</span></a></li>
+          <li><a class="nav-link" href="#">Уменьшенные гитары <span class="text-muted">85</span></a></li>
+          <li><a class="nav-link" href="#">Укулеле <span class="text-muted">87</span></a></li>
+          <li><a class="nav-link" href="#">Наборы новичкам <span class="text-muted">34</span></a></li>
+          <li><a class="nav-link" href="#">Аксессуары <span class="text-muted">12</span></a></li>
+      </ul>
+    </div>
+
+  <div class="fs-modal" style="display: none;max-width:500px;" id="selectableModal2">
+      <form class="sidebar-filter-group">
+          <div class="sidebar-filter">
+            <div class="sidebar-filter__title mb-2">Бренды</div>
+            <div class="custom-control custom-checkbox my-2 mr-sm-2">
+              <input type="checkbox" class="custom-control-input" id="filter-brand-01">
+              <label class="custom-control-label" for="filter-brand-01">ALHAMBRA</label>
+            </div>
+            <div class="custom-control custom-checkbox my-2 mr-sm-2">
+              <input type="checkbox" class="custom-control-input" id="filter-brand-02">
+              <label class="custom-control-label" for="filter-brand-02">ART & LUTHERIE</label>
+            </div>
+            <div class="custom-control custom-checkbox my-2 mr-sm-2">
+              <input type="checkbox" class="custom-control-input" id="filter-brand-03">
+              <label class="custom-control-label" for="filter-brand-03">CORT</label>
+            </div>
+            <div class="custom-control custom-checkbox my-2 mr-sm-2">
+              <input type="checkbox" class="custom-control-input" id="filter-brand-04">
+              <label class="custom-control-label" for="filter-brand-04">CRAFTER</label>
+            </div>
+            <div class="custom-control custom-checkbox my-2 mr-sm-2">
+              <input type="checkbox" class="custom-control-input" id="filter-brand-05">
+              <label class="custom-control-label" for="filter-brand-05">DEAN</label>
+            </div>
+            <div class="collapse" id="filter-brand-collapse" style="overflow: hidden;">
+              <div class="custom-control custom-checkbox my-2 mr-sm-2">
+                <input type="checkbox" class="custom-control-input" id="filter-brand-06">
+                <label class="custom-control-label" for="filter-brand-06">DEAN</label>
+              </div>
+              <div class="custom-control custom-checkbox my-2 mr-sm-2">
+                <input type="checkbox" class="custom-control-input" id="filter-brand-07">
+                <label class="custom-control-label" for="filter-brand-07">DEAN</label>
+              </div>
+              <div class="custom-control custom-checkbox my-2 mr-sm-2">
+                <input type="checkbox" class="custom-control-input" id="filter-brand-08">
+                <label class="custom-control-label" for="filter-brand-08">DEAN</label>
+              </div>
+              <div class="custom-control custom-checkbox my-2 mr-sm-2">
+                <input type="checkbox" class="custom-control-input" id="filter-brand-09">
+                <label class="custom-control-label" for="filter-brand-09">DEAN</label>
+              </div>
+              <div class="custom-control custom-checkbox my-2 mr-sm-2">
+                <input type="checkbox" class="custom-control-input" id="filter-brand-10">
+                <label class="custom-control-label" for="filter-brand-10">DEAN</label>
+              </div>
+            </div>
+            <a href="#filter-brand-collapse" data-toggle="collapse">Все бренды</a>
+          </div>
+          <div class="sidebar-filter">
+            <div class="sidebar-filter__title mb-2">Цена</div>
+            <div class="slider-rang-wrap">
+              <div class="row">
+                <div class="col-6">
+                  <label class="slider-rang__input-wrap">
+                    <input class="form-control minus" type="text" value="1"/>
+                  </label>
+                </div>
+                <div class="col-6">
+                  <label class="slider-rang__input-wrap">
+                    <input class="form-control plus" type="text" value="1000"/>
+                  </label>
+                </div>
+              </div>
+              <div class="slider-range filter">
+                <input class="range-slider" type="text"/>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-filter">
+            <div class="sidebar-filter__title mb-2">Тип</div>
+            <div class="custom-control custom-checkbox my-2 mr-sm-2">
+              <input type="checkbox" class="custom-control-input" id="filter-type-01">
+              <label class="custom-control-label" for="filter-type-01">Без звукоснимателей</label>
+            </div>
+            <div class="custom-control custom-checkbox my-2 mr-sm-2">
+              <input type="checkbox" class="custom-control-input" id="filter-type-02">
+              <label class="custom-control-label" for="filter-type-02">Со звукоснимателем</label>
+            </div>
+          </div>
+      </form>
+      <div class="fixed-btn-gr">
+          <a href="#" class="btn btn-succses">Сбросить</a>
+          <a href="#" class="btn btn-primary">Применить</a>
+      </div>
+  </div>
+
   <script src="js/script.min.js"></script>
 
 </body>
