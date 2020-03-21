@@ -852,7 +852,7 @@
                   <a href="#" class="btn btn-gray">Показать ещё</a>
                 </div>
 
-                <div class="rew-form">
+                <form action="" class="rew-form mb-4">
                   <ul class="nav nav-tabs">
                     <li class="nav-item">
                       <a class="nav-link active" data-toggle="tab" href="#tab-rew-01">Отзывы о товаре</a>
@@ -861,81 +861,126 @@
                       <a class="nav-link" data-toggle="tab" href="#tab-rew-02">Краткий комментарий</a>
                     </li>
                   </ul>
-                  <div class="tab-content p-4">
+                  <div class="tab-content">
                     <div class="tab-pane fade show active" id="tab-rew-01">
-                      <div class="row form-group">
-                        <label for="" class="col-md-4 col-form-label">Оценка</label>
-                        <div class="col-md-8">
-                          <div class="rating-block">
-                            <div class="rating edit">
-                              <div class="rating__line"></div>
-                              <div class="rating__activeline"></div>
-                              <input value="3" type="hidden" name="rating" />
-                              <div class="stars">
-                                <span class="star"><i>Ужасно</i></span>
-                                <span class="star"><i>Плохо</i></span>
-                                <span class="star"><i>Нормально</i></span>
-                                <span class="star"><i>Хорошо</i></span>
-                                <span class="star"><i>Отлично</i></span>
+                      <div class="rew-form__box p-4">
+                        <div class="row form-group">
+                          <label for="" class="col-md-4 col-form-label">Оценка</label>
+                          <div class="col-md-8">
+                            <div class="rating-block">
+                              <div class="rating edit">
+                                <div class="rating__line"></div>
+                                <div class="rating__activeline"></div>
+                                <input value="3" type="hidden" name="rating" />
+                                <div class="stars">
+                                  <span class="star"><i>Ужасно</i></span>
+                                  <span class="star"><i>Плохо</i></span>
+                                  <span class="star"><i>Нормально</i></span>
+                                  <span class="star"><i>Хорошо</i></span>
+                                  <span class="star"><i>Отлично</i></span>
+                                </div>
                               </div>
-                            </div>
-                        </div>
-                        </div>
-                      </div>
-                      <div class="row form-group">
-                        <label for="" class="col-md-4 col-form-label">Достоинства</label>
-                        <div class="col-md-8">
-                          <input type="text" class="form-control" id="">
-                        </div>
-                      </div>
-                      <div class="row form-group">
-                        <label for="" class="col-md-4 col-form-label">Недостатки</label>
-                        <div class="col-md-8">
-                          <input type="text" class="form-control" id="">
-                        </div>
-                      </div>
-                      <div class="row form-group">
-                        <label for="" class="col-md-4 col-form-label">Комментарий</label>
-                        <div class="col-md-8">
-                          <input type="text" class="form-control" id="">
-                        </div>
-                      </div>
-                      <div class="row form-group">
-                        <label for="" class="col-md-4 col-form-label">Фото</label>
-                        <div class="col-md-8">
-                          <input type="text" class="form-control" id="">
-                        </div>
-                      </div>
-                      <div class="row form-group">
-                        <label for="" class="col-md-4 col-form-label">Ваше имя и фамилия</label>
-                        <div class="col-md-8">
-                          <input type="text" class="form-control" id="">
-                        </div>
-                      </div>
-                      <div class="row form-group">
-                        <label for="" class="col-md-4 col-form-label">Ваше email</label>
-                        <div class="col-md-8">
-                          <input type="text" class="form-control" id="">
-                        </div>
-                      </div>
-                      <div class="row form-group">
-                        <div class="col-md-4"></div>
-                        <div class="col-md-8">
-                          <div class="custom-control custom-checkbox mb-3 mr-sm-2">
-                            <input type="checkbox" class="custom-control-input" id="rew-checkbox">
-                            <label class="custom-control-label" for="rew-checkbox">Уведомлять об ответах по эл. почте</label>
                           </div>
-                          <button class="btn mb-3 btn-primary btn-mw">Отправить</button>
-                          <p class="small">Чтобы Ваш отзыв либо комментарий прошел модерацию и был опубликован, ознакомьтесь, пожалуйста, с <a href="#">нашими правилами</a>!</p>
+                          </div>
+                        </div>
+                        <div class="row form-group">
+                          <label for="" class="col-md-4 col-form-label">Достоинства</label>
+                          <div class="col-md-8">
+                            <input type="text" class="form-control" id="">
+                          </div>
+                        </div>
+                        <div class="row form-group">
+                          <label for="" class="col-md-4 col-form-label">Недостатки</label>
+                          <div class="col-md-8">
+                            <input type="text" class="form-control" id="">
+                          </div>
+                        </div>
+                        <div class="row form-group">
+                          <label for="" class="col-md-4 col-form-label">Комментарий</label>
+                          <div class="col-md-8">
+                            <input type="text" class="form-control" id="">
+                          </div>
+                        </div>
+                        <div class="row form-group">
+                          <div class="col-md-4 col-form-label">Фото</div>
+                          <div class="col-md-8">
+                            <div class="custom-file">
+                              <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                              <label class="custom-file-label" for="validatedCustomFile">Загрузить файл</label>
+                              <div class="invalid-feedback">Example invalid custom file feedback</div>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                      
+                      <div class="rew-form__box p-4">
+                        <div class="row form-group">
+                          <label for="" class="col-md-4 col-form-label">Ваше имя и фамилия</label>
+                          <div class="col-md-8">
+                            <input type="text" class="form-control" id="">
+                          </div>
+                        </div>
+                        <div class="row form-group">
+                          <label for="" class="col-md-4 col-form-label">Ваше email</label>
+                          <div class="col-md-8">
+                            <input type="text" class="form-control" id="">
+                          </div>
+                        </div>
+                        <div class="row form-group">
+                          <div class="col-md-4"></div>
+                          <div class="col-md-8">
+                            <div class="custom-control custom-checkbox mb-3 mr-sm-2">
+                              <input type="checkbox" class="custom-control-input" id="rew-checkbox">
+                              <label class="custom-control-label" for="rew-checkbox">Уведомлять об ответах по эл. почте</label>
+                            </div>
+                            <button class="btn mb-3 btn-primary btn-mw">Отправить</button>
+                            <p class="small">Чтобы Ваш отзыв либо комментарий прошел модерацию и был опубликован, ознакомьтесь, пожалуйста, с <a href="#">нашими правилами</a>!</p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                     <div class="tab-pane fade" id="tab-rew-02">
-sdfsfds
+                      <div class="rew-form__box p-4">
+                        <div class="row form-group">
+                          <label for="" class="col-md-4 col-form-label">Комментарий</label>
+                          <div class="col-md-8">
+                            <input type="text" class="form-control" id="">
+                          </div>
+                        </div>
+                        <div class="row form-group">
+                          <label for="" class="col-md-4 col-form-label">Фото</label>
+                          <div class="col-md-8">
+                            <input type="text" class="form-control" id="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="rew-form__box p-4">
+                        <div class="row form-group">
+                          <label for="" class="col-md-4 col-form-label">Ваше имя и фамилия</label>
+                          <div class="col-md-8">
+                            <input type="text" class="form-control" id="">
+                          </div>
+                        </div>
+                        <div class="row form-group">
+                          <label for="" class="col-md-4 col-form-label">Ваше email</label>
+                          <div class="col-md-8">
+                            <input type="text" class="form-control" id="">
+                          </div>
+                        </div>
+                        <div class="row form-group">
+                          <div class="col-md-4"></div>
+                          <div class="col-md-8">
+                            <div class="custom-control custom-checkbox mb-3 mr-sm-2">
+                              <input type="checkbox" class="custom-control-input" id="rew-checkbox2">
+                              <label class="custom-control-label" for="rew-checkbox2">Уведомлять об ответах по эл. почте</label>
+                            </div>
+                            <button class="btn mb-3 btn-primary btn-mw">Отправить</button>
+                            <p class="small">Чтобы Ваш отзыв либо комментарий прошел модерацию и был опубликован, ознакомьтесь, пожалуйста, с <a href="#">нашими правилами</a>!</p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </form>
               </div>
               <div class="col-lg-3">
                 <h4 class="font-weight-bold">200 отзывов</h4>
