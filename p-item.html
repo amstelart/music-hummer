@@ -552,10 +552,10 @@
       <div class="section py-2">
         <ul class="nav nav-tabs">
           <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#tab-description">Описание</a>
+            <a class="nav-link" data-toggle="tab" href="#tab-description">Описание</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#tab-reviews">Отзывы</a>
+            <a class="nav-link active" data-toggle="tab" href="#tab-reviews">Отзывы</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="tab" href="#tab-additionally">Покупают вместе</a>
@@ -571,7 +571,7 @@
           </li>
         </ul>
         <div class="tab-content">
-          <div class="tab-pane fade show active" id="tab-description">
+          <div class="tab-pane fade" id="tab-description">
             <div class="row">
               <div class="col-lg-9">
                 <div class="embed-responsive mb-4 embed-responsive-16by9">
@@ -611,99 +611,241 @@
               </div>
             </div>
           </div>
-          <div class="tab-pane fade" id="tab-reviews">
+          <div class="tab-pane fade show active" id="tab-reviews">
             <div class="row rew-block">
               <div class="col-lg-9">
                 <div class="rew-block__item">
                   <div class="rew-block__item-head mb-2">
                     <div class="row">
-                      <div class="col">
-                        <div class="strong">Иван Иванов</div>
+                      <div class="col d-flex align-items-center">
+                        <div class="font-weight-bold mr-2">Алексей</div>
+                        <div class="p-rating">
+                          <div class="p-rating__group">
+                            <svg class="rating-star rating-star--full" width="20" height="20">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                              </use>
+                            </svg>
+                            <svg class="rating-star rating-star--full" width="20" height="20">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                              </use>
+                            </svg>
+                            <svg class="rating-star rating-star--full" width="20" height="20">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                              </use>
+                            </svg>
+                            <svg class="rating-star rating-star--full" width="20" height="20">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                              </use>
+                            </svg>
+                            <svg class="rating-star rating-star--full" width="20" height="20">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                              </use>
+                            </svg>
+                          </div>
+                        </div>
                       </div>
                       <div class="col-auto">
                         <div class="text-muted">04 января 2018 г.</div>
                       </div>
                     </div>
                   </div>
-                  <div class="rating-block-card mb-2">
-                    <div class="p-rating">
-                      <div class="p-rating__group">
-                        <svg class="rating-star rating-star--full" width="20" height="20">
-                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
-                          </use>
-                        </svg>
-                        <svg class="rating-star rating-star--full" width="20" height="20">
-                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
-                          </use>
-                        </svg>
-                        <svg class="rating-star rating-star--full" width="20" height="20">
-                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
-                          </use>
-                        </svg>
-                        <svg class="rating-star" width="20" height="20">
-                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
-                          </use>
-                        </svg>
-                        <svg class="rating-star" width="20" height="20">
-                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
-                          </use>
-                        </svg>
-                      </div>
-                      <a href="#" class="p-rating__link">234 отзыва</a>
-                    </div>
+                  <div class="rew-block__item-body">
+                    <div>За 15 лет игры на гитаре передержал в руках очень много гитар. Это самая-самая суперовая по всем показателям. Даже с родными струнами звучание отличное. Такое же мнение выразил музыкант профи, которому одному из первых удалось на ней сыграть! Берите не задумываясь!</div>
+                    <a href="#">Ответить</a>
                   </div>
-                  <div class="small mb-3">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </div>
                 </div>
                 <!-- +e.item-->
                 <div class="rew-block__item">
                   <div class="rew-block__item-head mb-2">
                     <div class="row">
-                      <div class="col">
-                        <div class="strong">Иван Иванов</div>
+                      <div class="col d-flex align-items-center">
+                        <div class="font-weight-bold mr-2">Иван</div>
+                        <div class="p-rating">
+                          <div class="p-rating__group">
+                            <svg class="rating-star rating-star--full" width="20" height="20">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                              </use>
+                            </svg>
+                            <svg class="rating-star rating-star--full" width="20" height="20">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                              </use>
+                            </svg>
+                            <svg class="rating-star rating-star--full" width="20" height="20">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                              </use>
+                            </svg>
+                            <svg class="rating-star rating-star--full" width="20" height="20">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                              </use>
+                            </svg>
+                            <svg class="rating-star rating-star--full" width="20" height="20">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                              </use>
+                            </svg>
+                          </div>
+                        </div>
                       </div>
                       <div class="col-auto">
-                        <div class="small text-gray">04 января 2018 г.</div>
+                        <div class="text-muted">04 января 2018 г.</div>
                       </div>
                     </div>
                   </div>
-                  <div class="rating-block-card mb-2">
-                    <div class="p-rating">
-                      <div class="p-rating__group">
-                        <svg class="rating-star rating-star--full" width="20" height="20">
-                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
-                          </use>
-                        </svg>
-                        <svg class="rating-star rating-star--full" width="20" height="20">
-                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
-                          </use>
-                        </svg>
-                        <svg class="rating-star rating-star--full" width="20" height="20">
-                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
-                          </use>
-                        </svg>
-                        <svg class="rating-star" width="20" height="20">
-                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
-                          </use>
-                        </svg>
-                        <svg class="rating-star" width="20" height="20">
-                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
-                          </use>
-                        </svg>
-                      </div>
-                      <a href="#" class="p-rating__link">234 отзыва</a>
-                    </div>
+                  <div class="rew-block__item-body">
+                    <div>За 15 лет игры на гитаре передержал в руках очень много гитар. Это самая-самая суперовая по всем показателям. Даже с родными струнами звучание отличное. Такое же мнение выразил музыкант профи, которому одному из первых удалось на ней сыграть! Берите не задумываясь!</div>
+                    <a href="#">Ответить</a>
                   </div>
-                  <div class="small mb-3">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </div>
+                  <div class="rew-block__item answer">
+                    <div class="rew-block__item-head mb-2">
+                      <div class="row">
+                        <div class="col d-flex align-items-center">
+                          <div class="font-weight-bold mr-2">Иван</div>
+                        </div>
+                        <div class="col-auto">
+                          <div class="text-muted">04 января 2018 г.</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="small mb-1">Быть такого не может, 4 струны которые установлены на гитару одного калибра? </div>
+                  </div>
+                  <div class="rew-block__item answer">
+                    <div class="rew-block__item-head mb-2">
+                      <div class="row">
+                        <div class="col d-flex align-items-center">
+                          <div class="font-weight-bold mr-2">Сергей</div>
+                        </div>
+                        <div class="col-auto">
+                          <div class="text-muted">04 января 2018 г.</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="small mb-1">Хорошая гитара, качественный звук да и этого в принципе достаточно) (Пришла уже с натянутыми струнами без царапин и прочей ерунды). </div>
+                  </div>
                 </div>
                 <!-- +e.item-->
+                <div class="rew-block__item">
+                  <div class="rew-block__item-head mb-2">
+                    <div class="row">
+                      <div class="col d-flex align-items-center">
+                        <div class="font-weight-bold mr-2">Алексей</div>
+                        <div class="p-rating">
+                          <div class="p-rating__group">
+                            <svg class="rating-star rating-star--full" width="20" height="20">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                              </use>
+                            </svg>
+                            <svg class="rating-star rating-star--full" width="20" height="20">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                              </use>
+                            </svg>
+                            <svg class="rating-star rating-star--full" width="20" height="20">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                              </use>
+                            </svg>
+                            <svg class="rating-star rating-star--full" width="20" height="20">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                              </use>
+                            </svg>
+                            <svg class="rating-star rating-star--full" width="20" height="20">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                              </use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <div class="text-muted">04 января 2018 г.</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rew-block__item-body">
+                    <div>За 15 лет игры на гитаре передержал в руках очень много гитар. Это самая-самая суперовая по всем показателям. Даже с родными струнами звучание отличное. Такое же мнение выразил музыкант профи, которому одному из первых удалось на ней сыграть! Берите не задумываясь!</div>
+                    <a href="#">Ответить</a>
+                  </div>
+                </div>
+                <!-- +e.item-->
+                <div class="rew-block__item">
+                  <div class="rew-block__item-head mb-2">
+                    <div class="row">
+                      <div class="col d-flex align-items-center">
+                        <div class="font-weight-bold mr-2">Максим</div>
+                        <div class="p-rating">
+                          <div class="p-rating__group">
+                            <svg class="rating-star rating-star--full" width="20" height="20">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                              </use>
+                            </svg>
+                            <svg class="rating-star rating-star--full" width="20" height="20">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                              </use>
+                            </svg>
+                            <svg class="rating-star rating-star--full" width="20" height="20">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                              </use>
+                            </svg>
+                            <svg class="rating-star rating-star--full" width="20" height="20">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                              </use>
+                            </svg>
+                            <svg class="rating-star rating-star--full" width="20" height="20">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                              </use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <div class="text-muted">04 января 2018 г.</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rew-block__item-body">
+                    <div>За 15 лет игры на гитаре передержал в руках очень много гитар. Это самая-самая суперовая по всем показателям. Даже с родными струнами звучание отличное. Такое же мнение выразил музыкант профи, которому одному из первых удалось на ней сыграть! Берите не задумываясь!</div>
+                    <a href="#">Ответить</a>
+                  </div>
+                </div>
+                <!-- +e.item-->
+                <div class="rew-block__item">
+                  <div class="rew-block__item-head mb-2">
+                    <div class="row">
+                      <div class="col d-flex align-items-center">
+                        <div class="font-weight-bold mr-2">Алексей</div>
+                        <div class="p-rating">
+                          <div class="p-rating__group">
+                            <svg class="rating-star rating-star--full" width="20" height="20">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                              </use>
+                            </svg>
+                            <svg class="rating-star rating-star--full" width="20" height="20">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                              </use>
+                            </svg>
+                            <svg class="rating-star rating-star--full" width="20" height="20">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                              </use>
+                            </svg>
+                            <svg class="rating-star rating-star--full" width="20" height="20">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                              </use>
+                            </svg>
+                            <svg class="rating-star rating-star--full" width="20" height="20">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                              </use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <div class="text-muted">04 января 2018 г.</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rew-block__item-body">
+                    <div>За 15 лет игры на гитаре передержал в руках очень много гитар. Это самая-самая суперовая по всем показателям. Даже с родными струнами звучание отличное. Такое же мнение выразил музыкант профи, которому одному из первых удалось на ней сыграть! Берите не задумываясь!</div>
+                    <a href="#">Ответить</a>
+                  </div>
+                </div>
+                <!-- +e.item-->
+                <a href="#" class="btn btn-gray">Показать ещё</a>
               </div>
               <div class="col-lg-3">
                 <h4 class="font-weight-bold">200 отзывов</h4>
@@ -850,6 +992,7 @@
                     </div>
                   </div>
                 </div>
+                <a href="#" class="btn btn-block btn-gray">Все отзывы</a>
               </div>
             </div>
           </div>
