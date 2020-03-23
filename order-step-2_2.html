@@ -132,7 +132,7 @@
                 <a class="user-options__item d-none d-lg-inline" href="#"><svg class="icon icon-search" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_compare"></use></svg><span class="d-none d-lg-inline-flex">Сравнение</span></a>
                 <a class="user-options__item" href="#"><svg class="icon icon-search" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_fav"></use></svg><span class="d-none d-lg-inline-flex">Отложенные</span></a>
                 <a class="user-options__item" href="#"><svg class="icon icon-search" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_shopping_cart"></use></svg><span class="d-none d-lg-inline-flex">Корзина</span></a>
-                <a class="user-options__item d-inline d-lg-none" href="#"><svg class="icon icon-search" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-search"></use></svg></a>
+                <a class="user-options__item d-inline d-lg-none" data-fancybox data-options='{"src": "#m-search", "touch": false}' href="javascript:;"><svg class="icon icon-search" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-search"></use></svg></a>
               </div>
             </div>
             <div class="col-auto d-none d-lg-block">
@@ -471,6 +471,13 @@
           <a href="#" class="btn btn-succses">Сбросить</a>
           <a href="#" class="btn btn-primary">Применить</a>
       </div>
+  </div>
+
+  <div class="fs-search" style="display: none;" id="m-search">
+    <form class="form-inline search">
+      <input class="form-control" type="search" placeholder="Найти" aria-label="Search">
+      <button class="btn" type="submit"><svg class="icon icon-search" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-search"></use></svg></button>
+    </form>
   </div>
 
   <script src="js/script.min.js"></script>
