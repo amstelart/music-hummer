@@ -59,6 +59,14 @@
     font-weight: 500;
     line-height: 20px;
     padding: 6px 14px;
+
+    @include media-breakpoint-down(sm) {
+      top: 0;
+      left: 0;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 0;
+    }
   }
   &__inner {
     border-radius: 4px;
@@ -102,8 +110,20 @@
     }
   }
   &__price {
-    font-size: 24px;
-    font-weight: 700;
+    .price {
+      font-size: 24px;
+      font-weight: 700;
+
+      &.price--old {
+        font-size: 17px;
+        font-weight: 400;
+
+        &:before {
+          height: 1px;
+          background: #939599;
+        }
+      }
+    }
   }
 
   &__action {
@@ -159,7 +179,7 @@
   }
 
   // Карточка при наведении
-  &--hover {
+  &:hover {
 
     #{$block-name}__close {
       display: block;
@@ -170,7 +190,11 @@
       top: 0;
       left: 0;
       right: 0;
-      z-index: 10;
+      z-index: 20;
+    }
+
+    #{$block-name}__label {
+      z-index: 21;
     }
 
     #{$block-name}__img-wrap {

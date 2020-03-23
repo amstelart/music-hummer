@@ -20,4 +20,10 @@
     display: none;
   }
 
+  &--blank {
+    #{$block-name}__title {
+      color: #BA0000;
+      font-size: 14px;
+    }
+  }
 }

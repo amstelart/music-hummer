@@ -1,0 +1,46 @@
+// В этом файле должны быть стили для БЭМ-блока kit-mobile, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.kit-mobile {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__title {
+    font-size: 24px;
+  }
+
+  &__card {
+    position: relative;
+
+    &::before {
+      content: "+";
+      font-size: 17px;
+      color: #7d7d7d;
+      position: absolute;
+      right: -10px;
+      top: 50%;
+      transform: translateY(-50%);
+
+      @include media-breakpoint-up(md) {
+        right: -20px;
+      }
+    }
+
+    img {
+      max-width: 100%;
+      padding: 8px;
+    }
+  }
+
+  .col-4 {
+    &:last-child {
+      #{$block-name}__card {
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+
+}

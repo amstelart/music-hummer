@@ -43,6 +43,12 @@
       top: calc(50% - 20px);
       transform: translateY(-50%);
     }
+
+    &.three {
+      &:before {
+        display: none;
+      }
+    }
   }
 
   &__group {

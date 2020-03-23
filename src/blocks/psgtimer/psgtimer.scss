@@ -1,5 +1,6 @@
 .psgTimer {
   // display: table;
+  position: relative;
   margin: 0;
   font-size: 0;
   font-family: 'Roboto', sans-serif;
@@ -13,7 +14,18 @@
     }
   }
   &_labels {
-    display: none;
+    display: flex;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: #fff;
+
+    > div {
+      &:not(:last-child) {
+        margin-right: 5%;
+      }
+    }
   }
   &_numbers {
     display: flex;
@@ -23,7 +35,8 @@
   &_unit {
     position: relative;
     background: #BA0000;
-    border-radius: 5px;
+    border-radius: 14px;
+    border-bottom: 6px solid #840000;
 
     &:after {
       content: ":";
@@ -69,11 +82,10 @@
   &_labels {
     &>div {
       padding-top: 5px!important;
-      font-size: 12px;
-      line-height: 18px;
+      font-size: 10px;
+      line-height: 10px;
       text-transform: uppercase;
       letter-spacing: 1.2px;
-      color: #21272C;
     }
   }
 }

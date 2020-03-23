@@ -43,7 +43,11 @@
     "order-steps": [],
     "payment-radio": [],
     "custom-forms": [],
-    "slider-range": []
+    "slider-range": [],
+    "rew-block": [],
+    "card-head": [],
+    "kit-mobile": [],
+    "inf-popup": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

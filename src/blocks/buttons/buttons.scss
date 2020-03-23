@@ -191,9 +191,31 @@ fieldset:disabled a.btn {
     border-color: rgba(#fff, 0.6);
     background-color:transparent;
     pointer-events: none;
-  } 
+  }
+
 }
 
+.btn-subscribe {
+
+  text-transform: inherit;
+  padding: 10px 0;
+  background-color: transparent;
+
+  &:hover {
+    background-color: transparent;
+  }
+
+  &:focus,
+  &.focus {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .icon {
+    margin-right: 10px;
+    display: inline-block;
+  }
+}
 //
 // Link buttons
 //

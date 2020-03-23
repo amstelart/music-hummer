@@ -1,0 +1,104 @@
+// В этом файле должны быть стили для БЭМ-блока rew-block, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.rew-block {
+
+  $block-name:                &; // #{$block-name}__element
+
+  margin-bottom: 40px;
+  
+  &__user {
+
+    @include media-breakpoint-up(md) {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__user-name {
+    font-weight: 700;
+    margin-right: 5px;
+    font-size: 17px;
+  }
+  &__user-rating {
+    display: flex;
+    .rating-star {
+      width: 12px;
+      height: auto;
+      margin: 0 2px;
+      
+      @include media-breakpoint-up(md) {
+        width: 18px;
+      }
+    }
+  }
+}
+
+.rew-block__item {
+  margin-bottom: 30px;
+
+  &.answer {
+    margin-bottom: 15px;
+    padding-left: 40px;
+  }
+}
+
+
+.rew-block__item-body {
+  margin-bottom: 20px;
+}
+
+.rew-block__like-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center
+}
+
+.rew-block__btn {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #a8b4c1;
+  padding-top: .125rem;
+  cursor: pointer
+}
+
+.rew-block__btn:hover {
+  color: #3b4256
+}
+
+.rew-block__btn .icon {
+  font-size: 18px
+}
+
+// rew-form
+
+.rew-form {
+  background: #F0F1F5;
+  border-radius: 4px;
+
+  .nav-tabs {
+    margin-bottom: 10px;
+
+    .nav-item {
+      flex-grow: 1;
+    }
+
+    .nav-link {
+      text-align: center;
+      color: #939599;;
+
+      &.active {
+        background-color: transparent;
+        color: #000;
+      }
+    }
+  }
+
+  &__box {
+    &:not(:first-child) {      
+      border-top: 1px solid #dee2e6;
+    }
+  }
+}

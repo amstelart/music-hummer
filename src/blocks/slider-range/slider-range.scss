@@ -44,6 +44,24 @@
     border-color: #BA0000;
     background-color:  #BA0000;
     cursor: pointer;
+
+    i {
+      height: 10px;
+      width: 2px;
+      background: rgba(#fff, 0.4);
+      display: inline-block;
+      position: absolute;
+      top: 3px;
+      left: 7px;
+
+      &:first-child {
+        left: 3px;
+      }
+
+      &:last-child {
+        left: 11px;
+      }
+    }
   }
 
   .irs--round .irs-bar {

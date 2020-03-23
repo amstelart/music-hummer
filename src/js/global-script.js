@@ -22,14 +22,6 @@ $(document).ready(function () {
     }
   });
 
-  $('.p-card').hover(
-
-    function () { $(this).addClass('p-card--hover') },
-
-    function () { $(this).removeClass('p-card--hover') }
-
-  );
-
   $(".p-card__options .options-block__item").click(function () {
     $(this).toggleClass("selected");
     return false;
@@ -78,7 +70,7 @@ $(document).ready(function () {
     asNavFor: '.main-slider__nav',
     responsive: [
       {
-        breakpoint: 1199,
+        breakpoint: 992,
         settings: {
           arrows: false,
           dots: true
@@ -91,11 +83,12 @@ $(document).ready(function () {
     slidesToScroll: 1,
     asNavFor: '.main-slider__carousel',
     dots: false,
+    variableWidth: true,
     centerMode: true,
     focusOnSelect: true,
     responsive: [
       {
-        breakpoint: 1199,
+        breakpoint: 992,
         settings: {
 
         }
@@ -114,6 +107,62 @@ $(document).ready(function () {
     focusOnSelect: true
   });
   // end options-carousel
+
+
+	$('.card-head__slider-big').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: false,
+		speed: 450,
+		asNavFor: '.card-head__slider-small',
+		infinite: false,
+		loop: false,
+    arrows: false,
+    // swipe: false
+
+	});
+	$('.card-head__slider-small').slick({
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		dots: false,
+		speed: 450,
+		infinite: false,
+		loop: false,
+		arrows: false,
+
+		// prevArrow: arrr2,
+		// nextArrow: arrl2,
+		// centerMode: true,
+
+		focusOnSelect: true,
+		asNavFor: '.card-head__slider-big',
+
+		// swipeToSlide: false
+  });
+  
+  $('.carusel')
+  .on('lazyLoaded', function (event, slick, image, imageSource) {
+    image.parent().css('background-image', 'url(' + image.attr('src') + ')');
+  });
+
+  $('[data-fancybox="images"]').fancybox({
+		protect: true,
+		toolbar: true,
+		smallBtn: true,
+		loop: true,
+		keyboard: true,
+		buttons: [
+			"zoom",
+			// "share",
+			// "slideShow",
+			'info',
+			"fullScreen",
+			// "download",
+			"thumbs",
+			"close"
+		],
+
+	});
 
   // kit-carousel
 
@@ -150,6 +199,24 @@ $(document).ready(function () {
   // https://www.jqueryscript.net/time-clock/psg-countdown-timer.html
   var timer = new PsgTimer({
     selector: '#bonus-timer',
+    currentDateTime: Date.UTC(2018, 0, 26, 12, 0, 0),
+    endDateTime: 'UTC+02:00 26.02.2018 13:00:00',
+    multilpeBlocks: true,
+    animation: 'fade',
+    labels: {
+      days: 'Дней',
+      hours: 'Часов',
+      minutes: 'Минут',
+      seconds: 'Секунд'
+    },
+    callbacks: {
+      onInit: function () {
+        console.log('Hello world!');
+      }
+    }
+  });
+  var timer = new PsgTimer({
+    selector: '#bonus-timer2',
     currentDateTime: Date.UTC(2018, 0, 26, 12, 0, 0),
     endDateTime: 'UTC+02:00 26.02.2018 13:00:00',
     multilpeBlocks: true,
