@@ -1,0 +1,3310 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Music hummer</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"> -->
+  <!-- <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"> -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+
+  </script>
+
+</head>
+
+<body>
+
+  <div class="main-wrapper">
+
+    <div class="trop main-mnu hidden-mnu hidden-lg landingMenu2 d-lg-none">
+      <div class="wrapp-hidden">
+        <ul class="sidebar-nav">
+          <li class="catalog-main"><a href="#catalog-collapse" class="" data-toggle="collapse">
+            <!-- <div class="burger"><span></span></div> -->
+            Каталог</a>
+            <div class="collapse" id="catalog-collapse">
+              <ul>
+                <li><a href="#catalog-sub-collapse" data-toggle="collapse">Гитары</a>
+                  <div class="collapse" id="catalog-sub-collapse">
+                    <ul class="catalog-main__sub-nav">
+                      <li class="active"><a href="#">Электрогитары <span>1234</span></a></li>
+                      <li><a href="#">Бас-гитары <span>336</span></a></li>
+                      <li><a href="#">Акустические <span>5678</span></a></li>
+                      <li><a href="#">Классические <span>1882</span></a></li>
+                      <li><a href="#">Электроакустические <span>568</span></a></li>
+                      <li><a href="#">Полуакустические <span>985</span></a></li>
+                      <li><a href="#">Уменьшенные гитары <span>1289</span></a></li>
+                      <li><a href="#">Укулеле <span>87</span></a></li>
+                      <li><a href="#">Наборы новичкам <span>34</span></a></li>
+                      <li><a href="#">Аксессуары <span>12</span></a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">Гитарное оборудование</a></li>
+                <li><a href="#">Трансляционное оборудование</a></li>
+                <li><a href="#">Звуковое оборудование</a></li>
+                <li><a href="#">Студия и звукозапись</a></li>
+                <li><a href="#">Клавишные</a></li>
+                <li><a href="#">Микрофоны</a></li>
+                <li><a href="#">Наушники</a></li>
+                <li><a href="#">Свет, сцена, эффекты</a></li>
+                <li><a href="#">Караоке оборудование</a></li>
+                <li><a href="#">Ударные</a></li>
+                <li><a href="#">Hi Fi оборудование</a></li>
+                <li><a href="#">Перкуссия</a></li>
+                <li><a href="#">Оркестровые</a></li>
+                <li><a href="#">Народные</a></li>
+                <li><a href="#">Сувениры и подарки</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">Новинки</a></li>
+          <li><a href="#">Скидки</a></li>
+          <li><a href="#">Хиты продаж</a></li>
+          <li><a href="#">Доступен в комплекте</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <header class="page-header" role="banner">
+      <div class="top-line d-none d-lg-block">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="top-line__info-item">Москва: <a href="tel:+74951290789">+7 (495) 120-07-89</a></div>
+              <div class="top-line__info-item">Бесплатно по России: <a href="tel:+78002500000">8 800 250-00-00</a></div>
+              <div class="top-line__info-item"><a href="mailto:">welcome@music-hummer.ru</a></div>
+            </div>
+            <div class="col-auto">
+              <ul class="top-line__nav">
+                <li><a href="#">Тендеры</a></li>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Оплата</a></li>
+                <li><a href="#">Поддержка</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mid-line">
+        <div class="container">
+          <div class="row">
+            <div class="col-auto d-block d-lg-none pr-0">
+              <a href="#my-menu"><div class="burger toggle-mnu"><span></span></div></a>
+            </div>
+            <div class="col">
+              <a href="index.html" class="logo">
+                <img src="img/logo.svg" alt="" width="122px" height="32px">
+              </a>
+            </div>
+            <div class="col-auto">
+              <div class="user-options">
+                <a class="user-options__item d-none d-lg-inline" href="#"><svg class="icon icon-search" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_compare"></use></svg><span class="d-none d-lg-inline-flex">Сравнение</span></a>
+                <a class="user-options__item" href="#"><svg class="icon icon-search" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_fav"></use></svg><span class="d-none d-lg-inline-flex">Отложенные</span></a>
+                <a class="user-options__item" href="#"><svg class="icon icon-search" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_shopping_cart"></use></svg><span class="d-none d-lg-inline-flex">Корзина</span></a>
+                <a class="user-options__item d-inline d-lg-none" data-fancybox data-options='{"src": "#m-search", "touch": false}' href="javascript:;"><svg class="icon icon-search" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-search"></use></svg></a>
+              </div>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <div class="user-entry">
+                <a href="#" class="user-entry__link">Войти</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-line d-none d-lg-block">
+        <div class="container">
+          <div class="nav-line__inner">
+            <nav class="main-nav d-flex">
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Акции</a>
+              </li>
+              <li class="main-nav__item active">
+                <a href="#" class="main-nav__link">Каталог</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Бренды</a>
+              </li>
+              <li class="main-nav__item dropdown"><a href="#" class="main-nav__link" data-toggle="dropdown">Услуги</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Аренда</a>
+                  <a class="dropdown-item" href="#">Трейд-ин</a>
+                  <a class="dropdown-item" href="#">Инсталляция</a>
+                  <a class="dropdown-item" href="#">Ремонт и сервис</a>
+                  <a class="dropdown-item" href="#">Для праздников</a>
+                  <a class="dropdown-item" href="#">Услуги для пианино</a>
+                  <a class="dropdown-item" href="#">Роспись на инструментах</a>
+                </div>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Оптовикам</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Контакты</a>
+              </li>
+            </nav>
+            <form class="form-inline search">
+              <input class="form-control" type="search" placeholder="Более 30 000 товаров" aria-label="Search">
+              <button class="btn" type="submit"><svg class="icon icon-search" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-search"></use></svg></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <div class="container">
+
+      <div class="page-top">
+        <nav class="page-top__breadcrumb" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Главная</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Сравнение</li>
+          </ol>
+        </nav>
+        <h1 class="page-top__title">Сравнение акустических гитар</h1>
+      </div>
+
+      <div style="position: relative;">
+        <div class="compare-content_wrapper">
+          <!-- MENUS TABLE -->
+          <div class="compare-left_sidebar-wrapper">
+            <div class="compare-left_sidebar">
+              <div class="compare-menu_panel">
+                <a href="#" class="btn btn-block btn-gray mb-3">Добавить еще одну модель</a>
+                <ul class="compare-menu__nav">
+                  <li><a href="#">Все параметры</a></li>
+                  <li><a class="active" href="#">Только отличия</a></li>
+                </ul>
+              </div>
+              <div class="compare-property_title-wrapper" data-height="42" style="height: 42px;">
+                <div class="compare-property_title">
+                  <div class="compare-property_title-content">
+                    <p class="title">Рейтинг</p>
+                    <div class="compare-property_title-icons">
+                      <div class="show-description">
+                        <!--do not remove. Set inline (display:none) if there are no description -->
+                        <svg class="icon_question_small" width="20" height="20">
+                          <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_question_small">
+                          </use>
+                        </svg>
+                        <div class="compare-property_title-description">
+                          <span class="descripption-title">Артикул</span>
+                          <span class="descripption-text">
+                            Описание свойства отсутствует. </span>
+                        </div>
+                        <!-- //// -->
+                      </div>
+                      <svg class="icon_cancel_comparison_small" width="20" height="20">
+                        <use
+                          xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_comparison_small">
+                        </use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="compare-property_title-wrapper" data-height="63" style="height: 63px;">
+                <div class="compare-property_title">
+                  <div class="compare-property_title-content">
+                    <p class="title">Цена</p>
+                    <div class="compare-property_title-icons">
+                      <div class="show-description">
+                        <!--do not remove. Set inline (display:none) if there are no description -->
+                        <svg class="icon_question_small" width="20" height="20">
+                          <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_question_small">
+                          </use>
+                        </svg>
+                        <div class="compare-property_title-description">
+                          <span class="descripption-title">Реквизиты</span>
+                          <span class="descripption-text">
+                            Описание свойства отсутствует. </span>
+                        </div>
+                        <!-- //// -->
+                      </div>
+                      <svg class="icon_cancel_comparison_small" width="20" height="20">
+                        <use
+                          xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_comparison_small">
+                        </use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="compare-property_title-wrapper" data-height="42" style="height: 42px;">
+                <div class="compare-property_title">
+                  <div class="compare-property_title-content">
+                    <p class="title">Звукосниматель</p>
+                    <div class="compare-property_title-icons">
+                      <div class="show-description">
+                        <!--do not remove. Set inline (display:none) if there are no description -->
+                        <svg class="icon_question_small" width="20" height="20">
+                          <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_question_small">
+                          </use>
+                        </svg>
+                        <div class="compare-property_title-description">
+                          <span class="descripption-title">Базовая единица</span>
+                          <span class="descripption-text">
+                            Описание свойства отсутствует. </span>
+                        </div>
+                        <!-- //// -->
+                      </div>
+                      <svg class="icon_cancel_comparison_small" width="20" height="20">
+                        <use
+                          xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_comparison_small">
+                        </use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="compare-property_title-wrapper" data-height="42" style="height: 42px;">
+                <div class="compare-property_title">
+                  <div class="compare-property_title-content">
+                    <p class="title">Модель</p>
+                    <div class="compare-property_title-icons">
+                      <div class="show-description">
+                        <!--do not remove. Set inline (display:none) if there are no description -->
+                        <svg class="icon_question_small" width="20" height="20">
+                          <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_question_small">
+                          </use>
+                        </svg>
+                        <div class="compare-property_title-description">
+                          <span class="descripption-title">Ставки налогов</span>
+                          <span class="descripption-text">
+                            Описание свойства отсутствует. </span>
+                        </div>
+                        <!-- //// -->
+                      </div>
+                      <svg class="icon_cancel_comparison_small" width="20" height="20">
+                        <use
+                          xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_comparison_small">
+                        </use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="compare-property_title-wrapper" data-height="42" style="height: 42px;">
+                <div class="compare-property_title">
+                  <div class="compare-property_title-content">
+                    <p class="title">Материалы</p>
+                    <div class="compare-property_title-icons">
+                      <div class="show-description">
+                        <!--do not remove. Set inline (display:none) if there are no description -->
+                        <svg class="icon_question_small" width="20" height="20">
+                          <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_question_small">
+                          </use>
+                        </svg>
+                        <div class="compare-property_title-description">
+                          <span class="descripption-title">Картинки</span>
+                          <span class="descripption-text">
+                            Описание свойства отсутствует. </span>
+                        </div>
+                        <!-- //// -->
+                      </div>
+                      <svg class="icon_cancel_comparison_small" width="20" height="20">
+                        <use
+                          xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_comparison_small">
+                        </use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="compare-property_title-wrapper" data-height="84" style="height: 84px;">
+                <div class="compare-property_title">
+                  <div class="compare-property_title-content">
+                    <p class="title">Гриф</p>
+                    <div class="compare-property_title-icons">
+                      <div class="show-description">
+                        <!--do not remove. Set inline (display:none) if there are no description -->
+                        <svg class="icon_question_small" width="20" height="20">
+                          <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_question_small">
+                          </use>
+                        </svg>
+                        <div class="compare-property_title-description">
+                          <span class="descripption-title">Производитель</span>
+                          <span class="descripption-text">
+                            Описание свойства отсутствует. </span>
+                        </div>
+                        <!-- //// -->
+                      </div>
+                      <svg class="icon_cancel_comparison_small" width="20" height="20">
+                        <use
+                          xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_comparison_small">
+                        </use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="compare-property_title-wrapper" data-height="63" style="height: 63px;">
+                <div class="compare-property_title">
+                  <div class="compare-property_title-content">
+                    <p class="title">
+                      ID поста блога для комментариев </p>
+                    <div class="compare-property_title-icons">
+                      <div class="show-description">
+                        <!--do not remove. Set inline (display:none) if there are no description -->
+                        <svg class="icon_question_small" width="20" height="20">
+                          <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_question_small">
+                          </use>
+                        </svg>
+                        <div class="compare-property_title-description">
+                          <span class="descripption-title">ID поста блога для комментариев</span>
+                          <span class="descripption-text">
+                            Описание свойства отсутствует. </span>
+                        </div>
+                        <!-- //// -->
+                      </div>
+                      <svg class="icon_cancel_comparison_small" width="20" height="20">
+                        <use
+                          xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_comparison_small">
+                        </use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="compare-property_title-wrapper" data-height="63" style="height: 63px;">
+                <div class="compare-property_title">
+                  <div class="compare-property_title-content">
+                    <p class="title">
+                      Рама / Рост велосипедиста, см </p>
+                    <div class="compare-property_title-icons">
+                      <div class="show-description">
+                        <!--do not remove. Set inline (display:none) if there are no description -->
+                        <svg class="icon_question_small" width="20" height="20">
+                          <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_question_small">
+                          </use>
+                        </svg>
+                        <div class="compare-property_title-description">
+                          <span class="descripption-title">Рама / Рост велосипедиста, см</span>
+                          <span class="descripption-text">
+                            Описание свойства отсутствует. </span>
+                        </div>
+                        <!-- //// -->
+                      </div>
+                      <svg class="icon_cancel_comparison_small" width="20" height="20">
+                        <use
+                          xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_comparison_small">
+                        </use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="compare-property_title-wrapper" data-height="42" style="height: 42px;">
+                <div class="compare-property_title">
+                  <div class="compare-property_title-content">
+                    <p class="title">
+                      Материал рамы </p>
+                    <div class="compare-property_title-icons">
+                      <div class="show-description">
+                        <!--do not remove. Set inline (display:none) if there are no description -->
+                        <svg class="icon_question_small" width="20" height="20">
+                          <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_question_small">
+                          </use>
+                        </svg>
+                        <div class="compare-property_title-description">
+                          <span class="descripption-title">Материал рамы</span>
+                          <span class="descripption-text">
+                            Описание свойства отсутствует. </span>
+                        </div>
+                        <!-- //// -->
+                      </div>
+                      <svg class="icon_cancel_comparison_small" width="20" height="20">
+                        <use
+                          xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_comparison_small">
+                        </use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="compare-property_title-wrapper" data-height="42" style="height: 42px;">
+                <div class="compare-property_title">
+                  <div class="compare-property_title-content">
+                    <p class="title">
+                      Размеры рамы </p>
+                    <div class="compare-property_title-icons">
+                      <div class="show-description">
+                        <!--do not remove. Set inline (display:none) if there are no description -->
+                        <svg class="icon_question_small" width="20" height="20">
+                          <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_question_small">
+                          </use>
+                        </svg>
+                        <div class="compare-property_title-description">
+                          <span class="descripption-title">Размеры рамы</span>
+                          <span class="descripption-text">
+                            Описание свойства отсутствует. </span>
+                        </div>
+                        <!-- //// -->
+                      </div>
+                      <svg class="icon_cancel_comparison_small" width="20" height="20">
+                        <use
+                          xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_comparison_small">
+                        </use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="compare-property_title-wrapper" data-height="42" style="height: 42px;">
+                <div class="compare-property_title">
+                  <div class="compare-property_title-content">
+                    <p class="title">
+                      Диаметр колес </p>
+                    <div class="compare-property_title-icons">
+                      <div class="show-description">
+                        <!--do not remove. Set inline (display:none) if there are no description -->
+                        <svg class="icon_question_small" width="20" height="20">
+                          <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_question_small">
+                          </use>
+                        </svg>
+                        <div class="compare-property_title-description">
+                          <span class="descripption-title">Диаметр колес</span>
+                          <span class="descripption-text">
+                            Описание свойства отсутствует. </span>
+                        </div>
+                        <!-- //// -->
+                      </div>
+                      <svg class="icon_cancel_comparison_small" width="20" height="20">
+                        <use
+                          xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_comparison_small">
+                        </use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="compare-property_title-wrapper" data-height="42" style="height: 42px;">
+                <div class="compare-property_title">
+                  <div class="compare-property_title-content">
+                    <p class="title">
+                      Материал обода </p>
+                    <div class="compare-property_title-icons">
+                      <div class="show-description">
+                        <!--do not remove. Set inline (display:none) if there are no description -->
+                        <svg class="icon_question_small" width="20" height="20">
+                          <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_question_small">
+                          </use>
+                        </svg>
+                        <div class="compare-property_title-description">
+                          <span class="descripption-title">Материал обода</span>
+                          <span class="descripption-text">
+                            Описание свойства отсутствует. </span>
+                        </div>
+                        <!-- //// -->
+                      </div>
+                      <svg class="icon_cancel_comparison_small" width="20" height="20">
+                        <use
+                          xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_comparison_small">
+                        </use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="compare-property_title-wrapper" data-height="42" style="height: 42px;">
+                <div class="compare-property_title">
+                  <div class="compare-property_title-content">
+                    <p class="title">
+                      Передний тормоз </p>
+                    <div class="compare-property_title-icons">
+                      <div class="show-description">
+                        <!--do not remove. Set inline (display:none) if there are no description -->
+                        <svg class="icon_question_small" width="20" height="20">
+                          <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_question_small">
+                          </use>
+                        </svg>
+                        <div class="compare-property_title-description">
+                          <span class="descripption-title">Передний тормоз</span>
+                          <span class="descripption-text">
+                            Описание свойства отсутствует. </span>
+                        </div>
+                        <!-- //// -->
+                      </div>
+                      <svg class="icon_cancel_comparison_small" width="20" height="20">
+                        <use
+                          xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_comparison_small">
+                        </use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="compare-property_title-wrapper" data-height="42" style="height: 42px;">
+                <div class="compare-property_title">
+                  <div class="compare-property_title-content">
+                    <p class="title">
+                      Задний тормоз </p>
+                    <div class="compare-property_title-icons">
+                      <div class="show-description">
+                        <!--do not remove. Set inline (display:none) if there are no description -->
+                        <svg class="icon_question_small" width="20" height="20">
+                          <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_question_small">
+                          </use>
+                        </svg>
+                        <div class="compare-property_title-description">
+                          <span class="descripption-title">Задний тормоз</span>
+                          <span class="descripption-text">
+                            Описание свойства отсутствует. </span>
+                        </div>
+                        <!-- //// -->
+                      </div>
+                      <svg class="icon_cancel_comparison_small" width="20" height="20">
+                        <use
+                          xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_comparison_small">
+                        </use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="compare-property_title-wrapper" data-height="42" style="height: 42px;">
+                <div class="compare-property_title">
+                  <div class="compare-property_title-content">
+                    <p class="title">
+                      Количество скоростей </p>
+                    <div class="compare-property_title-icons">
+                      <div class="show-description">
+                        <!--do not remove. Set inline (display:none) if there are no description -->
+                        <svg class="icon_question_small" width="20" height="20">
+                          <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_question_small">
+                          </use>
+                        </svg>
+                        <div class="compare-property_title-description">
+                          <span class="descripption-title">Количество скоростей</span>
+                          <span class="descripption-text">
+                            Описание свойства отсутствует. </span>
+                        </div>
+                        <!-- //// -->
+                      </div>
+                      <svg class="icon_cancel_comparison_small" width="20" height="20">
+                        <use
+                          xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_comparison_small">
+                        </use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="compare-property_title-wrapper" data-height="42" style="height: 42px;">
+                <div class="compare-property_title">
+                  <div class="compare-property_title-content">
+                    <p class="title">
+                      Тип </p>
+                    <div class="compare-property_title-icons">
+                      <div class="show-description">
+                        <!--do not remove. Set inline (display:none) if there are no description -->
+                        <svg class="icon_question_small" width="20" height="20">
+                          <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_question_small">
+                          </use>
+                        </svg>
+                        <div class="compare-property_title-description">
+                          <span class="descripption-title">Тип</span>
+                          <span class="descripption-text">
+                            Описание свойства отсутствует. </span>
+                        </div>
+                        <!-- //// -->
+                      </div>
+                      <svg class="icon_cancel_comparison_small" width="20" height="20">
+                        <use
+                          xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_comparison_small">
+                        </use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="compare-property_title-wrapper" data-height="63" style="height: 63px;">
+                <div class="compare-property_title">
+                  <div class="compare-property_title-content">
+                    <p class="title">
+                      Конструкция </p>
+                    <div class="compare-property_title-icons">
+                      <div class="show-description">
+                        <!--do not remove. Set inline (display:none) if there are no description -->
+                        <svg class="icon_question_small" width="20" height="20">
+                          <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_question_small">
+                          </use>
+                        </svg>
+                        <div class="compare-property_title-description">
+                          <span class="descripption-title">Конструкция</span>
+                          <span class="descripption-text">
+                            Описание свойства отсутствует. </span>
+                        </div>
+                        <!-- //// -->
+                      </div>
+                      <svg class="icon_cancel_comparison_small" width="20" height="20">
+                        <use
+                          xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_comparison_small">
+                        </use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="compare-property_title-wrapper" data-height="42" style="height: 42px;">
+                <div class="compare-property_title">
+                  <div class="compare-property_title-content">
+                    <p class="title">
+                      Модель </p>
+                    <div class="compare-property_title-icons">
+                      <div class="show-description">
+                        <!--do not remove. Set inline (display:none) if there are no description -->
+                        <svg class="icon_question_small" width="20" height="20">
+                          <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_question_small">
+                          </use>
+                        </svg>
+                        <div class="compare-property_title-description">
+                          <span class="descripption-title">Модель</span>
+                          <span class="descripption-text">
+                            Описание свойства отсутствует. </span>
+                        </div>
+                        <!-- //// -->
+                      </div>
+                      <svg class="icon_cancel_comparison_small" width="20" height="20">
+                        <use
+                          xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_comparison_small">
+                        </use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="compare-menu_panel">
+                <div class="compare-menu_panel-title">
+                  <span>Товаров в сравнении: </span><span>5</span>
+                </div>
+                <div class="compare-menu_panel-content">
+                  <div class="compare_menu-panel_switch all">
+                    <div class="menu-panel_switch-block">
+                      <div class="compare-switch">
+                        <div class="switch "></div>
+                      </div>
+                    </div>
+                    <div class="menu-panel_radio-text_block">
+                      <a class="all_params" href="/catalog/compare/?DIFFERENT=N">
+                        Все параметры</a>
+                      <a class="different_params" href="/catalog/compare/?DIFFERENT=Y">
+                        Только различающиеся</a>
+                    </div>
+                  </div>
+                  <div class="compare_menu-panel_show-deleted">
+                    <div class="bx_filter_parameters_box_checkbox ">
+                      <input type="checkbox" id="compare-show_deleted2" value="Y"
+                        class="checkbox__input compare-show_deleted">
+                      <label for="compare-show_deleted2" class="checkbox__label">
+                        <span>Показать удаленные</span> </label>
+                    </div>
+                  </div>
+                  <a class="compare_menu-panel_clear"
+                    href="/catalog/compare/?action_ccr=DELETE_FROM_COMPARE_RESULT&amp;ID=ALL;">
+                    <svg class="icon-clear-cart" width="18" height="22">
+                      <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_clear_cart"></use>
+                    </svg>
+                    <span>Очистить сравнение</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- / MENUS TABLE -->
+
+          <!-- CONTENT TABLE -->
+          <div class="compare-properties_block ps ps--active-x">
+            <div>
+              <!-- TOP IMAGES -->
+              <div class="compare-product_items-wrapper top-images">
+                <div class="compare-product_items">
+
+                  <div class="compare-product_item">
+                    <div class="compare-product_item-content">
+                      <a class="table_compare_product_img hover-zoom hover-square" href="#"><img src="img/p-card-img-01.png" alt="" title=""></a>
+                      <div>
+                        <a class="compare-product_title" href="#">Cort C4 Plus ZBMH Open Pore Tobacco Burst (C4 Pl…</a>
+                        <a class="table_compare_product_close" href="#"></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="compare-product_item">
+                    <div class="compare-product_item-content">
+                      <a class="table_compare_product_img hover-zoom hover-square" href="#"><img src="img/p-card-img-01.png" alt="" title=""></a>
+                      <div>
+                        <a class="compare-product_title" href="#">Cort C4 Plus ZBMH Open Pore Tobacco Burst (C4 Pl…</a>
+                        <a class="table_compare_product_close" href="#"></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="compare-product_item">
+                    <div class="compare-product_item-content">
+                      <a class="table_compare_product_img hover-zoom hover-square" href="#"><img src="img/p-card-img-01.png" alt="" title=""></a>
+                      <div>
+                        <a class="compare-product_title" href="#">Cort C4 Plus ZBMH Open Pore Tobacco Burst (C4 Pl…</a>
+                        <a class="table_compare_product_close" href="#"></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="compare-product_item">
+                    <div class="compare-product_item-content">
+                      <a class="table_compare_product_img hover-zoom hover-square" href="#"><img src="img/p-card-img-01.png" alt="" title=""></a>
+                      <div>
+                        <a class="compare-product_title" href="#">Cort C4 Plus ZBMH Open Pore Tobacco Burst (C4 Pl…</a>
+                        <a class="table_compare_product_close" href="#"></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="compare-product_item">
+                    <div class="compare-product_item-content">
+                      <a class="table_compare_product_img hover-zoom hover-square" href="#"><img src="img/p-card-img-01.png" alt="" title=""></a>
+                      <div>
+                        <a class="compare-product_title" href="#">Cort C4 Plus ZBMH Open Pore Tobacco Burst (C4 Pl…</a>
+                        <a class="table_compare_product_close" href="#"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- TOP IMAGES -->
+
+              <div class="compare-properties_wrapper">
+                <div class="mobile-title-wrapper">
+                  <div class="mobile-compare-property_title-border" data-height="42" style="height: 42px;">
+                    <div class="mobile-compare-property_title">
+                      <span>Артикул</span>
+                      <div class="mobile-compare-property_title-icons">
+                        <!--do not remove. Set inline (display:none) if there are no description -->
+                        <svg class="mobile-icon_question_small" width="20" height="20">
+                          <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_question_small">
+                          </use>
+                        </svg>
+                        <!-- //// -->
+                        <svg class="mobile-icon_cancel_comparison_small" width="20" height="20">
+                          <use
+                            xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_comparison_small">
+                          </use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <!--do not remove. Set inline (display:none) if there are no description -->
+                  <div class="mobile-compare-property_title-description-wrapper" data-height="0" style="height: 0px;">
+                    <div class="mobile-compare-property_title-content-wrapper">
+                      <div class="mobile-compare-property_title-description">
+                        <span class="mobile-description-title">Артикул</span>
+                        <span class="mobile-description-text">
+                          Описание свойства отсутствует. </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- //// -->
+                </div>
+                <div class="compare-row_mobile_wrapper" style="height: auto;" data-height="309">
+                  <div class="table-properties-wrapper">
+                    <div class="mobile-compare-product_titles_wrapper">
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Городской велосипед STELS Navigator 325 28 Z010 (2018) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Велосипед BMX STARK Madness BMX 1 (2018) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Городской велосипед Novatrack TG-20 6 (2017) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Подростковый городской велосипед TREK Jet 20 (2015) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Детский велосипед STELS Magic 12 (2015) </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="compare-propertie_row" data-height="42" style="height: 42px;">
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <div class="p-rating">
+                            <div class="p-rating__group">
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                            </div>
+                            <a href="#" class="p-rating__link">234 отзыва</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <div class="p-rating">
+                            <div class="p-rating__group">
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                            </div>
+                            <a href="#" class="p-rating__link">234 отзыва</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <div class="p-rating">
+                            <div class="p-rating__group">
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                            </div>
+                            <a href="#" class="p-rating__link">234 отзыва</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <div class="p-rating">
+                            <div class="p-rating__group">
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                            </div>
+                            <a href="#" class="p-rating__link">234 отзыва</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <div class="p-rating">
+                            <div class="p-rating__group">
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star rating-star--full" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                              <svg class="rating-star" width="20" height="20">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_star">
+                                </use>
+                              </svg>
+                            </div>
+                            <a href="#" class="p-rating__link">234 отзыва</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mobile-title-wrapper">
+                  <div class="mobile-compare-property_title-border" data-height="42" style="height: 42px;">
+                    <div class="mobile-compare-property_title">
+                      <span>Реквизиты</span>
+                      <div class="mobile-compare-property_title-icons">
+                        <!--do not remove. Set inline (display:none) if there are no description -->
+                        <svg class="mobile-icon_question_small" width="20" height="20">
+                          <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_question_small">
+                          </use>
+                        </svg>
+                        <!-- //// -->
+                        <svg class="mobile-icon_cancel_comparison_small" width="20" height="20">
+                          <use
+                            xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_comparison_small">
+                          </use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <!--do not remove. Set inline (display:none) if there are no description -->
+                  <div class="mobile-compare-property_title-description-wrapper" data-height="0" style="height: 0px;">
+                    <div class="mobile-compare-property_title-content-wrapper">
+                      <div class="mobile-compare-property_title-description">
+                        <span class="mobile-description-title">Реквизиты</span>
+                        <span class="mobile-description-text">
+                          Описание свойства отсутствует. </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- //// -->
+                </div>
+                <div class="compare-row_mobile_wrapper" style="height: auto;" data-height="309">
+                  <div class="table-properties-wrapper">
+                    <div class="mobile-compare-product_titles_wrapper">
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Городской велосипед STELS Navigator 325 28 Z010 (2018) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Велосипед BMX STARK Madness BMX 1 (2018) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Городской велосипед Novatrack TG-20 6 (2017) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Подростковый городской велосипед TREK Jet 20 (2015) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Детский велосипед STELS Magic 12 (2015) </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="compare-propertie_row" data-height="63" style="height: 63px;">
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <div class="price">8&nbsp;269&nbsp;₽</div>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <div class="price">8&nbsp;269&nbsp;₽</div>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <div class="price">8&nbsp;269&nbsp;₽</div>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <div class="price">8&nbsp;269&nbsp;₽</div>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <div class="price">8&nbsp;269&nbsp;₽</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mobile-title-wrapper">
+                  <div class="mobile-compare-property_title-border" data-height="42" style="height: 42px;">
+                    <div class="mobile-compare-property_title">
+                      <span>Базовая единица</span>
+                      <div class="mobile-compare-property_title-icons">
+                        <!--do not remove. Set inline (display:none) if there are no description -->
+                        <svg class="mobile-icon_question_small" width="20" height="20">
+                          <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_question_small">
+                          </use>
+                        </svg>
+                        <!-- //// -->
+                        <svg class="mobile-icon_cancel_comparison_small" width="20" height="20">
+                          <use
+                            xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_comparison_small">
+                          </use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <!--do not remove. Set inline (display:none) if there are no description -->
+                  <div class="mobile-compare-property_title-description-wrapper" data-height="0" style="height: 0px;">
+                    <div class="mobile-compare-property_title-content-wrapper">
+                      <div class="mobile-compare-property_title-description">
+                        <span class="mobile-description-title">Базовая единица</span>
+                        <span class="mobile-description-text">
+                          Описание свойства отсутствует. </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- //// -->
+                </div>
+                <div class="compare-row_mobile_wrapper" style="height: auto;" data-height="309">
+                  <div class="table-properties-wrapper">
+                    <div class="mobile-compare-product_titles_wrapper">
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Городской велосипед STELS Navigator 325 28 Z010 (2018) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Велосипед BMX STARK Madness BMX 1 (2018) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Городской велосипед Novatrack TG-20 6 (2017) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Подростковый городской велосипед TREK Jet 20 (2015) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Детский велосипед STELS Magic 12 (2015) </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="compare-propertie_row" data-height="42" style="height: 42px;">
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            шт </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            шт </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            шт </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            шт </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            шт </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mobile-title-wrapper">
+                  <div class="mobile-compare-property_title-border" data-height="42" style="height: 42px;">
+                    <div class="mobile-compare-property_title">
+                      <span>Ставки налогов</span>
+                      <div class="mobile-compare-property_title-icons">
+                        <!--do not remove. Set inline (display:none) if there are no description -->
+                        <svg class="mobile-icon_question_small" width="20" height="20">
+                          <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_question_small">
+                          </use>
+                        </svg>
+                        <!-- //// -->
+                        <svg class="mobile-icon_cancel_comparison_small" width="20" height="20">
+                          <use
+                            xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_comparison_small">
+                          </use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <!--do not remove. Set inline (display:none) if there are no description -->
+                  <div class="mobile-compare-property_title-description-wrapper" data-height="0" style="height: 0px;">
+                    <div class="mobile-compare-property_title-content-wrapper">
+                      <div class="mobile-compare-property_title-description">
+                        <span class="mobile-description-title">Ставки налогов</span>
+                        <span class="mobile-description-text">
+                          Описание свойства отсутствует. </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- //// -->
+                </div>
+                <div class="compare-row_mobile_wrapper" style="height: auto;" data-height="309">
+                  <div class="table-properties-wrapper">
+                    <div class="mobile-compare-product_titles_wrapper">
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Городской велосипед STELS Navigator 325 28 Z010 (2018) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Велосипед BMX STARK Madness BMX 1 (2018) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Городской велосипед Novatrack TG-20 6 (2017) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Подростковый городской велосипед TREK Jet 20 (2015) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Детский велосипед STELS Magic 12 (2015) </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="compare-propertie_row" data-height="42" style="height: 42px;">
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            18 </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            18 </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            18 </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            18 </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            18 </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mobile-title-wrapper">
+                  <div class="mobile-compare-property_title-border" data-height="42"
+                    style="height: 42px; overflow: hidden;">
+                    <div class="mobile-compare-property_title">
+                      <span>Картинки</span>
+                      <div class="mobile-compare-property_title-icons">
+                        <!--do not remove. Set inline (display:none) if there are no description -->
+                        <svg class="mobile-icon_question_small" width="20" height="20">
+                          <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_question_small">
+                          </use>
+                        </svg>
+                        <!-- //// -->
+                        <svg class="mobile-icon_cancel_comparison_small" width="20" height="20">
+                          <use
+                            xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_comparison_small">
+                          </use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <!--do not remove. Set inline (display:none) if there are no description -->
+                  <div class="mobile-compare-property_title-description-wrapper" data-height="0" style="height: 0px;">
+                    <div class="mobile-compare-property_title-content-wrapper">
+                      <div class="mobile-compare-property_title-description">
+                        <span class="mobile-description-title">Картинки</span>
+                        <span class="mobile-description-text">
+                          Описание свойства отсутствует. </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- //// -->
+                </div>
+                <div class="compare-row_mobile_wrapper" style="height: auto; overflow: hidden;" data-height="309">
+                  <div class="table-properties-wrapper">
+                    <div class="mobile-compare-product_titles_wrapper">
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Городской велосипед STELS Navigator 325 28 Z010 (2018) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Велосипед BMX STARK Madness BMX 1 (2018) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Городской велосипед Novatrack TG-20 6 (2017) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Подростковый городской велосипед TREK Jet 20 (2015) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Детский велосипед STELS Magic 12 (2015) </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="compare-propertie_row" data-height="42" style="height: 42px;">
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            <a
+                              href="/bitrix/redirect.php?event1=catalog_out&amp;event2=%2Fupload%2Fiblock%2F4c6%2F4c67113c5eff22a003dba9e8e983fd7e.jpg&amp;event3=c84c60eb178f3c7a04b71a74319243c0.jpg&amp;goto=%2Fupload%2Fiblock%2F4c6%2F4c67113c5eff22a003dba9e8e983fd7e.jpg">Загрузить</a>/
+                            <a
+                              href="/bitrix/redirect.php?event1=catalog_out&amp;event2=%2Fupload%2Fiblock%2Fa88%2Fa8854d89865e58e7ecc6a029dbb64490.jpg&amp;event3=b6f629509c5e8344a732020f81375565.jpg&amp;goto=%2Fupload%2Fiblock%2Fa88%2Fa8854d89865e58e7ecc6a029dbb64490.jpg">Загрузить</a>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            <a
+                              href="/bitrix/redirect.php?event1=catalog_out&amp;event2=%2Fupload%2Fiblock%2Fe3b%2Fe3b152da6440a75c95a9238b7542a589.jpg&amp;event3=c6d430dfef8e56dfe569c709d1e807b3.jpg&amp;goto=%2Fupload%2Fiblock%2Fe3b%2Fe3b152da6440a75c95a9238b7542a589.jpg">Загрузить</a>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            <a
+                              href="/bitrix/redirect.php?event1=catalog_out&amp;event2=%2Fupload%2Fiblock%2F0c7%2F0c75434c47a34ba8e45e19a353d45681.jpg&amp;event3=392f0dfede0bd712fab8b9409e471f3e.jpg&amp;goto=%2Fupload%2Fiblock%2F0c7%2F0c75434c47a34ba8e45e19a353d45681.jpg">Загрузить</a>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mobile-title-wrapper">
+                  <div class="mobile-compare-property_title-border" data-height="42"
+                    style="height: 42px; overflow: hidden;">
+                    <div class="mobile-compare-property_title">
+                      <span>Производитель</span>
+                      <div class="mobile-compare-property_title-icons">
+                        <!--do not remove. Set inline (display:none) if there are no description -->
+                        <svg class="mobile-icon_question_small" width="20" height="20">
+                          <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_question_small">
+                          </use>
+                        </svg>
+                        <!-- //// -->
+                        <svg class="mobile-icon_cancel_comparison_small" width="20" height="20">
+                          <use
+                            xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_comparison_small">
+                          </use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <!--do not remove. Set inline (display:none) if there are no description -->
+                  <div class="mobile-compare-property_title-description-wrapper" data-height="0" style="height: 0px;">
+                    <div class="mobile-compare-property_title-content-wrapper">
+                      <div class="mobile-compare-property_title-description">
+                        <span class="mobile-description-title">Производитель</span>
+                        <span class="mobile-description-text">
+                          Описание свойства отсутствует. </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- //// -->
+                </div>
+                <div class="compare-row_mobile_wrapper" style="height: auto; overflow: hidden;" data-height="309">
+                  <div class="table-properties-wrapper">
+                    <div class="mobile-compare-product_titles_wrapper">
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Городской велосипед STELS Navigator 325 28 Z010 (2018) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Велосипед BMX STARK Madness BMX 1 (2018) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Городской велосипед Novatrack TG-20 6 (2017) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Подростковый городской велосипед TREK Jet 20 (2015) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Детский велосипед STELS Magic 12 (2015) </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="compare-propertie_row" data-height="84" style="height: 84px;">
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            STELS </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            STARK </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            Novatrack </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            TREK </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            STELS </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mobile-title-wrapper">
+                  <div class="mobile-compare-property_title-border" data-height="42"
+                    style="height: 42px; overflow: hidden;">
+                    <div class="mobile-compare-property_title">
+                      <span>ID поста блога для комментариев</span>
+                      <div class="mobile-compare-property_title-icons">
+                        <!--do not remove. Set inline (display:none) if there are no description -->
+                        <svg class="mobile-icon_question_small" width="20" height="20">
+                          <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_question_small">
+                          </use>
+                        </svg>
+                        <!-- //// -->
+                        <svg class="mobile-icon_cancel_comparison_small" width="20" height="20">
+                          <use
+                            xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_comparison_small">
+                          </use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <!--do not remove. Set inline (display:none) if there are no description -->
+                  <div class="mobile-compare-property_title-description-wrapper" data-height="0" style="height: 0px;">
+                    <div class="mobile-compare-property_title-content-wrapper">
+                      <div class="mobile-compare-property_title-description">
+                        <span class="mobile-description-title">ID поста блога для комментариев</span>
+                        <span class="mobile-description-text">
+                          Описание свойства отсутствует. </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- //// -->
+                </div>
+                <div class="compare-row_mobile_wrapper" style="height: auto; overflow: hidden;" data-height="309">
+                  <div class="table-properties-wrapper">
+                    <div class="mobile-compare-product_titles_wrapper">
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Городской велосипед STELS Navigator 325 28 Z010 (2018) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Велосипед BMX STARK Madness BMX 1 (2018) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Городской велосипед Novatrack TG-20 6 (2017) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Подростковый городской велосипед TREK Jet 20 (2015) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Детский велосипед STELS Magic 12 (2015) </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="compare-propertie_row" data-height="63" style="height: 63px;">
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            40 </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            9 </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            7 </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            62 </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mobile-title-wrapper">
+                  <div class="mobile-compare-property_title-border" data-height="42"
+                    style="height: 42px; overflow: hidden;">
+                    <div class="mobile-compare-property_title">
+                      <span>Рама / Рост велосипедиста, см</span>
+                      <div class="mobile-compare-property_title-icons">
+                        <!--do not remove. Set inline (display:none) if there are no description -->
+                        <svg class="mobile-icon_question_small" width="20" height="20">
+                          <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_question_small">
+                          </use>
+                        </svg>
+                        <!-- //// -->
+                        <svg class="mobile-icon_cancel_comparison_small" width="20" height="20">
+                          <use
+                            xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_comparison_small">
+                          </use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <!--do not remove. Set inline (display:none) if there are no description -->
+                  <div class="mobile-compare-property_title-description-wrapper" data-height="0" style="height: 0px;">
+                    <div class="mobile-compare-property_title-content-wrapper">
+                      <div class="mobile-compare-property_title-description">
+                        <span class="mobile-description-title">Рама / Рост велосипедиста, см</span>
+                        <span class="mobile-description-text">
+                          Описание свойства отсутствует. </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- //// -->
+                </div>
+                <div class="compare-row_mobile_wrapper" style="height: auto; overflow: hidden;" data-height="309">
+                  <div class="table-properties-wrapper">
+                    <div class="mobile-compare-product_titles_wrapper">
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Городской велосипед STELS Navigator 325 28 Z010 (2018) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Велосипед BMX STARK Madness BMX 1 (2018) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Городской велосипед Novatrack TG-20 6 (2017) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Подростковый городской велосипед TREK Jet 20 (2015) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Детский велосипед STELS Magic 12 (2015) </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="compare-propertie_row" data-height="63" style="height: 63px;">
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            20" (178-185) </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            20" (178-185) </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mobile-title-wrapper">
+                  <div class="mobile-compare-property_title-border" data-height="42"
+                    style="height: 42px; overflow: hidden;">
+                    <div class="mobile-compare-property_title">
+                      <span>Материал рамы</span>
+                      <div class="mobile-compare-property_title-icons">
+                        <!--do not remove. Set inline (display:none) if there are no description -->
+                        <svg class="mobile-icon_question_small" width="20" height="20">
+                          <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_question_small">
+                          </use>
+                        </svg>
+                        <!-- //// -->
+                        <svg class="mobile-icon_cancel_comparison_small" width="20" height="20">
+                          <use
+                            xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_comparison_small">
+                          </use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <!--do not remove. Set inline (display:none) if there are no description -->
+                  <div class="mobile-compare-property_title-description-wrapper" data-height="0" style="height: 0px;">
+                    <div class="mobile-compare-property_title-content-wrapper">
+                      <div class="mobile-compare-property_title-description">
+                        <span class="mobile-description-title">Материал рамы</span>
+                        <span class="mobile-description-text">
+                          Описание свойства отсутствует. </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- //// -->
+                </div>
+                <div class="compare-row_mobile_wrapper" style="height: auto; overflow: hidden;" data-height="309">
+                  <div class="table-properties-wrapper">
+                    <div class="mobile-compare-product_titles_wrapper">
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Городской велосипед STELS Navigator 325 28 Z010 (2018) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Велосипед BMX STARK Madness BMX 1 (2018) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Городской велосипед Novatrack TG-20 6 (2017) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Подростковый городской велосипед TREK Jet 20 (2015) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Детский велосипед STELS Magic 12 (2015) </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="compare-propertie_row" data-height="42" style="height: 42px;">
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            сталь </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            сталь </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            алюминиевый сплав </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            алюминиевый сплав </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            сталь </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mobile-title-wrapper">
+                  <div class="mobile-compare-property_title-border" data-height="42"
+                    style="height: 42px; overflow: hidden;">
+                    <div class="mobile-compare-property_title">
+                      <span>Размеры рамы</span>
+                      <div class="mobile-compare-property_title-icons">
+                        <!--do not remove. Set inline (display:none) if there are no description -->
+                        <svg class="mobile-icon_question_small" width="20" height="20">
+                          <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_question_small">
+                          </use>
+                        </svg>
+                        <!-- //// -->
+                        <svg class="mobile-icon_cancel_comparison_small" width="20" height="20">
+                          <use
+                            xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_comparison_small">
+                          </use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <!--do not remove. Set inline (display:none) if there are no description -->
+                  <div class="mobile-compare-property_title-description-wrapper" data-height="0" style="height: 0px;">
+                    <div class="mobile-compare-property_title-content-wrapper">
+                      <div class="mobile-compare-property_title-description">
+                        <span class="mobile-description-title">Размеры рамы</span>
+                        <span class="mobile-description-text">
+                          Описание свойства отсутствует. </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- //// -->
+                </div>
+                <div class="compare-row_mobile_wrapper" style="height: auto; overflow: hidden;" data-height="309">
+                  <div class="table-properties-wrapper">
+                    <div class="mobile-compare-product_titles_wrapper">
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Городской велосипед STELS Navigator 325 28 Z010 (2018) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Велосипед BMX STARK Madness BMX 1 (2018) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Городской велосипед Novatrack TG-20 6 (2017) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Подростковый городской велосипед TREK Jet 20 (2015) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Детский велосипед STELS Magic 12 (2015) </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="compare-propertie_row" data-height="42" style="height: 42px;">
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            20.0 дюйм </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            8.0 дюйм </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mobile-title-wrapper">
+                  <div class="mobile-compare-property_title-border" data-height="42"
+                    style="height: 42px; overflow: hidden;">
+                    <div class="mobile-compare-property_title">
+                      <span>Диаметр колес</span>
+                      <div class="mobile-compare-property_title-icons">
+                        <!--do not remove. Set inline (display:none) if there are no description -->
+                        <svg class="mobile-icon_question_small" width="20" height="20">
+                          <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_question_small">
+                          </use>
+                        </svg>
+                        <!-- //// -->
+                        <svg class="mobile-icon_cancel_comparison_small" width="20" height="20">
+                          <use
+                            xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_comparison_small">
+                          </use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <!--do not remove. Set inline (display:none) if there are no description -->
+                  <div class="mobile-compare-property_title-description-wrapper" data-height="0" style="height: 0px;">
+                    <div class="mobile-compare-property_title-content-wrapper">
+                      <div class="mobile-compare-property_title-description">
+                        <span class="mobile-description-title">Диаметр колес</span>
+                        <span class="mobile-description-text">
+                          Описание свойства отсутствует. </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- //// -->
+                </div>
+                <div class="compare-row_mobile_wrapper" style="height: auto; overflow: hidden;" data-height="309">
+                  <div class="table-properties-wrapper">
+                    <div class="mobile-compare-product_titles_wrapper">
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Городской велосипед STELS Navigator 325 28 Z010 (2018) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Велосипед BMX STARK Madness BMX 1 (2018) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Городской велосипед Novatrack TG-20 6 (2017) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Подростковый городской велосипед TREK Jet 20 (2015) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Детский велосипед STELS Magic 12 (2015) </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="compare-propertie_row" data-height="42" style="height: 42px;">
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            28 дюймов </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            20 дюймов </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            20 дюймов </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            20 дюймов </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            12 дюймов </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mobile-title-wrapper">
+                  <div class="mobile-compare-property_title-border" data-height="42"
+                    style="height: 42px; overflow: hidden;">
+                    <div class="mobile-compare-property_title">
+                      <span>Материал обода</span>
+                      <div class="mobile-compare-property_title-icons">
+                        <!--do not remove. Set inline (display:none) if there are no description -->
+                        <svg class="mobile-icon_question_small" width="20" height="20">
+                          <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_question_small">
+                          </use>
+                        </svg>
+                        <!-- //// -->
+                        <svg class="mobile-icon_cancel_comparison_small" width="20" height="20">
+                          <use
+                            xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_comparison_small">
+                          </use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <!--do not remove. Set inline (display:none) if there are no description -->
+                  <div class="mobile-compare-property_title-description-wrapper" data-height="0" style="height: 0px;">
+                    <div class="mobile-compare-property_title-content-wrapper">
+                      <div class="mobile-compare-property_title-description">
+                        <span class="mobile-description-title">Материал обода</span>
+                        <span class="mobile-description-text">
+                          Описание свойства отсутствует. </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- //// -->
+                </div>
+                <div class="compare-row_mobile_wrapper" style="height: auto; overflow: hidden;" data-height="309">
+                  <div class="table-properties-wrapper">
+                    <div class="mobile-compare-product_titles_wrapper">
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Городской велосипед STELS Navigator 325 28 Z010 (2018) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Велосипед BMX STARK Madness BMX 1 (2018) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Городской велосипед Novatrack TG-20 6 (2017) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Подростковый городской велосипед TREK Jet 20 (2015) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Детский велосипед STELS Magic 12 (2015) </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="compare-propertie_row" data-height="42" style="height: 42px;">
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            алюминиевый сплав </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            алюминиевый сплав </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            алюминиевый сплав </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            алюминиевый сплав </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            сталь </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mobile-title-wrapper">
+                  <div class="mobile-compare-property_title-border" data-height="42"
+                    style="height: 42px; overflow: hidden;">
+                    <div class="mobile-compare-property_title">
+                      <span>Передний тормоз</span>
+                      <div class="mobile-compare-property_title-icons">
+                        <!--do not remove. Set inline (display:none) if there are no description -->
+                        <svg class="mobile-icon_question_small" width="20" height="20">
+                          <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_question_small">
+                          </use>
+                        </svg>
+                        <!-- //// -->
+                        <svg class="mobile-icon_cancel_comparison_small" width="20" height="20">
+                          <use
+                            xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_comparison_small">
+                          </use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <!--do not remove. Set inline (display:none) if there are no description -->
+                  <div class="mobile-compare-property_title-description-wrapper" data-height="0" style="height: 0px;">
+                    <div class="mobile-compare-property_title-content-wrapper">
+                      <div class="mobile-compare-property_title-description">
+                        <span class="mobile-description-title">Передний тормоз</span>
+                        <span class="mobile-description-text">
+                          Описание свойства отсутствует. </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- //// -->
+                </div>
+                <div class="compare-row_mobile_wrapper" style="height: auto; overflow: hidden;" data-height="309">
+                  <div class="table-properties-wrapper">
+                    <div class="mobile-compare-product_titles_wrapper">
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Городской велосипед STELS Navigator 325 28 Z010 (2018) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Велосипед BMX STARK Madness BMX 1 (2018) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Городской велосипед Novatrack TG-20 6 (2017) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Подростковый городской велосипед TREK Jet 20 (2015) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Детский велосипед STELS Magic 12 (2015) </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="compare-propertie_row" data-height="42" style="height: 42px;">
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            прогулочный / Sparkle SB101D </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            прогулочный </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            прогулочный </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mobile-title-wrapper">
+                  <div class="mobile-compare-property_title-border" data-height="42" style="height: 42px;">
+                    <div class="mobile-compare-property_title">
+                      <span>Задний тормоз</span>
+                      <div class="mobile-compare-property_title-icons">
+                        <!--do not remove. Set inline (display:none) if there are no description -->
+                        <svg class="mobile-icon_question_small" width="20" height="20">
+                          <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_question_small">
+                          </use>
+                        </svg>
+                        <!-- //// -->
+                        <svg class="mobile-icon_cancel_comparison_small" width="20" height="20">
+                          <use
+                            xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_comparison_small">
+                          </use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <!--do not remove. Set inline (display:none) if there are no description -->
+                  <div class="mobile-compare-property_title-description-wrapper" data-height="0" style="height: 0px;">
+                    <div class="mobile-compare-property_title-content-wrapper">
+                      <div class="mobile-compare-property_title-description">
+                        <span class="mobile-description-title">Задний тормоз</span>
+                        <span class="mobile-description-text">
+                          Описание свойства отсутствует. </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- //// -->
+                </div>
+                <div class="compare-row_mobile_wrapper" style="height: auto;" data-height="309">
+                  <div class="table-properties-wrapper">
+                    <div class="mobile-compare-product_titles_wrapper">
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Городской велосипед STELS Navigator 325 28 Z010 (2018) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Велосипед BMX STARK Madness BMX 1 (2018) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Городской велосипед Novatrack TG-20 6 (2017) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Подростковый городской велосипед TREK Jet 20 (2015) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Детский велосипед STELS Magic 12 (2015) </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="compare-propertie_row" data-height="42" style="height: 42px;">
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            начальный </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            прогулочный / Sparkle U969D </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            прогулочный </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            прогулочный </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            начальный </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mobile-title-wrapper">
+                  <div class="mobile-compare-property_title-border" data-height="42" style="height: 42px;">
+                    <div class="mobile-compare-property_title">
+                      <span>Количество скоростей</span>
+                      <div class="mobile-compare-property_title-icons">
+                        <!--do not remove. Set inline (display:none) if there are no description -->
+                        <svg class="mobile-icon_question_small" width="20" height="20">
+                          <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_question_small">
+                          </use>
+                        </svg>
+                        <!-- //// -->
+                        <svg class="mobile-icon_cancel_comparison_small" width="20" height="20">
+                          <use
+                            xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_comparison_small">
+                          </use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <!--do not remove. Set inline (display:none) if there are no description -->
+                  <div class="mobile-compare-property_title-description-wrapper" data-height="0" style="height: 0px;">
+                    <div class="mobile-compare-property_title-content-wrapper">
+                      <div class="mobile-compare-property_title-description">
+                        <span class="mobile-description-title">Количество скоростей</span>
+                        <span class="mobile-description-text">
+                          Описание свойства отсутствует. </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- //// -->
+                </div>
+                <div class="compare-row_mobile_wrapper" style="height: auto;" data-height="309">
+                  <div class="table-properties-wrapper">
+                    <div class="mobile-compare-product_titles_wrapper">
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Городской велосипед STELS Navigator 325 28 Z010 (2018) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Велосипед BMX STARK Madness BMX 1 (2018) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Городской велосипед Novatrack TG-20 6 (2017) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Подростковый городской велосипед TREK Jet 20 (2015) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Детский велосипед STELS Magic 12 (2015) </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="compare-propertie_row" data-height="42" style="height: 42px;">
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            1 </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            1 </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            6 </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            1 </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            1 </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mobile-title-wrapper">
+                  <div class="mobile-compare-property_title-border" data-height="42" style="height: 42px;">
+                    <div class="mobile-compare-property_title">
+                      <span>Тип</span>
+                      <div class="mobile-compare-property_title-icons">
+                        <!--do not remove. Set inline (display:none) if there are no description -->
+                        <svg class="mobile-icon_question_small" width="20" height="20">
+                          <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_question_small">
+                          </use>
+                        </svg>
+                        <!-- //// -->
+                        <svg class="mobile-icon_cancel_comparison_small" width="20" height="20">
+                          <use
+                            xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_comparison_small">
+                          </use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <!--do not remove. Set inline (display:none) if there are no description -->
+                  <div class="mobile-compare-property_title-description-wrapper" data-height="0" style="height: 0px;">
+                    <div class="mobile-compare-property_title-content-wrapper">
+                      <div class="mobile-compare-property_title-description">
+                        <span class="mobile-description-title">Тип</span>
+                        <span class="mobile-description-text">
+                          Описание свойства отсутствует. </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- //// -->
+                </div>
+                <div class="compare-row_mobile_wrapper" style="height: auto;" data-height="309">
+                  <div class="table-properties-wrapper">
+                    <div class="mobile-compare-product_titles_wrapper">
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Городской велосипед STELS Navigator 325 28 Z010 (2018) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Велосипед BMX STARK Madness BMX 1 (2018) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Городской велосипед Novatrack TG-20 6 (2017) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Подростковый городской велосипед TREK Jet 20 (2015) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Детский велосипед STELS Magic 12 (2015) </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="compare-propertie_row" data-height="42" style="height: 42px;">
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            городской </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            BMX </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            городской </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            городской </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            детский </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mobile-title-wrapper">
+                  <div class="mobile-compare-property_title-border" data-height="42" style="height: 42px;">
+                    <div class="mobile-compare-property_title">
+                      <span>Конструкция</span>
+                      <div class="mobile-compare-property_title-icons">
+                        <!--do not remove. Set inline (display:none) if there are no description -->
+                        <svg class="mobile-icon_question_small" width="20" height="20">
+                          <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_question_small">
+                          </use>
+                        </svg>
+                        <!-- //// -->
+                        <svg class="mobile-icon_cancel_comparison_small" width="20" height="20">
+                          <use
+                            xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_comparison_small">
+                          </use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <!--do not remove. Set inline (display:none) if there are no description -->
+                  <div class="mobile-compare-property_title-description-wrapper" data-height="0" style="height: 0px;">
+                    <div class="mobile-compare-property_title-content-wrapper">
+                      <div class="mobile-compare-property_title-description">
+                        <span class="mobile-description-title">Конструкция</span>
+                        <span class="mobile-description-text">
+                          Описание свойства отсутствует. </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- //// -->
+                </div>
+                <div class="compare-row_mobile_wrapper" style="height: auto;" data-height="309">
+                  <div class="table-properties-wrapper">
+                    <div class="mobile-compare-product_titles_wrapper">
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Городской велосипед STELS Navigator 325 28 Z010 (2018) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Велосипед BMX STARK Madness BMX 1 (2018) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Городской велосипед Novatrack TG-20 6 (2017) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Подростковый городской велосипед TREK Jet 20 (2015) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Детский велосипед STELS Magic 12 (2015) </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="compare-propertie_row" data-height="63" style="height: 63px;">
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            Складной </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            с возможностью крепления боковых колес </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mobile-title-wrapper">
+                  <div class="mobile-compare-property_title-border" data-height="42" style="height: 42px;">
+                    <div class="mobile-compare-property_title">
+                      <span>Модель</span>
+                      <div class="mobile-compare-property_title-icons">
+                        <!--do not remove. Set inline (display:none) if there are no description -->
+                        <svg class="mobile-icon_question_small" width="20" height="20">
+                          <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_question_small">
+                          </use>
+                        </svg>
+                        <!-- //// -->
+                        <svg class="mobile-icon_cancel_comparison_small" width="20" height="20">
+                          <use
+                            xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_comparison_small">
+                          </use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <!--do not remove. Set inline (display:none) if there are no description -->
+                  <div class="mobile-compare-property_title-description-wrapper" data-height="0" style="height: 0px;">
+                    <div class="mobile-compare-property_title-content-wrapper">
+                      <div class="mobile-compare-property_title-description">
+                        <span class="mobile-description-title">Модель</span>
+                        <span class="mobile-description-text">
+                          Описание свойства отсутствует. </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- //// -->
+                </div>
+                <div class="compare-row_mobile_wrapper" style="height: auto;" data-height="309">
+                  <div class="table-properties-wrapper">
+                    <div class="mobile-compare-product_titles_wrapper">
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Городской велосипед STELS Navigator 325 28 Z010 (2018) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Велосипед BMX STARK Madness BMX 1 (2018) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Городской велосипед Novatrack TG-20 6 (2017) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Подростковый городской велосипед TREK Jet 20 (2015) </span>
+                        </div>
+                      </div>
+                      <div class="mobile-compare-product_title-border_wrapper" style="height: 58px;">
+                        <div class="mobile-compare-product_title">
+                          <span>
+                            Детский велосипед STELS Magic 12 (2015) </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="compare-propertie_row" data-height="42" style="height: 42px;">
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            2018 года </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            2018 года </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            2017 года </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            2015 года </span>
+                        </div>
+                      </div>
+                      <div class="compare-propertie_wpapper" style="height: auto;">
+                        <div class="compare-propertie_item">
+                          <span>
+                            2015 года </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- BOTTOM IMAGES -->
+              <div class="compare-product_items-wrapper bottom-images">
+                <div class="compare-product_items">
+
+                  <div class="compare-product_item">
+
+                    <div class="compare-product_item-content">
+
+                      <a class="table_compare_product_img hover-zoom hover-square"
+                        href="/catalog/sport_i_otdykh/velosipedy/gorodskoy_velosiped_stels_navigator_325_28_z010_2018/">
+                        <img src="/upload/iblock/3aa/3aade5c3b181c82132ecdda16313cc2f.jpg"
+                          alt="Городской велосипед STELS Navigator 325 28 Z010 (2018)"
+                          title="Городской велосипед STELS Navigator 325 28 Z010 (2018)">
+                      </a>
+
+                      <div>
+                        <a class="compare-product_title"
+                          href="/catalog/sport_i_otdykh/velosipedy/gorodskoy_velosiped_stels_navigator_325_28_z010_2018/">
+                          Городской велосипед STELS Navigator 325 28 Z010 (2018) </a>
+
+                        <div class="product-card-inner__rating-block">
+
+                          <div class="rating-block bx_item_detail_rating">
+                            <span class="rating-block-title fonts__middle_comment">
+                              Рейтинг: </span>
+                            <div class="bx_stars_container">
+                              <div id="bx_vo_8_267_wnW8nW_stars" class="bx_stars_bg"></div>
+                              <div id="bx_vo_8_267_wnW8nW_progr" class="bx_stars_progress" style="width: 0%;">
+                              </div>
+                            </div>
+                          </div>
+
+                          <script>
+                            bx_vo_8_267_wnW8nW = new JCIblockVoteStars({ 'progressId': 'bx_vo_8_267_wnW8nW_progr', 'ratingId': 'bx_vo_8_267_wnW8nW_rating', 'starsId': 'bx_vo_8_267_wnW8nW_stars', 'ajaxUrl': '/bitrix/components/bitrix/iblock.vote/component.php', 'checkVoteUrl': '/bitrix/components/bitrix/iblock.vote/ajax.php', 'ajaxParams': { 'SESSION_PARAMS': '38fd79452838e8d7b1ebedfb1047211b', 'PAGE_PARAMS': { 'ELEMENT_ID': 267 }, 'AJAX_CALL': 'Y' }, 'siteId': 's1', 'voteData': { 'element': 0, 'percent': 0, 'count': 0 }, 'readOnly': true });
+                          </script>
+                        </div>
+
+                        <div class="compare-price">
+                          5&nbsp;710 руб. </div>
+
+                        <a class="table_compare_product_close"
+                          onclick="CatalogCompareObj.delete('/catalog/compare/?action_ccr=DELETE_FROM_COMPARE_RESULT&amp;ID=267');"
+                          href="/catalog/compare/?action_ccr=DELETE_FROM_COMPARE_RESULT&amp;ID=267">
+                        </a>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="compare-product_item">
+
+                    <div class="compare-product_item-content">
+
+                      <a class="table_compare_product_img hover-zoom hover-square"
+                        href="/catalog/sport_i_otdykh/velosipedy/velosiped_bmx_stark_madness_bmx_1_2018/">
+                        <img src="/upload/iblock/630/630a0751616dec4df0f43cc2e3f86488.jpg"
+                          alt="Велосипед BMX STARK Madness BMX 1 (2018)"
+                          title="Велосипед BMX STARK Madness BMX 1 (2018)">
+                      </a>
+
+                      <div>
+                        <a class="compare-product_title"
+                          href="/catalog/sport_i_otdykh/velosipedy/velosiped_bmx_stark_madness_bmx_1_2018/">
+                          Велосипед BMX STARK Madness BMX 1 (2018) </a>
+
+                        <div class="product-card-inner__rating-block">
+
+                          <div class="rating-block bx_item_detail_rating">
+                            <span class="rating-block-title fonts__middle_comment">
+                              Рейтинг: </span>
+                            <div class="bx_stars_container">
+                              <div id="bx_vo_8_265_XmMM27_stars" class="bx_stars_bg"></div>
+                              <div id="bx_vo_8_265_XmMM27_progr" class="bx_stars_progress" style="width: 0%;">
+                              </div>
+                            </div>
+                          </div>
+
+                          <script>
+                            bx_vo_8_265_XmMM27 = new JCIblockVoteStars({ 'progressId': 'bx_vo_8_265_XmMM27_progr', 'ratingId': 'bx_vo_8_265_XmMM27_rating', 'starsId': 'bx_vo_8_265_XmMM27_stars', 'ajaxUrl': '/bitrix/components/bitrix/iblock.vote/component.php', 'checkVoteUrl': '/bitrix/components/bitrix/iblock.vote/ajax.php', 'ajaxParams': { 'SESSION_PARAMS': '38fd79452838e8d7b1ebedfb1047211b', 'PAGE_PARAMS': { 'ELEMENT_ID': 265 }, 'AJAX_CALL': 'Y' }, 'siteId': 's1', 'voteData': { 'element': 0, 'percent': 0, 'count': 0 }, 'readOnly': true });
+                          </script>
+                        </div>
+
+                        <div class="compare-price">
+                          15&nbsp;990 руб. </div>
+
+                        <a class="table_compare_product_close"
+                          onclick="CatalogCompareObj.delete('/catalog/compare/?action_ccr=DELETE_FROM_COMPARE_RESULT&amp;ID=265');"
+                          href="/catalog/compare/?action_ccr=DELETE_FROM_COMPARE_RESULT&amp;ID=265">
+                        </a>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="compare-product_item">
+
+                    <div class="compare-product_item-content">
+
+                      <a class="table_compare_product_img hover-zoom hover-square"
+                        href="/catalog/sport_i_otdykh/velosipedy/gorodskoy_velosiped_novatrack_tg_20_6_2017/">
+                        <img src="/upload/iblock/4f7/4f74e488ab5dc7bcd024c088a6a8d748.jpg"
+                          alt="Городской велосипед Novatrack TG-20 6 (2017)"
+                          title="Городской велосипед Novatrack TG-20 6 (2017)">
+                      </a>
+
+                      <div>
+                        <a class="compare-product_title"
+                          href="/catalog/sport_i_otdykh/velosipedy/gorodskoy_velosiped_novatrack_tg_20_6_2017/">
+                          Городской велосипед Novatrack TG-20 6 (2017) </a>
+
+                        <div class="product-card-inner__rating-block">
+
+                          <div class="rating-block bx_item_detail_rating">
+                            <span class="rating-block-title fonts__middle_comment">
+                              Рейтинг: </span>
+                            <div class="bx_stars_container">
+                              <div id="bx_vo_8_264_oQMX41_stars" class="bx_stars_bg"></div>
+                              <div id="bx_vo_8_264_oQMX41_progr" class="bx_stars_progress" style="width: 0%;">
+                              </div>
+                            </div>
+                          </div>
+
+                          <script>
+                            bx_vo_8_264_oQMX41 = new JCIblockVoteStars({ 'progressId': 'bx_vo_8_264_oQMX41_progr', 'ratingId': 'bx_vo_8_264_oQMX41_rating', 'starsId': 'bx_vo_8_264_oQMX41_stars', 'ajaxUrl': '/bitrix/components/bitrix/iblock.vote/component.php', 'checkVoteUrl': '/bitrix/components/bitrix/iblock.vote/ajax.php', 'ajaxParams': { 'SESSION_PARAMS': '38fd79452838e8d7b1ebedfb1047211b', 'PAGE_PARAMS': { 'ELEMENT_ID': 264 }, 'AJAX_CALL': 'Y' }, 'siteId': 's1', 'voteData': { 'element': 0, 'percent': 0, 'count': 0 }, 'readOnly': true });
+                          </script>
+                        </div>
+
+                        <div class="compare-price">
+                          13&nbsp;000 руб. </div>
+
+                        <a class="table_compare_product_close"
+                          onclick="CatalogCompareObj.delete('/catalog/compare/?action_ccr=DELETE_FROM_COMPARE_RESULT&amp;ID=264');"
+                          href="/catalog/compare/?action_ccr=DELETE_FROM_COMPARE_RESULT&amp;ID=264">
+                        </a>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="compare-product_item">
+
+                    <div class="compare-product_item-content">
+
+                      <a class="table_compare_product_img hover-zoom hover-square"
+                        href="/catalog/sport_i_otdykh/velosipedy/podrostkovyy_gorodskoy_velosiped_trek_jet_20_2015/">
+                        <img src="/upload/iblock/e32/e32a6283cdcac637135e2304d4f151a2.jpg"
+                          alt="Подростковый городской велосипед TREK Jet 20 (2015)"
+                          title="Подростковый городской велосипед TREK Jet 20 (2015)">
+                      </a>
+
+                      <div>
+                        <a class="compare-product_title"
+                          href="/catalog/sport_i_otdykh/velosipedy/podrostkovyy_gorodskoy_velosiped_trek_jet_20_2015/">
+                          Подростковый городской велосипед TREK Jet 20 (2015) </a>
+
+                        <div class="product-card-inner__rating-block">
+
+                          <div class="rating-block bx_item_detail_rating">
+                            <span class="rating-block-title fonts__middle_comment">
+                              Рейтинг: </span>
+                            <div class="bx_stars_container">
+                              <div id="bx_vo_8_262_D8NkGP_stars" class="bx_stars_bg"></div>
+                              <div id="bx_vo_8_262_D8NkGP_progr" class="bx_stars_progress" style="width: 0%;">
+                              </div>
+                            </div>
+                          </div>
+
+                          <script>
+                            bx_vo_8_262_D8NkGP = new JCIblockVoteStars({ 'progressId': 'bx_vo_8_262_D8NkGP_progr', 'ratingId': 'bx_vo_8_262_D8NkGP_rating', 'starsId': 'bx_vo_8_262_D8NkGP_stars', 'ajaxUrl': '/bitrix/components/bitrix/iblock.vote/component.php', 'checkVoteUrl': '/bitrix/components/bitrix/iblock.vote/ajax.php', 'ajaxParams': { 'SESSION_PARAMS': '38fd79452838e8d7b1ebedfb1047211b', 'PAGE_PARAMS': { 'ELEMENT_ID': 262 }, 'AJAX_CALL': 'Y' }, 'siteId': 's1', 'voteData': { 'element': 0, 'percent': 0, 'count': 0 }, 'readOnly': true });
+                          </script>
+                        </div>
+
+                        <div class="compare-price">
+                          13&nbsp;490 руб. </div>
+
+                        <a class="table_compare_product_close"
+                          onclick="CatalogCompareObj.delete('/catalog/compare/?action_ccr=DELETE_FROM_COMPARE_RESULT&amp;ID=262');"
+                          href="/catalog/compare/?action_ccr=DELETE_FROM_COMPARE_RESULT&amp;ID=262">
+                        </a>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="compare-product_item">
+
+                    <div class="compare-product_item-content">
+
+                      <a class="table_compare_product_img hover-zoom hover-square"
+                        href="/catalog/sport_i_otdykh/velosipedy/detskiy_velosiped_stels_magic_12_2015/">
+                        <img src="/upload/iblock/226/226672db647c7b20f8c86a3c9a76163c.jpg"
+                          alt="Детский велосипед STELS Magic 12 (2015)" title="Детский велосипед STELS Magic 12 (2015)">
+                      </a>
+
+                      <div>
+                        <a class="compare-product_title"
+                          href="/catalog/sport_i_otdykh/velosipedy/detskiy_velosiped_stels_magic_12_2015/">
+                          Детский велосипед STELS Magic 12 (2015) </a>
+
+                        <div class="product-card-inner__rating-block">
+
+                          <div class="rating-block bx_item_detail_rating">
+                            <span class="rating-block-title fonts__middle_comment">
+                              Рейтинг: </span>
+                            <div class="bx_stars_container">
+                              <div id="bx_vo_8_159_lsS7wV_stars" class="bx_stars_bg"></div>
+                              <div id="bx_vo_8_159_lsS7wV_progr" class="bx_stars_progress" style="width: 0%;">
+                              </div>
+                            </div>
+                          </div>
+
+                          <script>
+                            bx_vo_8_159_lsS7wV = new JCIblockVoteStars({ 'progressId': 'bx_vo_8_159_lsS7wV_progr', 'ratingId': 'bx_vo_8_159_lsS7wV_rating', 'starsId': 'bx_vo_8_159_lsS7wV_stars', 'ajaxUrl': '/bitrix/components/bitrix/iblock.vote/component.php', 'checkVoteUrl': '/bitrix/components/bitrix/iblock.vote/ajax.php', 'ajaxParams': { 'SESSION_PARAMS': '38fd79452838e8d7b1ebedfb1047211b', 'PAGE_PARAMS': { 'ELEMENT_ID': 159 }, 'AJAX_CALL': 'Y' }, 'siteId': 's1', 'voteData': { 'element': 159, 'percent': 0, 'count': 0 }, 'readOnly': true });
+                          </script>
+                        </div>
+
+
+                        <a class="table_compare_product_close"
+                          onclick="CatalogCompareObj.delete('/catalog/compare/?action_ccr=DELETE_FROM_COMPARE_RESULT&amp;ID=159');"
+                          href="/catalog/compare/?action_ccr=DELETE_FROM_COMPARE_RESULT&amp;ID=159">
+                        </a>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- BOTTOM IMAGES -->
+
+              <div class="mobile-compare-menu_panel">
+                <div class="compare-menu_panel">
+                  <div class="compare-menu_panel-title">
+                    <span>Товаров в сравнении: </span><span>5</span>
+                  </div>
+                  <div class="compare-menu_panel-content">
+                    <div class="compare_menu-panel_switch all">
+                      <div class="menu-panel_switch-block">
+                        <div class="compare-switch">
+                          <div class="switch "></div>
+                        </div>
+                      </div>
+                      <div class="menu-panel_radio-text_block">
+                        <a class="all_params" href="/catalog/compare/?DIFFERENT=N">
+                          Все параметры</a>
+                        <a class="different_params" href="/catalog/compare/?DIFFERENT=Y">
+                          Только различающиеся</a>
+                      </div>
+                    </div>
+                    <div class="compare_menu-panel_show-deleted">
+                      <div class="bx_filter_parameters_box_checkbox ">
+                        <input type="checkbox" id="compare-show_deleted3" value="Y"
+                          class="checkbox__input compare-show_deleted">
+                        <label for="compare-show_deleted3" class="checkbox__label">
+                          <span>Показать удаленные</span> </label>
+                      </div>
+                    </div>
+                    <a class="compare_menu-panel_clear"
+                      href="/catalog/compare/?action_ccr=DELETE_FROM_COMPARE_RESULT&amp;ID=ALL;">
+                      <svg class="icon-clear-cart" width="18" height="22">
+                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_clear_cart"></use>
+                      </svg>
+                      <span>Очистить сравнение</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="ps__rail-x" style="width: 1005px; left: 0px; bottom: 0px;" data-topscroll="true">
+              <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 804px;"></div>
+            </div>
+            <div class="ps__rail-y" style="top: 0px; right: 0px;">
+              <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+            </div>
+            <div class="ps__rail-x" style="width: 1005px; left: 0px; bottom: 0px;">
+              <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 803px;"></div>
+            </div>
+            <div class="ps__rail-y" style="top: 0px; right: 0px;">
+              <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+            </div>
+          </div>
+          <!-- /CONTENT TABLE -->
+
+        </div>
+      </div>
+
+    </div>
+
+    <footer class="page-footer" role="contentinfo">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 page-footer__contacts">
+            <div class="mb-4">
+              <img src="img/logo-white.svg" width="122px" height="32px" alt="">
+            </div>
+            <div class="mb-3">
+              <ul class="list-unstyled">
+                <li class="mb-4">
+                  <small>Интернет-магазин:</small>
+                  <div class="font-weight-bold">8 (800) 555-07-83</div>
+                </li>
+                <li class="mb-4">
+                  <small>Магазин в Москве:</small>
+                  <div class="font-weight-bold">+7 (495) 120-07-89</div>
+                  <small>метро ВДНХ, ул 1-я останкинская д.55</small>
+                </li>
+                <li class="mb-4">
+                  <small>E-mail:</small>
+                  <div class="font-weight-bold">welcome@music-hummer.ru</div>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="#" class="btn btn-block btn-outline-light">Контакты</a>
+            </div>
+          </div>
+          <div class="col-lg-9 page-footer__info">
+            <div class="row d-none d-md-flex">
+              <div class="col">
+                <div class="page-footer__nav-title">Инструменты</div>
+                <ul class="page-footer__nav">
+                  <li><a href="#">Гитары</a></li>
+                  <li><a href="#">Клавишные</a></li>
+                  <li><a href="#">Ударные</a></li>
+                  <li><a href="#">Духовые</a></li>
+                  <li><a href="#">Смычковые</a></li>
+                </ul>
+              </div>
+              <div class="col">
+                <div class="page-footer__nav-title">Оборудование</div>
+                <ul class="page-footer__nav">
+                  <li><a href="#">Звуковое</a></li>
+                  <li><a href="#">Гитарное</a></li>
+                  <li><a href="#">Трансляционное</a></li>
+                  <li><a href="#">Световое</a></li>
+                </ul>
+              </div>
+              <div class="col-auto">
+                <div class="page-footer__nav-title">Решения</div>
+                <ul class="page-footer__nav">
+                  <li><a href="#">Для студии</a></li>
+                  <li><a href="#">Для ресторанов</a></li>
+                  <li><a href="#">Для кинотеатров</a></li>
+                  <li><a href="#">Для концертов</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="pb-4">
+              <ul class="social">
+                <li class="social__link-wrap">
+                  <a class="social__link" href="#">
+                    <img src="img/social-vk.png" alt="">
+                  </a>
+                </li>
+                <li class="social__link-wrap">
+                  <a class="social__link" href="#">
+                    <img src="img/social-fb.png" alt="">
+                  </a>
+                </li>
+                <li class="social__link-wrap">
+                  <a class="social__link" href="#">
+                    <img src="img/social-yout.png" alt="">
+                  </a>
+                </li>
+                <li class="social__link-wrap">
+                  <a class="social__link" href="#">
+                    <img src="img/social-inst.png" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="copyright"><p class="text-muted">© 2006 – 2019 Интернет-магазин музыкальных инструментов и оборудования «Мьюзик Хаммер». 
+              Сайт не является публичной офертой.</p></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+  </div>
+  <div class="my-header">
+    <nav id="my-menu">
+      <ul>
+        <li><a href="#">Акции</a></li>
+        <li><span>Каталог</span>
+          <ul>
+            <li><span>Гитары</span>
+              <ul class="catalog-main__sub-nav">
+                <li><a href="#">Электрогитары <span>1234</span></a></li>
+                <li><a href="#">Бас-гитары<span>45</span></a></li>
+                <li><a href="#">Акустические<span>45</span></a></li>
+                <li><a href="#">Классические<span>45</span></a></li>
+                <li><a href="#">Электроакустические<span>45</span></a></li>
+                <li><a href="#">Полуакустические<span>45</span></a></li>
+                <li><a href="#">Уменьшенные гитары<span>45</span></a></li>
+                <li><a href="#">Укулеле<span>45</span></a></li>
+                <li><a href="#">Наборы новичкам<span>45</span></a></li>
+                <li><a href="#">Аксессуары<span>45</span></a></li>
+              </ul>
+            </li>
+            <li><a href="#">Гитарное оборудование</a></li>
+            <li><a href="#">Трансляционное оборудование</a></li>
+            <li><a href="#">Звуковое оборудование</a></li>
+            <li><a href="#">Студия и звукозапись</a></li>
+            <li><a href="#">Клавишные</a></li>
+            <li><a href="#">Микрофоны</a></li>
+            <li><a href="#">Наушники</a></li>
+            <li><a href="#">Свет, сцена, эффекты</a></li>
+            <li><a href="#">Караоке оборудование</a></li>
+            <li><a href="#">Ударные</a></li>
+            <li><a href="#">Hi Fi оборудование</a></li>
+            <li><a href="#">Перкуссия</a></li>
+            <li><a href="#">Оркестровые</a></li>
+            <li><a href="#">Народные</a></li>
+            <li><a href="#">Сувениры и подарки</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Бренды</a></li>
+        <li><a href="#">Услуги</a></li>
+        <li><a href="#">Оптовикам</a></li>
+        <li><a href="#">Контакты</a></li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Оплата</a></li>
+        <li><a href="#">Поддержка</a></li>
+      </ul>
+      <!-- <div class="mb-3">
+        <p class="small text-muted m-0">Москва:</p>
+        <p class="small text-muted m-0">+7 (495) 120-07-89</p>
+      </div>
+      <div class="mb-3">
+        <p class="small text-muted m-0">Бесплатно по России:</p>
+        <p class="small text-muted m-0">8 800 250-00-00</p>
+      </div>
+      <div class="mb-3">
+        <p class="small text-muted m-0">welcome@music-hummer.ru</p>
+      </div> -->
+    </nav>
+  </div>
+
+  <div class="fs-modal" style="display: none;max-width:500px;" id="selectableModal">
+      <h5>Категории</h5>
+      <ul class="modal-category-nav">
+          <li><a class="nav-link" href="#">Электрогитары <span class="text-muted">1234</span></a></li>
+          <li><a class="nav-link" href="#">Бас-гитары <span class="text-muted">336</span></a></li>
+          <li><a class="nav-link" href="#">Акустические <span class="text-muted">6528</span></a></li>
+          <li><a class="nav-link" href="#">Классические <span class="text-muted">1882</span></a></li>
+          <li><a class="nav-link" href="#">Электроакустические <span class="text-muted">586</span></a></li>
+          <li><a class="nav-link" href="#">Полуакустические <span class="text-muted">985</span></a></li>
+          <li><a class="nav-link" href="#">Уменьшенные гитары <span class="text-muted">85</span></a></li>
+          <li><a class="nav-link" href="#">Укулеле <span class="text-muted">87</span></a></li>
+          <li><a class="nav-link" href="#">Наборы новичкам <span class="text-muted">34</span></a></li>
+          <li><a class="nav-link" href="#">Аксессуары <span class="text-muted">12</span></a></li>
+      </ul>
+    </div>
+
+  <div class="fs-modal" style="display: none;max-width:500px;" id="selectableModal2">
+      <form class="sidebar-filter-group">
+          <div class="sidebar-filter">
+            <div class="sidebar-filter__title mb-2">Бренды</div>
+            <div class="custom-control custom-checkbox my-2 mr-sm-2">
+              <input type="checkbox" class="custom-control-input" id="filter-brand-01">
+              <label class="custom-control-label" for="filter-brand-01">ALHAMBRA</label>
+            </div>
+            <div class="custom-control custom-checkbox my-2 mr-sm-2">
+              <input type="checkbox" class="custom-control-input" id="filter-brand-02">
+              <label class="custom-control-label" for="filter-brand-02">ART & LUTHERIE</label>
+            </div>
+            <div class="custom-control custom-checkbox my-2 mr-sm-2">
+              <input type="checkbox" class="custom-control-input" id="filter-brand-03">
+              <label class="custom-control-label" for="filter-brand-03">CORT</label>
+            </div>
+            <div class="custom-control custom-checkbox my-2 mr-sm-2">
+              <input type="checkbox" class="custom-control-input" id="filter-brand-04">
+              <label class="custom-control-label" for="filter-brand-04">CRAFTER</label>
+            </div>
+            <div class="custom-control custom-checkbox my-2 mr-sm-2">
+              <input type="checkbox" class="custom-control-input" id="filter-brand-05">
+              <label class="custom-control-label" for="filter-brand-05">DEAN</label>
+            </div>
+            <div class="collapse" id="filter-brand-collapse" style="overflow: hidden;">
+              <div class="custom-control custom-checkbox my-2 mr-sm-2">
+                <input type="checkbox" class="custom-control-input" id="filter-brand-06">
+                <label class="custom-control-label" for="filter-brand-06">DEAN</label>
+              </div>
+              <div class="custom-control custom-checkbox my-2 mr-sm-2">
+                <input type="checkbox" class="custom-control-input" id="filter-brand-07">
+                <label class="custom-control-label" for="filter-brand-07">DEAN</label>
+              </div>
+              <div class="custom-control custom-checkbox my-2 mr-sm-2">
+                <input type="checkbox" class="custom-control-input" id="filter-brand-08">
+                <label class="custom-control-label" for="filter-brand-08">DEAN</label>
+              </div>
+              <div class="custom-control custom-checkbox my-2 mr-sm-2">
+                <input type="checkbox" class="custom-control-input" id="filter-brand-09">
+                <label class="custom-control-label" for="filter-brand-09">DEAN</label>
+              </div>
+              <div class="custom-control custom-checkbox my-2 mr-sm-2">
+                <input type="checkbox" class="custom-control-input" id="filter-brand-10">
+                <label class="custom-control-label" for="filter-brand-10">DEAN</label>
+              </div>
+            </div>
+            <a href="#filter-brand-collapse" data-toggle="collapse">Все бренды</a>
+          </div>
+          <div class="sidebar-filter">
+            <div class="sidebar-filter__title mb-2">Цена</div>
+            <div class="slider-rang-wrap">
+              <div class="row">
+                <div class="col-6">
+                  <label class="slider-rang__input-wrap">
+                    <input class="form-control minus" type="text" value="1"/>
+                  </label>
+                </div>
+                <div class="col-6">
+                  <label class="slider-rang__input-wrap">
+                    <input class="form-control plus" type="text" value="1000"/>
+                  </label>
+                </div>
+              </div>
+              <div class="slider-range filter">
+                <input class="range-slider" type="text"/>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-filter">
+            <div class="sidebar-filter__title mb-2">Тип</div>
+            <div class="custom-control custom-checkbox my-2 mr-sm-2">
+              <input type="checkbox" class="custom-control-input" id="filter-type-01">
+              <label class="custom-control-label" for="filter-type-01">Без звукоснимателей</label>
+            </div>
+            <div class="custom-control custom-checkbox my-2 mr-sm-2">
+              <input type="checkbox" class="custom-control-input" id="filter-type-02">
+              <label class="custom-control-label" for="filter-type-02">Со звукоснимателем</label>
+            </div>
+          </div>
+      </form>
+      <div class="fixed-btn-gr">
+          <a href="#" class="btn btn-succses">Сбросить</a>
+          <a href="#" class="btn btn-primary">Применить</a>
+      </div>
+  </div>
+
+  <div class="fs-modal" style="display: none;max-width:500px;" id="selectableModal3">
+
+    <ul class="modal-sort-nav">
+      <li><a href="#"><svg class="icon" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_step_04"></use></svg>Новинки</a></li>
+      <li><a href="#"><svg class="icon" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_step_04"></use></svg>Скидки</a></li>
+      <li><a href="#"><svg class="icon" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_step_04"></use></svg>Хиты продаж</a></li>
+      <li><a href="#"><svg class="icon" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ic_step_04"></use></svg>Доступен в комплекте</a></li>
+      <li><a href="#">Сначала новые</a></li>
+      <li><a href="#">Сначала дорогие</a></li>
+      <li><a href="#">Сначала дешевые</a></li>
+    </ul>
+      <div class="fixed-btn-gr">
+          <a href="#" class="btn btn-succses">Сбросить</a>
+          <a href="#" class="btn btn-primary">Применить</a>
+      </div>
+  </div>
+
+  <div class="fs-search" style="display: none;" id="m-search">
+    <form class="form-inline search">
+      <input class="form-control" type="search" placeholder="Найти" aria-label="Search">
+      <button class="btn" type="submit"><svg class="icon icon-search" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-search"></use></svg></button>
+    </form>
+  </div>
+
+  <script src="js/script.min.js"></script>
+  <script>
+    //MMENU
+    document.addEventListener(
+      "DOMContentLoaded", () => {
+        const menu = new MmenuLight(
+          document.querySelector("#my-menu")
+        );
+
+        const navigator = menu.navigation();
+        const drawer = menu.offcanvas();
+
+        document.querySelector('a[href="#my-menu"]')
+          .addEventListener('click', (evnt) => {
+            evnt.preventDefault();
+            drawer.open();
+          });
+      }
+    );
+    //END MMENU
+  </script>
+
+</body>
+
+</html>
